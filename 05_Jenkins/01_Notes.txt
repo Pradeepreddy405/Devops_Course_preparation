@@ -133,4 +133,7 @@ CD (Continuous Delivery / Continuous Deployment)
 
 Flow:
 
-Git → CI → Deploy to Dev → QA → (Manual Approve) → Prod
+	Git → CI → Deploy to Dev → QA → (Manual Approve) → Prod
+
+Typical stages in pipeline :
+	Commit → Build → Test → Deploy to Dev → Deploy to QA → Deploy to Staging → Manual Approval → Deploy to Prod
