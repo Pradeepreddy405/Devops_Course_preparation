@@ -137,3 +137,9 @@ Flow:
 
 Typical stages in pipeline :
 	Commit → Build → Test → Deploy to Dev → Deploy to QA → Deploy to Staging → Manual Approval → Deploy to Prod
+
+
+Continuous delivery vs continuous deployment ?
+
+	Continuous Delivery ensures code is always ready for production with manual approval, 
+	whereas Continuous Deployment automatically deploys every successful build to production without human intervention.
