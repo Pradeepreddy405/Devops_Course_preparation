@@ -1,12 +1,3 @@
-Problems before container Orchestration
-
-Manual scaling (slow & error-prone)
-Single server dependency
-Downtime during deployment
-Hard networking between containers
-
-
-
 Container Orchestration :
 
 	As companies began moving from monolithic applications to microservices, they started running hundreds or thousands of containers. Running all of them manually quickly became impossible.
