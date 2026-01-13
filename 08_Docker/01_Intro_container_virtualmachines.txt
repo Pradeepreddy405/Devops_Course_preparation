@@ -16,7 +16,7 @@ why virtualization and containers evolved ?
 	Hard to scale
 		Scaling = buying new hardware
 
-	Environment mismatch
+	Environment mismatch 
 		“Works on my machine” issue
 		
 		
@@ -104,4 +104,26 @@ why virtualization and containers evolved ?
 		- Virtualization solved hardware underutilization and enabled cloud computing.
 		- Containers solved VM inefficiencies and enabled microservices.
 		- Kubernetes solved container management at scale.	
+
+
+Note : 
+
+	- Dependency mismatch is when required libraries or runtimes differ.
+
+		1) App needs Python 3.9, server has Python 3.7
+		2) App needs Java 11, prod has Java 8
+		3) App needs libssl 1.1, OS has libssl 1.0
+		4) Node app needs a package version that isn’t installed
+		5) Only about software dependencies
+
+	- Environment mismatch is broader and includes OS, configuration, and system differences. Dependency mismatch is 	  part of environment mismatch.
+
+		OS differences (Ubuntu vs Amazon Linux)
+
+		1) Kernel differences
+		2) Dependency mismatch (yes, it’s part of this)
+		3) Environment variables
+		4) File paths & permissions
+		5) System configs
+		6) Dependency mismatch is ONE reason for environment mismatch
 		
