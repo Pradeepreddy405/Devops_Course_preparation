@@ -1,8 +1,61 @@
 What is Kubernetes Orchestration?
 	Kubernetes orchestration is how Kubernetes automatically deploys, schedules, scales, heals, and manages containerized applications across a cluster of machines (nodes).
+
+	Cluster    : A Kubernetes cluster is a collection of control plane and worker nodes that work together to deploy, manage, scale, and heal containerized applications.
+			   : Cluster consists of two important components i.e nothing but Control plane and worker nodes.
+			   
+				 Cluster =  Control plane + worker  nodes 
 	
-	workernode :
-		kubelet: Pod lifecycle manager
+			    1) Control plane components (API Server , Scheduler , Control manager and etcd(cluster state database) . 
+				2) Worker node components   (Kubelet, proxy, CNI (Networking),Container run time
+	
+
+	1)Control plane components:
+	
+		i)API Server (Entry Point)
+			- Receives all requests (kubectl, UI, CI/CD)
+			- Validates YAML
+			- Authenticates & authorizes
+			- Stores desired state in etcd
+			- Nothing in Kubernetes happens without the API Server
+
+	    ii)etcd (Memory of the Cluster)
+			
+			Stores:
+			Desired state (replicas, images, configs)
+			Actual cluster metadata
+			Acts as single source of truth
+	
+			Example:
+			
+				Desired replicas = 3
+				Controller Manager (Reconciliation Engine)
+				
+				Continuously checks:
+				Desired state (etcd) VS Actual state (nodes)
+			
+				If mismatch:
+				Takes corrective action
+			
+					Example:
+					
+						Desired Pods = 3
+						Running Pods = 2
+						Controller creates 1 new Pod
+
+		iii)Scheduler:
+		
+			- Picks which worker node should run the Pod
+			- Considers:
+				CPU & memory availability
+				Node labels / taints
+			- Caution:
+				Scheduler does not run Pods
+				It only assigns Pods to nodes
+	
+	
+	2)Workernode(data plane) :
+		i)kubelet: Pod lifecycle manager
 		
 			- Talks to the API Server
 			- Creates, starts, stops Pods on the node
@@ -11,27 +64,26 @@ What is Kubernetes Orchestration?
 			- Reports node & pod status back to control plane	
 			
 		
-		kube-proxy: Networking & traffic manager (per node)
+		ii)kube-proxy: Networking & traffic manager (per node)
 			- Implements Services (ClusterIP / NodePort / LoadBalancer)
 			- Handles network traffic routing to Pods
 			- Uses iptables / IPVS rules
 			- Load-balances traffic across healthy Pods
 			
-		Container Runtime : with run time applications will run inside the pods
-			- Container execution engine - containerd,CRI-O
+		iii)Container Runtime(containerd,CRI-O) : with run time applications will run inside the pods
 			- Responsible for running containers
 			- Pulls container images from registries
 			- Creates and starts containers inside Pods
 			- Stops and deletes containers when required
 			- Works with kubelet via CRI (Container Runtime Interface)
-		Container Runtime — Container execution engine
+		iv)Container Runtime — Container execution engine
 
-		CNI (Container Network Interface) — Pod networking provider
-		Calico
-		Flannel
-		Cilium
-		Assigns IP addresses to Pods
-		Enables Pod-to-Pod communication
-		Enables Pod-to-Service communication
-		Handles cross-node networking
-		Enforces Network Policies (if supported)
+		v)CNI (Container Network Interface) — Pod networking provider
+			- Calico
+			- Flannel
+			- Cilium
+			- Assigns IP addresses to Pods
+			- Enables Pod-to-Pod communication
+			- Enables Pod-to-Service communication
+			- Handles cross-node networking
+			- Enforces Network Policies (if supported)
