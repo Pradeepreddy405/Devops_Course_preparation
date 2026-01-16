@@ -1,0 +1,2 @@
+cd JAVA-MYSQL-APP/lib
+wget https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.29/mysql-connector-java-8.0.29.jar
