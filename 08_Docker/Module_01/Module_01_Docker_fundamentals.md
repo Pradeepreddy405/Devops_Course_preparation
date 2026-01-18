@@ -108,6 +108,10 @@ A Docker container goes through multiple stages from creation to deletion.
 
 ![Docker Architecture](06_Contaier_lifecycle.png)
 
+<p align="center">
+  <img src="./06_Contaier_lifecycle.png" width="700" alt="Container lifecycle">
+</p>
+
 ### Lifecycle Flow
 
 ```
