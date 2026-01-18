@@ -25,10 +25,10 @@ Module 2: Docker Images and Dockerfile
 Goal: Learn to create custom Docker images from scratch.
 	Topics:
 		- What is a Dockerfile?
-		Dockerfile instructions: FROM, RUN, COPY, ADD, WORKDIR, CMD, ENTRYPOINT, ENV
-		Building and tagging images
-		Understanding layers and caching
-		Best practices for Dockerfile optimization
+		- Dockerfile instructions: FROM, RUN, COPY, ADD, WORKDIR, CMD, ENTRYPOINT, ENV
+		- Building and tagging images
+		- Understanding layers and caching
+		- Best practices for Dockerfile optimization
 
 	Hands-on:
 		- Create a Dockerfile for a Python Flask app
