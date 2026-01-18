@@ -1,7 +1,5 @@
 # Docker Fundamentals
 
-This README provides a clear and interview-ready overview of **Docker Fundamentals**, suitable for **DevOps / Cloud / Platform Engineer roles (up to ~20 LPA)**.
-
 ---
 
 ## 1. What is Docker?
@@ -13,8 +11,7 @@ Containers package:
 - Dependencies
 - Runtime
 
-into a **single, lightweight, and portable unit**, ensuring consistency across **development, testing, and production environments**.
-
+Container packages all of them into a **single, lightweight, and portable unit**, ensuring consistency across **development, testing, and production environments**.
 Docker also provides a **rich ecosystem** including **Docker Engine, Docker CLI, and Docker Hub** for seamless container management.
 
 ### Docker Components
@@ -177,17 +174,8 @@ docker rm <container>
 
 ---
 
-## Lifecycle Summary (Interview Ready)
-
-A Docker container lifecycle starts with creation from an image, then it can be started or run, paused/unpaused, stopped, restarted, or killed, and finally removed. Containers are **ephemeral**, so persistent data should be stored using **Docker volumes**.
-
+   A Docker container lifecycle starts with creation from an image, then it can be started or run, paused/unpaused, stopped, restarted, or killed, and finally        removed. Containers are **ephemeral**, so persistent data should be stored using **Docker volumes**.
 ---
 
-## Conclusion
-
-These Docker fundamentals cover the **core concepts required for DevOps and Cloud interviews** and form the foundation for advanced topics such as **Docker networking, volumes, multi-stage builds, and Kubernetes**.
-
----
-
-Happy Learning 🚀
+Happy Learning :)
 
