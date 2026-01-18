@@ -54,7 +54,7 @@ Docker also provides a **rich ecosystem** including **Docker Engine, Docker CLI,
 
 ## 3. Docker Architecture
     
-          ![Docker Architecture](03_Docker_architecture.png)
+![Docker Architecture](03_Docker_architecture.png)
       
 Docker follows a **client-server architecture** with three main components.
 
@@ -103,7 +103,7 @@ docker rm          # Remove a stopped container
 
 A Docker container goes through multiple stages from creation to deletion.
 
-    ![Docker Architecture](06_Contaier_lifecycle.png)
+![Docker Architecture](06_Contaier_lifecycle.png)
 
 ### Lifecycle Flow
 
