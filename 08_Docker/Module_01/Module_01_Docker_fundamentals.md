@@ -107,11 +107,11 @@ A Docker container goes through multiple stages from creation to deletion.
   <img src="./06_Contaier_lifecycle.png" width="700" alt="Container Lifecycle">
 </p>
 
-### Lifecycle Flow
+  ### Lifecycle Flow
 
-    ```
-    Image → Create → Start / Run → Running → Pause / Unpause → Stop / Kill → Exited → Remove
-    ```
+  ```
+        Image → Create → Start / Run → Running → Pause / Unpause → Stop / Kill → Exited → Remove
+  ```
 
 ### Lifecycle Stages
 
