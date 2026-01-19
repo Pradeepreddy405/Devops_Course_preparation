@@ -2,7 +2,7 @@
 
 ## 1) What is a Dockerfile?
 
-	A **Dockerfile** is a text file that contains a set of instructions to automatically build a Docker image.  
+  	A **Dockerfile** is a text file that contains a set of instructions to automatically build a Docker image.  
 	It defines how an application and its environment are packaged, ensuring the app runs consistently across development, testing, and production.
 
   ### What a Dockerfile does:
@@ -32,7 +32,7 @@ Docker processes the Dockerfile sequentially, and most instructions create **imm
 
 ### Example Dockerfile:
 		
-		```dockerfile
+		```
 			FROM node:18-alpine
 			WORKDIR /app
 			COPY package*.json .
@@ -45,25 +45,25 @@ Docker processes the Dockerfile sequentially, and most instructions create **imm
 		---
 
 ## 3) Building and Tagging Images
-	
-	### 1) Building an image
+1) Building an image
 		- Docker images are built from a Dockerfile using the `docker build` command.
 		
 		```bash
 		docker build -t Application_name:Version_1.0 .
 		```
-		
-		- `-t` : Assigns name and tag  
-		- `.`   : Build context (current directory) — the directory Docker uses to access files during image creation  
-		- Docker reads the Dockerfile **instruction by instruction**  
-		- Each instruction creates a new **immutable layer**
-	
-	### 2) Tagging images
+
+	  - `-t` : Assigns name and tag  
+	  - `.`   : Build context (current directory) — the directory Docker uses to access files during image creation  
+	  - Docker reads the Dockerfile **instruction by instruction**  
+	  - Each instruction creates a new **immutable layer**
+    
+	2) Tagging images
 		- Tags are used for **versioning** and **release management**.
+		
 		```bash
 		docker tag myapplication_name:Version_1.0 myrepo/myapp:latest
 		```
-		- Helps differentiate dev / test / prod images  
+	- Helps differentiate dev / test / prod images  
 		- Required for pushing images to Docker Hub / ECR / GCR  
 		- Enables rollback by reusing older tags  
 		
@@ -72,9 +72,8 @@ Docker processes the Dockerfile sequentially, and most instructions create **imm
 	---
 	
 ## 4) Understanding Layers and Caching
-
-	### Docker Image Layers
-		Docker images are a **stack of layers**, not a single file.
+  ### Docker Image Layers
+  Docker images are a **stack of layers**, not a single file.
 		
 		Example Dockerfile layers:
 		
@@ -88,24 +87,23 @@ Docker processes the Dockerfile sequentially, and most instructions create **imm
 		
 		- Layers are **immutable**, **cached**, and **shared** across images.
 	
-	### Docker Build Cache
-		- Docker build cache is a **layer reuse mechanism**.
-		- During `docker build`:
-		- Docker checks each instruction
-		- If instruction and context haven’t changed, Docker **reuses the cached layer**
-		- Cache is invalidated if either the instruction OR the files used by that instruction change
+  ### Docker Build Cache
+  - Docker build cache is a **layer reuse mechanism**.
+  - During `docker build`:
+  - Docker checks each instruction
+  - If instruction and context haven’t changed, Docker **reuses the cached layer**
+  - Cache is invalidated if either the instruction OR the files used by that instruction change
 	
-			**Example:**
-			
-			**First build**
+	**Example:**
+		**First build**
+    
 			```
 			FROM → cached
 			COPY package.json → new
 			RUN npm install → runs
 			COPY . → new
 			```
-			
-			**Second build**
+	   **Second build**
 			```
 			FROM → cached
 			COPY package.json → cached
@@ -119,15 +117,15 @@ Docker processes the Dockerfile sequentially, and most instructions create **imm
 
 ## 5) Best Practices for Dockerfile Optimization
 
-	1. **Use minimal base images**
-	```dockerfile
+1. **Use minimal base images**
+	```
 	FROM node:18-alpine
 	```
 	- Smaller image size  
 	- Faster pulls  
 	- Reduced attack surface  
 	
-	2. **Use multi-stage builds**
+2. **Use multi-stage builds**
 	```dockerfile
 	FROM node:18 AS build
 	RUN npm run build
@@ -139,23 +137,23 @@ Docker processes the Dockerfile sequentially, and most instructions create **imm
 	- Removes build tools from runtime image  
 	- Standard in production to separate build-time and runtime concerns  
 	
-	3. **Minimize number of layers**
+3. **Minimize number of layers**
 	```dockerfile
 	RUN apt update && apt install -y curl
 	```
 	- Combine related RUN commands  
 	
-	4. **Avoid running containers as root**
+4. **Avoid running containers as root**
 	```dockerfile
 	USER node
 	```
 	- Improves security  
 	
-	5. **Use `.dockerignore`**
+5. **Use `.dockerignore`**
 	- Prevents unnecessary files from entering the image  
 	- Reduces build time and image size  
 	
-	6. **Prefer COPY over ADD**
+6. **Prefer COPY over ADD**
 	- COPY is **explicit and predictable**  
 	- ADD has extra behavior (auto-extract, URLs)
 	
