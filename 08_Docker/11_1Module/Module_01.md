@@ -32,7 +32,6 @@ Docker processes the Dockerfile sequentially, and most instructions create **imm
 
 ### Example Dockerfile:
 		
-		```
 			FROM node:18-alpine
 			WORKDIR /app
 			COPY package*.json .
@@ -40,13 +39,13 @@ Docker processes the Dockerfile sequentially, and most instructions create **imm
 			COPY . .
 			EXPOSE 3000
 			CMD ["npm", "start"]
-			```
+		
 		
 		---
 
 ## 3) Building and Tagging Images
 1) Building an image
-		- Docker images are built from a Dockerfile using the `docker build` command.
+	  - Docker images are built from a Dockerfile using the `docker build` command.
 		
 		```bash
 		docker build -t Application_name:Version_1.0 .
@@ -57,15 +56,15 @@ Docker processes the Dockerfile sequentially, and most instructions create **imm
 	  - Docker reads the Dockerfile **instruction by instruction**  
 	  - Each instruction creates a new **immutable layer**
     
-	2) Tagging images
-		- Tags are used for **versioning** and **release management**.
+2) Tagging images
+	  - Tags are used for **versioning** and **release management**.
 		
 		```bash
 		docker tag myapplication_name:Version_1.0 myrepo/myapp:latest
 		```
-	- Helps differentiate dev / test / prod images  
-		- Required for pushing images to Docker Hub / ECR / GCR  
-		- Enables rollback by reusing older tags  
+	  - Helps differentiate dev / test / prod images  
+	  - Required for pushing images to Docker Hub / ECR / GCR  
+	  - Enables rollback by reusing older tags  
 		
 		> **Note:** Tagging is critical in CI/CD pipelines to ensure **traceability** and **reproducibility** of deployments.
 		
