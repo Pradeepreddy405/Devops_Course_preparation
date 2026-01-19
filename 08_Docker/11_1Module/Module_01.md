@@ -73,13 +73,13 @@
 		Docker images are a **stack of layers**, not a single file.
 		Example Dockerfile layers:
 		
-		| Instruction | Layer |
-		|-------------|-------|
-		| `FROM node:18-alpine` | Base image |
-		| `WORKDIR /app`        | WORKDIR |
-		| `COPY package.json .` | Copy dependencies |
-		| `RUN npm install`     | Install dependencies |
-		| `COPY . .`            | Copy source code |
+		| Instruction | Layer 							|
+		|-------------|---------------------------------|
+		| `FROM node:18-alpine` | Base image		 	|
+		| `WORKDIR /app`        | WORKDIR 				|
+		| `COPY package.json .` | Copy dependencies 	|
+		| `RUN npm install`     | Install dependencies 	|
+		| `COPY . .`            | Copy source code 		|
 	
   - Layers are **immutable**, **cached**, and **shared** across images.
 	
@@ -114,12 +114,13 @@
 ## 5) Best Practices for Dockerfile Optimization
 
   1. **Use minimal base images**
+     
 	```
 	FROM node:18-alpine       
 	```
-	- Smaller image size  
-	- Faster pulls  
-	- Reduced attack surface  
+  - Smaller image size  
+  - Faster pulls  
+  - Reduced attack surface  
 	
  2. **Use multi-stage builds**
 
@@ -130,30 +131,30 @@
 	FROM nginx:alpine
 	COPY --from=build /app/dist /usr/share/nginx/html
 	```
-	- Keeps final image **clean and lightweight**  
-	- Removes build tools from runtime image  
-	- Standard in production to separate build-time and runtime concerns  
+  - Keeps final image **clean and lightweight**  
+  - Removes build tools from runtime image  
+  - Standard in production to separate build-time and runtime concerns  
 	
-4. **Minimize number of layers**
-	```dockerfile
-	RUN apt update && apt install -y curl
-	```
+3. **Minimize number of layers**
+		```
+		RUN apt update && apt install -y curl
+		```
 	- Combine related RUN commands  
 	
-5. **Avoid running containers as root**
+4. **Avoid running containers as root**
 	```dockerfile
 	USER node
 	```
 	- Improves security  
 	
-6. **Use `.dockerignore`**
+5. **Use `.dockerignore`**
 	- Prevents unnecessary files from entering the image  
 	- Reduces build time and image size  
 	
-7. **Prefer COPY over ADD**
+6. **Prefer COPY over ADD**
 	- COPY is **explicit and predictable**  
 	- ADD has extra behavior (auto-extract, URLs)	
-	> Dockerfile optimization impacts **image size**, **security**, **deployment speed**, and **scalability** in production environments.
+	- Dockerfile optimization impacts **image size**, **security**, **deployment speed**, and **scalability** in production environments.
 	
 ---
 
