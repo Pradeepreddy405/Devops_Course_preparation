@@ -152,8 +152,7 @@ Docker processes the Dockerfile sequentially, and most instructions create **imm
 	
 6. **Prefer COPY over ADD**
 	- COPY is **explicit and predictable**  
-	- ADD has extra behavior (auto-extract, URLs)
-	
+	- ADD has extra behavior (auto-extract, URLs)	
 	> Dockerfile optimization impacts **image size**, **security**, **deployment speed**, and **scalability** in production environments.
 	
 ---
