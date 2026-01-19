@@ -1,9 +1,7 @@
 # Dockerfile Guide
 
 ## 1) What is a Dockerfile?
-
-  	A **Dockerfile** is a text file that contains a set of instructions to automatically build a Docker image.  
-	It defines how an application and its environment are packaged, ensuring the app runs consistently across development, testing, and production.
+	A **Dockerfile** is a text file that contains a set of instructions to automatically build a Docker image. It defines how an application and its environment are packaged, ensuring the app runs consistently across development, testing, and production.
 
   ### What a Dockerfile does:
    - Specifies the base image (OS / runtime)  
@@ -18,17 +16,17 @@ Docker processes the Dockerfile sequentially, and most instructions create **imm
 
 ## 2) Dockerfile Instructions
 
-| Instruction | Description |
-|-------------|-------------|
-| `FROM`      | Base image |
-| `WORKDIR`   | Working directory inside container |
-| `COPY`      | Copy files into image |
-| `ADD`       | Similar to COPY but with extra behavior (auto-extract, URLs) |
-| `RUN`       | Execute commands during build |
-| `ENV`       | Set environment variables |
-| `EXPOSE`    | Document container port |
-| `CMD`       | Default command, can be overridden at runtime |
-| `ENTRYPOINT`| Fixed command, arguments can be appended |
+| Instruction | Description 												|
+|-------------|-------------------------------------------------------------|
+| `FROM`      | Base image 													|
+| `WORKDIR`   | Working directory inside container 							|
+| `COPY`      | Copy files into image 										|
+| `ADD`       | Similar to COPY but with extra behavior (auto-extract, URLs)|
+| `RUN`       | Execute commands during build		 						|
+| `ENV`       | Set environment variables 									|
+| `EXPOSE`    | Document container port 									|
+| `CMD`       | Default command, can be overridden at runtime			 	|
+| `ENTRYPOINT`| Fixed command, arguments can be appended 				|
 
 ### Example Dockerfile:
 		
