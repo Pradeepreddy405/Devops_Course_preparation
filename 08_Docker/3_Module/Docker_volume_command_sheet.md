@@ -66,10 +66,9 @@ docker volume inspect myvol
 
 
 ## 4. Use a Volume in a Container
-```bash
-docker run -v myvol:/path image
-```
-
+	
+	command: docker run -v myvol:/path image
+	
    	Example: Persist Nginx Website Data
     -----------------------------------------
 	docker run -d \
@@ -78,23 +77,20 @@ docker run -v myvol:/path image
   		nginx
     ----------------------------------------
 	Write data inside container:
+	
 		command : docker exec web1 sh -c "echo Hello > /usr/share/nginx/html/index.html"
 	---------------------------------------	
 
-Remove container:
-```bash
-docker rm -f web1
-```
+	Remove container: docker rm -f web1
+	
+	Run a new container with same volume:
+	
+		docker run -d \
+	  		--name web2 \
+	  		-v myvol:/usr/share/nginx/html \
+	  	nginx
 
-Run a new container with same volume:
-```bash
-docker run -d \
-  --name web2 \
-  -v myvol:/usr/share/nginx/html \
-  nginx
-```
-
-Data persists across containers
+	Data persists across containers
 
 ---
 
