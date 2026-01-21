@@ -4,9 +4,6 @@ Kubernetes orchestration is how Kubernetes automatically deploys, schedules, sca
 
 ### 2) Kubernetes Architecture
 
-  <img src="Images/00_Kubernetes_Architecture_002.png" width="700"/>
-
-
 	Cluster    : A Kubernetes cluster is a collection of control plane and worker nodes that work together to deploy, manage, scale, and heal containerized 
 				 applications.
 				 
@@ -17,17 +14,18 @@ Kubernetes orchestration is how Kubernetes automatically deploys, schedules, sca
 			    	1) Control plane components (API Server , Scheduler , Control manager and etcd(cluster state database) . 
 					2) Worker node components   (Kubelet, proxy, CNI (Networking),Container run time
 	
+<img src="Images/00_Kubernetes_Architecture_002.png" width="700"/>
 
-	1)Control plane components:
+1)Control plane components:
 	
-		i)API Server (Entry Point)
+		1)API Server (Entry Point)
 			- Receives all requests (kubectl, UI, CI/CD)
 			- Validates YAML
 			- Authenticates & authorizes
 			- Stores desired state in etcd
 			- Nothing in Kubernetes happens without the API Server
 
-	    ii)etcd (Memory of the Cluster)
+	    2)etcd (Memory of the Cluster)
 			
 			Stores:
 			Desired state (replicas, images, configs)
@@ -51,7 +49,7 @@ Kubernetes orchestration is how Kubernetes automatically deploys, schedules, sca
 						Running Pods = 2
 						Controller creates 1 new Pod
 
-		iii)Scheduler:
+		3)Scheduler:
 		
 			- Picks which worker node should run the Pod
 			- Considers:
@@ -62,8 +60,9 @@ Kubernetes orchestration is how Kubernetes automatically deploys, schedules, sca
 				It only assigns Pods to nodes
 	
 	
-	2)Workernode(data plane) :
-		i)kubelet: Pod lifecycle manager
+2)Workernode(data plane) :
+
+		1)kubelet: Pod lifecycle manager
 		
 			- Talks to the API Server
 			- Creates, starts, stops Pods on the node
@@ -72,21 +71,21 @@ Kubernetes orchestration is how Kubernetes automatically deploys, schedules, sca
 			- Reports node & pod status back to control plane	
 			
 		
-		ii)kube-proxy: Networking & traffic manager (per node)
+		2)kube-proxy: Networking & traffic manager (per node)
 			- Implements Services (ClusterIP / NodePort / LoadBalancer)
 			- Handles network traffic routing to Pods
 			- Uses iptables / IPVS rules
 			- Load-balances traffic across healthy Pods
 			
-		iii)Container Runtime(containerd,CRI-O) : with run time applications will run inside the pods
+		3)Container Runtime(containerd,CRI-O) : with run time applications will run inside the pods
 			- Responsible for running containers
 			- Pulls container images from registries
 			- Creates and starts containers inside Pods
 			- Stops and deletes containers when required
 			- Works with kubelet via CRI (Container Runtime Interface)
-		iv)Container Runtime — Container execution engine
+		4)Container Runtime — Container execution engine
 
-		v)CNI (Container Network Interface) — Pod networking provider
+		5)CNI (Container Network Interface) — Pod networking provider
 			- Calico
 			- Flannel
 			- Cilium
