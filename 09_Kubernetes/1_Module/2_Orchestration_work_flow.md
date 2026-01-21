@@ -4,7 +4,7 @@ Kubernetes orchestration is how Kubernetes automatically deploys, schedules, sca
 
 ### 2) Kubernetes Architecture
 
-  <img src="Images/00_Kubernetes_Architecture_002.png" width="850"/>
+  <img src="Images/00_Kubernetes_Architecture_002.png" width="700"/>
 
 
 	Cluster    : A Kubernetes cluster is a collection of control plane and worker nodes that work together to deploy, manage, scale, and heal containerized 
