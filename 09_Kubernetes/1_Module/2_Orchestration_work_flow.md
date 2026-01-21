@@ -1,13 +1,20 @@
-What is Kubernetes Orchestration?
-	Kubernetes orchestration is how Kubernetes automatically deploys, schedules, scales, heals, and manages containerized applications across a cluster of machines (nodes).
+### 1)	What is Kubernetes Orchestration?
+Kubernetes orchestration is how Kubernetes automatically deploys, schedules, scales, heals, and manages containerized applications across a cluster of machines (nodes).
 
-	Cluster    : A Kubernetes cluster is a collection of control plane and worker nodes that work together to deploy, manage, scale, and heal containerized applications.
+
+### 2) Kubernetes Architecture
+
+<img src="images/00_Kubernetes_Architecture_002.png" width="700"/>
+
+	Cluster    : A Kubernetes cluster is a collection of control plane and worker nodes that work together to deploy, manage, scale, and heal containerized 
+				 applications.
+				 
 			   : Cluster consists of two important components i.e nothing but Control plane and worker nodes.
 			   
-				 Cluster =  Control plane + worker  nodes 
-	
-			    1) Control plane components (API Server , Scheduler , Control manager and etcd(cluster state database) . 
-				2) Worker node components   (Kubelet, proxy, CNI (Networking),Container run time
+				 	Cluster =  Control plane + worker  nodes 
+					
+			    	1) Control plane components (API Server , Scheduler , Control manager and etcd(cluster state database) . 
+					2) Worker node components   (Kubelet, proxy, CNI (Networking),Container run time
 	
 
 	1)Control plane components:
