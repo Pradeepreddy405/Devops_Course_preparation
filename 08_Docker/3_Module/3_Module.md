@@ -50,3 +50,26 @@ Docker storage defines how container data is stored, shared, and persisted beyon
 		Volumes			: Managed by Docker, can be shared across containers.
 		Bind mounts		: Map host directories into containers, useful for development.
 		tmpfs mounts	: Store data in RAM, data disappears when container stops.
+	
+	4.	Named Volumes
+		Volumes can be named or anonymous. 
+		Named volumes make it easier to reuse data across containers.
+
+			Create a named volume			:	docker volume create mydata
+			Use named volume in container	:   docker run -v mydata:/app/data myimage
+
+		Default storage location on Linux: /var/lib/docker/volumes/
+
+		Advantages:
+			- Managed by Docker
+			- Persistent even if container is removed
+			- Can be shared across multiple containers
+			- Independent of container lifecycle
+
+	5. 	Inspecting Volumes
+		List all volumes			:	docker volume ls
+		Inspect a specific volume	:	docker volume inspect mydata
+		Remove a volume	:	docker volume rm mydata
+		
+
+	
