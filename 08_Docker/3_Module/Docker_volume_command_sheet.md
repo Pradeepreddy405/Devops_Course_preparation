@@ -51,14 +51,14 @@ docker volume inspect myvol
 
 	Example output:
 		[
-		{
-			"Name": "myvol",
-			"Driver": "local",
-			"Mountpoint": "/var/lib/docker/volumes/myvol/_data",
-			"Scope": "local"
-		}
+			{
+				"Name": "myvol",
+				"Driver": "local",
+				"Mountpoint": "/var/lib/docker/volumes/myvol/_data",
+				"Scope": "local"
+			}
 		]
-			### Key Fields
+			Key Fields
 			**Mountpoint** 	→ Actual host directory
 			**Driver** 		→ Volume driver (`local` by default)
 
