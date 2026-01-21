@@ -25,18 +25,19 @@ To persist data beyond the container lifecycle, Docker provides **Volumes** and 
 
 docker volume create myvol
 
-- What happens?
-	Docker creates a managed storage location on the host
-
-	Default path:
-		> /var/lib/docker/volumes/myvol/_data
-		> Volume exists independently of containers
+	- What happens?
+	- Docker creates a managed storage location on the host
+	
+		Default path:
+			> /var/lib/docker/volumes/myvol/_data
+			> Volume exists independently of containers
 		
 
 
 ## 2. List Volumes
 
 docker volume ls
+
 	Example output:
 			DRIVER    VOLUME NAME
 			======    ===========
@@ -45,9 +46,10 @@ docker volume ls
 	
 
 ## 3. Inspect a Volume
+
 docker volume inspect myvol
 
-Example output:
+	Example output:
 		[
 		{
 			"Name": "myvol",
@@ -62,11 +64,11 @@ Example output:
 
 
 ## 4. Use a Volume in a Container
+
 docker run -v myvol:/path image
 
 
-   ### Example: Persist Nginx Website Data
-   
+   	### Example: Persist Nginx Website Data
 	docker run -d \
   		--name web1 \
   		-v myvol:/usr/share/nginx/html \
@@ -90,7 +92,7 @@ docker run -d \
   nginx
 ```
 
-✔ Data persists across containers
+Data persists across containers
 
 ---
 
