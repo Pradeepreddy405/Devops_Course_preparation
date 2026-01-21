@@ -20,26 +20,21 @@ To persist data beyond the container lifecycle, Docker provides **Volumes** and 
 	docker run -v vol:/path image
 	docker run -v /host:/path image
 
+
 ## 1. Create a Volume
 
 docker volume create myvol
-
-		### What happens?
-		- Docker creates a managed storage location on the host
-		- Default path:
-		```
-		/var/lib/docker/volumes/myvol/_data
-		```
-		- Volume exists independently of containers
+		What happens?
+			Docker creates a managed storage location on the host
+		Default path:
+			> /var/lib/docker/volumes/myvol/_data
+			> Volume exists independently of containers
 		
-		Recommended for **production workloads**
 
----
 
 ## 2. List Volumes
 
 docker volume ls
-	
 	Example output:
 			DRIVER    VOLUME NAME
 			======    ===========
@@ -50,7 +45,7 @@ docker volume ls
 ## 3. Inspect a Volume
 docker volume inspect myvol
 
-	Example output:
+Example output:
 		[
 		{
 			"Name": "myvol",
@@ -59,12 +54,10 @@ docker volume inspect myvol
 			"Scope": "local"
 		}
 		]
+			### Key Fields
+			**Mountpoint** 	→ Actual host directory
+			**Driver** 		→ Volume driver (`local` by default)
 
-### Key Fields
-**Mountpoint** 	→ Actual host directory
-**Driver** 		→ Volume driver (`local` by default)
-
----
 
 ## 4. Use a Volume in a Container
 docker run -v myvol:/path image
@@ -159,8 +152,7 @@ docker volume rm myvol
 ---
 
 ## 7. Remove Unused Volumes
-
-```bash
+```
 docker volume prune
 ```
 
@@ -173,14 +165,14 @@ docker volume prune
 ## Real-World Use Cases
 
 ### Database Persistence
-```bash
+```
 docker run -d \
   -v mysql_data:/var/lib/mysql \
   mysql:8
 ```
 
 ### Application Logs
-```bash
+```
 docker run -d \
   -v app_logs:/var/log/app \
   myapp
@@ -202,8 +194,4 @@ docker run -d -v shared:/data app2
 	- Bind mounts are **host-dependent**
 
 
----
 
-Happy Learning
-
----
