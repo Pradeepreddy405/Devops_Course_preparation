@@ -2,10 +2,10 @@
 
 Step 1: Write the deployment.yaml
 
-	You define the desired state in deployment.yaml file
-	Number of pods (replicas)
-	Container image (nginx:latest)
-	Ports, labels, environment variables, volumes, etc.
+	- You define the desired state in deployment.yaml file
+	- Number of pods (replicas)
+	- Container image (nginx:latest)
+	- Ports, labels, environment variables, volumes, etc.
 
 
 Step 2: Apply the deployment
@@ -13,9 +13,9 @@ Step 2: Apply the deployment
 	Command: kubectl apply -f deployment.yaml
 
 	What happens:
-		kubectl sends the Deployment manifest to the API Server.
-		API Server validates, parses, and stores it in etcd (the cluster’s key-value store).
-		Declarative approach: You only tell Kubernetes what you want, not how to do it.
+		- kubectl sends the Deployment manifest to the API Server.
+		- API Server validates, parses, and stores it in etcd (the cluster’s key-value store).
+		- Declarative approach: You only tell Kubernetes what you want, not how to do it.
 	Components involved: kubectl → API Server → etcd.
 
 Step 3: Deployment Controller takes over
