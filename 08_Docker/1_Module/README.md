@@ -6,17 +6,17 @@ Topics:
 	- Docker architecture: Docker Engine, Docker Client, Docker Hub
 	- Images, Containers, Registries
 	- Installing Docker (Linux / Windows / Mac)
-	
-   - Basic Docker CLI:
-	   ```bash
-			docker --version
-			docker run
-			docker ps, docker images
-			docker stop, docker rm
-```
+	- Basic Docker CLI:
+     
+				docker --version
+				docker run
+				docker ps, docker images
+				docker stop, docker rm
+    
    - Container lifecycle
+   - 
+	## Hands-on:
 
-    Hands-on:
 			- Run your first container (hello-world, nginx)
 			- List and inspect containers/images
 			- Remove containers/images safely
