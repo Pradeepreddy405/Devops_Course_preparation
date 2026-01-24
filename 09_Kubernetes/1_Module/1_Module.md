@@ -98,15 +98,16 @@ As companies began moving from monolithic applications to microservices, they st
 ###	3)	Kubernetes architecture  
 Kubernetes is inherently a clustered system. Even the smallest Kubernetes setup is logically a cluster consisting of a control plane and one or more worker nodes.
 		
-			- Cluster = Control plane + Worker node(s)
+- Cluster = Control plane + Worker node(s)
 			
-			- Cluster components :
-				Control Plane  
+	- Cluster components :
+
+   		   Control Plane  
 					- API Server  
 					- Scheduler  
 					- Controller Manager  
 					- etcd  
-				Worker Nodes  
+			Data Nodes  
 					- kubelet  
 					- kube-proxy  
 					- Container Runtime
