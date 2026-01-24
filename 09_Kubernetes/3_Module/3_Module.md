@@ -38,7 +38,7 @@ This creates several challenges:
 - External clients cannot consistently access Pods
 - Load balancing and service discovery become difficult
 
-### Solution: Kubernetes Services
+  ### Solution: Kubernetes Services
 
 A **Service** provides a stable, persistent abstraction over a group of Pods.
 
@@ -71,12 +71,12 @@ curl http://10.244.0.5:80   # Pod IP
 
 ### b) Communication via Services
 
-Since Pod IPs are temporary, Services act as stable access points.
+Since Pod IP's are temporary, Services act as stable access points and Kubernetes mainly exposes services in three modes (types)
 
-Common Service exposure patterns:
-1. **ClusterIP** – internal-only access
-2. **NodePort** – access via node IP
-3. **LoadBalancer** – external cloud access
+   Common Service exposure patterns:
+   1. **ClusterIP** – internal-only access
+   2. **NodePort** – access via node IP
+   3. **LoadBalancer** – external cloud access
 
 ---
 
