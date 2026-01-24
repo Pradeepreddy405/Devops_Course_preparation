@@ -4,7 +4,7 @@ Kubernetes is an open-source container orchestration platform that automates dep
 
 			
 ###	2)	Container Orchestration :
-As companies began moving from monolithic applications to microservices, they started running hundreds or thousands of containers. Running all of them manually quickly became impossible,At that point of time they faced below mentioned problems mostly when running containers in production especially when demand Fluctuated.
+As companies began moving from monolithic applications to microservices, they started running hundreds or thousands of containers. Running all of them manually quickly became impossible, Mostly when running containers in production especially when demand Fluctuated at that point of time they faced below mentioned problems
 
 
 		1)	Manual scaling:
