@@ -84,32 +84,42 @@ Cluster consists of two important components i.e nothing but (Control plane)Mast
 				Deletes all objects when a namespace is deleted
 	
 
-### Data plane (Worker node) :
+### Data plane (Worker node) components:
 
-		1)kubelet: Pod lifecycle manager
+   ### 3.5) kubelet: Pod lifecycle manager
+   
+   kubelet is a node-level agent that ensures containers described in Pod specs are running and healthy on a node.
 		
-			- Talks to the API Server
-			- Creates, starts, stops Pods on the node
-			- Ensures containers match the desired state
-			- Performs health checks (liveness/readiness probes)
-			- Reports node & pod status back to control plane	
+		- Talks to the API Server
+		- Creates, starts, stops Pods on the node
+		- Ensures containers match the desired state
+		- Performs health checks (liveness/readiness probes)
+		- Reports node & pod status back to control plane	
 			
 		
-		2)kube-proxy: Networking & traffic manager (per node)
+   ### 3.6) kube-proxy: Networking & traffic manager (per node)
+   
+   kube-proxy maintains Service networking and load-balancing rules on nodes, leveraging the Pod network provided by CNI plugins
+   
 			- Implements Services (ClusterIP / NodePort / LoadBalancer)
 			- Handles network traffic routing to Pods
 			- Uses iptables / IPVS rules
 			- Load-balances traffic across healthy Pods
 			
-		3)Container Runtime(containerd,CRI-O) : with run time applications will run inside the pods
+   ### 3.7) Container Runtime(containerd,CRI-O,Docker) : with run time applications will run inside the pods
+   
+   The container runtime is responsible for pulling images and running containers on worker nodes, as instructed by kubelet via the CRI.
+   
 			- Responsible for running containers
 			- Pulls container images from registries
 			- Creates and starts containers inside Pods
 			- Stops and deletes containers when required
 			- Works with kubelet via CRI (Container Runtime Interface)
-		4)Container Runtime — Container execution engine
 
-		5)CNI (Container Network Interface) — Pod networking provider
+   ### 3.8) CNI (Container Network Interface) — Pod networking provider
+
+   CNI plugins provide Pod networking by assigning IPs and enabling communication between Pods across the cluster.
+   
 			- Calico
 			- Flannel
 			- Cilium
@@ -119,7 +129,7 @@ Cluster consists of two important components i.e nothing but (Control plane)Mast
 			- Handles cross-node networking
 			- Enforces Network Policies (if supported)
 			
-			
+=========================================================================================================================================================		
 ### Summary :
    Kubernetes Orchestration is automated process of maintaining the desired state of containerized applications by cordinating with control plane decissions
    and worked node execution across a cluster.
