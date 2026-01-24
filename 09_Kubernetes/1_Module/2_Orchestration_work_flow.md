@@ -2,7 +2,7 @@
 
 Kubernetes orchestration is how Kubernetes automatically deploys, schedules, scales, heals, and manages containerized applications across a cluster of machines (nodes).
 
-
+---
 ### 2) Kubernetes Architecture
 Cluster    : A Kubernetes cluster is a collection of control plane and worker nodes that work together to deploy, manage, scale, and heal containerized 
 			 applications.
@@ -16,11 +16,12 @@ Cluster consists of two important components i.e nothing but (Control plane)Mast
 	
 <img src="Images/00_Kubernetes_Architecture_002.png" width="700"/>
 
-3) Control plane components:
+---
+### 3) Control plane components:
 
-### 3.1)  API Server
-	
-The API Server is the central management component of Kubernetes. It acts as the front door to the cluster, handling authentication, authorization, 			validation, admission control, and storing the desired state in etcd. All control plane and worker components communicate through the API Server.
+   ### 3.1)  API Server
+   
+   The API Server is the central management component of Kubernetes. It acts as the front door to the cluster, handling authentication, authorization, 		      validation, admission control, and storing the desired state in etcd. All control plane and worker components communicate through the API Server.
 			
 			- Receives all requests (kubectl, UI, CI/CD)
 			- Validates YAML
@@ -28,9 +29,9 @@ The API Server is the central management component of Kubernetes. It acts as the
 			- Stores desired state in etcd
 			- Nothing in Kubernetes happens without the API Server
 
-###  3.2) etcd (Memory of the Cluster)
+   ###  3.2) etcd (Memory of the Cluster)
 
-etcd is a distributed, strongly consistent key-value store that acts as the single source of truth for Kubernetes. It stores all cluster state, configuration, and metadata. The API Server is the only component that interacts with etcd, ensuring secure, consistent, and reliable storage of the cluster’s desired and current state.
+   etcd is a distributed, strongly consistent key-value store that acts as the single source of truth for Kubernetes. It stores all cluster state, configuration,     and metadata. The API Server is the only component that interacts with etcd, ensuring secure, consistent, and reliable storage of the cluster’s desired and        current state.
 
 			Stores:
 				- Desired state (replicas, images, configs)
@@ -54,9 +55,9 @@ etcd is a distributed, strongly consistent key-value store that acts as the sing
 						Running Pods = 2
 						Controller creates 1 new Pod
 
-### 3.3)Scheduler:
+   ### 3.3)Scheduler:
 
-Kubernetes Scheduler selects the most suitable node for a Pod based on resource availability, constraints, and policies, then binds the Pod to that node.
+   Kubernetes Scheduler selects the most suitable node for a Pod based on resource availability, constraints, and policies, then binds the Pod to that node.
 		
 			- Picks which worker node should run the Pod
 			- Considers:
@@ -65,9 +66,9 @@ Kubernetes Scheduler selects the most suitable node for a Pod based on resource 
 			- Caution:
 				Scheduler does not run Pods
 				It only assigns Pods to nodes
-### 3.4) Controller-manager
+   ### 3.4) Controller-manager
 		
-kube-controller-manager continuously reconciles the desired state with the actual state of the cluster by running multiple controllers like node, replica, deployment, and endpoint controllers.
+   Kube-controller-manager continuously reconciles the desired state with the actual state of the cluster by running multiple controllers like node, replica,         deployment, and endpoint controllers.
 
 		- Maintains correct number of Pods
 		 	 	If a Pod crashes → creates a new one
@@ -83,7 +84,7 @@ kube-controller-manager continuously reconciles the desired state with the actua
 				Deletes all objects when a namespace is deleted
 	
 
-2)Workernode(data plane) :
+### Data plane (Worker node) :
 
 		1)kubelet: Pod lifecycle manager
 		
@@ -119,15 +120,15 @@ kube-controller-manager continuously reconciles the desired state with the actua
 			- Enforces Network Policies (if supported)
 			
 			
-Summary :
-- Kubernetes Orchestration is automated process of maintaining the desired state of containerized applications by cordinating with control plane decissions
-  and worked node execution across a cluster.
+### Summary :
+   Kubernetes Orchestration is automated process of maintaining the desired state of containerized applications by cordinating with control plane decissions
+   and worked node execution across a cluster.
 		
-		- API Server								:Acts as the central entry point of the cluster, handling all requests and communication between components.
-		- Scheduler								:Assigns newly created Pods to suitable worker nodes based on resource availability and constraints.
-		- Controller Manager						:Continuously monitors the cluster and ensures the actual state matches the desired state.
-		- etcd									:A distributed key-value store that permanently stores the cluster’s configuration and state.
-		- kubelet									:An agent that runs on each worker node and ensures Pods are running as instructed by the control plane.
-		- Container Runtime (Docker / containerd) :Responsible for pulling images and creating, starting, and stopping containers.
-		- CNI (Container Network Interface)			:Provides networking for Pods, enabling pod-to-pod and pod-to-service communication.
-		- kube-proxy								:Manages network rules on the node to route traffic to the correct Pods and Services.
+- API Server					:Acts as the central entry point of the cluster, handling all requests and communication between components.
+- Scheduler					:Assigns newly created Pods to suitable worker nodes based on resource availability and constraints.
+- Controller Manager				:Continuously monitors the cluster and ensures the actual state matches the desired state.
+- etcd						:A distributed key-value store that permanently stores the cluster’s configuration and state.
+- kubelet					:An agent that runs on each worker node and ensures Pods are running as instructed by the control plane.
+- Container Runtime (Docker / containerd)	:Responsible for pulling images and creating, starting, and stopping containers.
+- CNI (Container Network Interface)		:Provides networking for Pods, enabling pod-to-pod and pod-to-service communication.
+- kube-proxy					:Manages network rules on the node to route traffic to the correct Pods and Services.
