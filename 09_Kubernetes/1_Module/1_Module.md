@@ -40,7 +40,7 @@ As companies began moving from monolithic applications to microservices, they st
 			- Could not gradually roll out new versions
 			- No automated rollback if something failed
 		
-		8) 	If container crash or goes down, the application inside a container also goes down or unable to access that 	 	application 
+		8) 	If container crash or goes down, the application inside a container also goes down or unable to access that application 
 			- Containers made deployment easier—but managing thousands of containers made operations harder.
 		
 		9) 	Single server dependency
