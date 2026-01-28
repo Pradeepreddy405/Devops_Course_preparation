@@ -172,29 +172,12 @@ terraform destroy
 - Kubernetes Cluster Deployment: EKS with Terraform modules
 - CI/CD Pipeline with Terraform: Automated infra deployment via GitHub Actions
 - Hybrid Cloud Deployment: AWS + GCP resources managed by Terraform
-
-**Hands-on:**
 - Deploy a full stack application using Terraform modules
 - Use workspaces for dev/staging/prod
 - Automate deployment with CI/CD pipeline
 
 ---
 
-## **Getting Started**
-1. Install Terraform: [Terraform Installation Guide](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
-2. Configure your cloud provider credentials (AWS, GCP, Azure)
-3. Follow the modules sequentially for hands-on practice
-4. Push your projects to GitHub to track progress and build a portfolio
-
----
-
-## **Resources**
-- [Terraform Documentation](https://developer.hashicorp.com/terraform/docs)
-- [Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
-- [Terraform Best Practices](https://developer.hashicorp.com/terraform/tutorials/best-practices)
-- GitHub sample repositories for Terraform projects
-
----
 
 ## **License**
 This roadmap is provided for learning purposes. You are free to use and modify it for your personal projects.
