@@ -14,22 +14,20 @@ This repository provides a comprehensive roadmap to learn **Terraform** from fun
 - Terraform architecture: Providers, Resources, State, Modules
 - Terraform installation (Linux / Windows / Mac)
 
-**Terraform CLI basics:**
-```bash
-terraform --version
-terraform init
-terraform plan
-terraform apply
-terraform destroy
-```
+  **Terraform CLI basics:**
 
-**Understanding Terraform state and backend basics**
-
-**Hands-on:**
-- Install Terraform and verify version
-- Initialize a Terraform project
-- Create a simple AWS EC2 instance or S3 bucket
-- Apply changes and destroy resources safely
+    ```bash
+    terraform --version
+    terraform init
+    terraform plan
+    terraform apply
+    terraform destroy
+    ```
+      Hands-on:
+      - Install Terraform and verify version
+      - Initialize a Terraform project
+      - Create a simple AWS EC2 instance or S3 bucket
+      - Apply changes and destroy resources safely
 
 ---
 
@@ -43,10 +41,10 @@ terraform destroy
 - Outputs: retrieving resource info
 - Understanding dependencies between resources
 
-**Hands-on:**
-- Create an EC2 instance with variables for instance type, AMI, and region
-- Output instance ID and public IP
-- Use `terraform plan` to preview changes
+      Hands-on:
+      - Create an EC2 instance with variables for instance type, AMI, and region
+      - Output instance ID and public IP
+      - Use `terraform plan` to preview changes
 
 ---
 
@@ -60,9 +58,9 @@ terraform destroy
 - Import existing resources into Terraform state
 - State commands: `terraform state list`, `terraform state show`, `terraform import`
 
-**Hands-on:**
-- Configure an S3 backend with state locking using DynamoDB
-- Import an existing S3 bucket into Terraform
+        Hands-on:
+      - Configure an S3 backend with state locking using DynamoDB
+      - Import an existing S3 bucket into Terraform
 - Modify resources and safely update state
 
 ---
@@ -76,10 +74,10 @@ terraform destroy
 - Input and output variables in modules
 - Module versioning and best practices
 
-**Hands-on:**
-- Create a reusable module for EC2 + Security Group
-- Create a module for an S3 bucket with versioning
-- Use modules to deploy multiple environments
+      Hands-on:
+      - Create a reusable module for EC2 + Security Group
+      - Create a module for an S3 bucket with versioning
+      - Use modules to deploy multiple environments
 
 ---
 
@@ -92,10 +90,10 @@ terraform destroy
 - Managing secrets with AWS SSM or Secrets Manager
 - Conditional resources with `count` and `for_each`
 
-**Hands-on:**
-- Create workspaces for dev and prod
-- Deploy same infrastructure in multiple environments
-- Use variables to customize configurations per workspace
+      Hands-on:
+      - Create workspaces for dev and prod
+      - Deploy same infrastructure in multiple environments
+      - Use variables to customize configurations per workspace
 
 ---
 
@@ -109,10 +107,10 @@ terraform destroy
 - Lifecycle rules: `create_before_destroy`, `prevent_destroy`
 - Terraform formatting, validation, and linting best practices
 
-**Hands-on:**
-- Use `for_each` to create multiple EC2 instances
-- Apply conditional resource creation
-- Use dynamic blocks in a security group module
+      Hands-on:
+      - Use `for_each` to create multiple EC2 instances
+      - Apply conditional resource creation
+      - Use dynamic blocks in a security group module
 
 ---
 
@@ -125,10 +123,10 @@ terraform destroy
 - Azure Provider: VM, Storage Account, Networking
 - Tagging, naming conventions, and resource organization
 
-**Hands-on:**
-- Deploy a VPC with subnets, security groups, and EC2 instances
-- Create an S3 bucket with versioning and IAM policy
-- Deploy RDS/MySQL instance with Terraform
+      Hands-on:
+      - Deploy a VPC with subnets, security groups, and EC2 instances
+      - Create an S3 bucket with versioning and IAM policy
+      - Deploy RDS/MySQL instance with Terraform
 
 ---
 
@@ -141,10 +139,10 @@ terraform destroy
 - Plan and apply in pipelines
 - Automated state management and locking
 
-**Hands-on:**
-- Build a GitHub Actions pipeline to apply Terraform on push
-- Automate Terraform plan and apply with approval workflow
-- Integrate remote state backend in CI/CD
+      Hands-on:
+      - Build a GitHub Actions pipeline to apply Terraform on push
+      - Automate Terraform plan and apply with approval workflow
+      - Integrate remote state backend in CI/CD
 
 ---
 
@@ -158,10 +156,10 @@ terraform destroy
 - Backup and recovery of Terraform state
 - Handling drift detection and remediation
 
-**Hands-on:**
-- Refactor Terraform code into modules
-- Use sensitive variables for passwords or keys
-- Test drift detection and reconcile infrastructure
+      Hands-on:
+      - Refactor Terraform code into modules
+      - Use sensitive variables for passwords or keys
+      - Test drift detection and reconcile infrastructure
 
 ---
 
@@ -181,4 +179,3 @@ terraform destroy
 
 ## **License**
 This roadmap is provided for learning purposes. You are free to use and modify it for your personal projects.
-
