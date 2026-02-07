@@ -1,7 +1,7 @@
 # 1 Security Groups
 Security Groups (SGs) are stateful, virtual firewalls attached to AWS resources (most commonly EC2, but also ALB/NLB, RDS, Lambda in VPC, ENIs). They control who can talk to your resource and on which ports/protocols.
 	
-## Core components 
+### Core components 
 Stateful 			: If inbound traffic is allowed, return traffic is automatically allowed, no need for outbound rules.
 Allow rules only 	: No explicit deny. Anything not allowed is implicitly denied.
 Resource-level 		: Attached to EC2/ENI, not to subnets.
