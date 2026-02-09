@@ -16,8 +16,7 @@ An AWS Load Balancer (part of Elastic Load Balancing) automatically distributes 
   3) Gateway Load Balancer (GLB): Operates at the network layer (Layer 3) for deploying and managing virtual network appliances.
 
 
-## 4)How load balancers work
-
+## 4) How load balancers work
 1 Clients send requests to the load balancer's DNS name.
 2 A Listener (protocol/port) on the load balancer receives the request.
 3 The load balancer uses rules to forward the request to a Target Group.
