@@ -1,6 +1,6 @@
 # Scaling 
-	1) Scaling is the process of increasing or decreasing resource capacity to match application demand.
-	2) In cloud environments like AWS, scaling ensures your application has enough CPU, memory, storage, or instances to handle traffic efficiently — without overprovisioning.
+1) Scaling is the process of increasing or decreasing resource capacity to match application demand.
+2) In cloud environments like AWS, scaling ensures your application has enough CPU, memory, storage, or instances to handle traffic efficiently — without overprovisioning.
 
 	## Types of scaling	
 		1) Vetical scaling  
