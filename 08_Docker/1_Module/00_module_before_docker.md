@@ -1,11 +1,10 @@
-# Evolution of Virtualization and Containers
-	
-	This document explains **why virtualization and containers evolved**, their differences, and their role in modern DevOps workflows.
+# Evolution of Virtualization and Containers	
+This document explains **why virtualization and containers evolved**, their differences, and their role in modern DevOps workflows.
 	
 	---
 	
 ## Why Virtualization and Containers Evolved
-	
+
 	Traditional IT faced several problems:
 	
 	1. **Resource Wastage**  
@@ -31,30 +30,25 @@
 	---
 	
 ## 1️) Virtualization
+Virtualization is the technology that allows running multiple isolated systems (**VMs**) on a single physical machine.
 	
-	**Definition:**  
-	Virtualization is the technology that allows running multiple isolated systems (**VMs**) on a single physical machine.
-	
-	**Core Component:**  
+**Core Component:**  
 	- **Hypervisor:** Software that creates and manages virtual machines.
 	
-	**Benefits:**
-	
+**Benefits:**
 	- One physical server → many Virtual Machines (VMs)  
 	- Each VM has its own OS, CPU, RAM, and Disk  
 	- Multiple apps can run on a single server  
 	- Better resource usage → cost reduction  
 	- Faster provisioning of servers
 	
-	**How DevOps Uses Virtualization:**
-	
+**How DevOps Uses Virtualization:**
 	- Spin up build servers dynamically  
 	- Create test environments quickly  
 	- Blue-Green & Canary deployments  
 	- Infrastructure as Code (IaC)
 	
-	**Problems with Virtualization:**
-	
+**Problems with Virtualization:**
 	- Heavyweight: Each VM has its own OS  
 	- Slow boot time: Minutes to start  
 	- High resource usage  
@@ -64,28 +58,23 @@
 	
 	---
 	
-## 2️)Containers
+## 2️) Containers
 	
-	**Why Containers Evolved:**  
+**Why Containers Evolved:**  
 	Containers were introduced to solve virtualization inefficiencies and better support modern DevOps workflows.
-	
-	**Definition:**  
-	A container is a lightweight, portable unit that packages:
-	
+	A container is a lightweight, portable unit that packages:	
 	- Application code  
 	- Runtime (Java, Python, Node, etc.)  
 	- Libraries & dependencies  
 	- System tools & configurations
 	
-	**Benefits:**
-	
+**Benefits:**	
 	- Run applications in isolated environments  
 	- Ensures consistency across development, testing, and production  
 	- Lightweight and fast to start  
 	- Ideal for microservices architecture
 	
-	**Problems with Containers:**
-	
+**Problems with Containers:**
 	- Security isolation weaker than VMs  
 	- Complex networking  
 	- No built-in orchestration
@@ -107,9 +96,8 @@
 	
 	---
 	
-## 3️)DevOps Workflow Evolution
+## 3️) DevOps Workflow Evolution
 	
-	```
 	Physical Servers (Bare Metal)
 			↓
 	Virtual Machines (VMware, KVM)
@@ -125,7 +113,7 @@
 	
 	---
 	
-## 4️)Short Summary
+## 4️) Short Summary
 	
 	- **Virtualization** solved hardware underutilization and enabled cloud computing.  
 	- **Containers** solved VM inefficiencies and enabled microservices.  
@@ -133,7 +121,7 @@
 	
 	---
 	
-## 5️)Notes on Environment and Dependency Mismatch
+## 5️) Notes on Environment and Dependency Mismatch
 	
 	**Dependency Mismatch:**  
 	Occurs when required libraries or runtimes differ:

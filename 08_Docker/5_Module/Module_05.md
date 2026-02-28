@@ -1,9 +1,8 @@
 Module 5: Docker Compose
 
+###	1) Introduction to Docker Compose
+Docker Compose is a declarative orchestration tool used to define, configure, and run multi-container Docker     applications using a single YAML file. Instead of running multiple docker run commands,
 
-	###	1)Introduction to Docker Compose
-			Docker Compose is a declarative orchestration tool used to define, configure, and run multi-container Docker     applications using a single YAML file. Instead of running multiple docker run commands,
-			
 			- Services
 			- Networks
 			- Volumes
@@ -27,7 +26,7 @@ Module 5: Docker Compose
 
 
 		
-	###	2)docker-compose.yml structure
+###	2) docker-compose.yml structure
 			'''
 				version: "3.9"        # Compose file format version (optional in latest)
 				services:             # All containers
@@ -37,7 +36,7 @@ Module 5: Docker Compose
 				secrets:              # Sensitive data (Swarm)
 			'''
 			
-	###	3) Docker compose key components
+###	3) Docker compose key components
 			
 			version, services, networks, volumes, ports, depends on, restart
 			
