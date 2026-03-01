@@ -1,6 +1,5 @@
 ## 1 Why Conditionals ?
-
-In real DevOps & Cloud projects, we make decisions like:
+   In real DevOps & Cloud projects, we make decisions like:
 	If service is running → Do nothing
 	If service is stopped → Restart it
 	If file exists → Backup it
