@@ -1,4 +1,4 @@
-## 1 Why Conditionals ?
+## 1  Why Conditionals ?
 	In real DevOps & Cloud projects, we make decisions like:
 	If service is running 	→ Do nothing
 	If service is stopped 	→ Restart it
