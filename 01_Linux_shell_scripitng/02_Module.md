@@ -47,7 +47,23 @@ Example:
 file="My File.txt"
 echo $file      # ❌ breaks
 echo "$file"    # ✅ correct
-```
+
+Try to run this script to know the difference between $file and "$file"
+
+  1)	file="My File.txt"
+		for i in "$file"       --->considered single word 
+		do
+    	    echo $file
+		done
+	    Output: My File.txt
+	
+  2)    file="My File.txt"
+		for i in $file      ----->considered two words due to gap 
+		do
+        	echo $file
+		done
+		Output: My File.txt
+				My File.txt
 
 ------------------------------------------------------------------------
 
