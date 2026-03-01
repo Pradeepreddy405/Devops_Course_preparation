@@ -64,7 +64,7 @@ Try to run this script to know the difference between $file and "$file"
 		done
 		Output: My File.txt
 				My File.txt
-
+```
 ------------------------------------------------------------------------
 
 ##  4️ Different Types of Variables
