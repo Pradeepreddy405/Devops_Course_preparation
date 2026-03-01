@@ -157,10 +157,16 @@ Global (default) → Accessible everywhere.
 Local (inside function):
 
 ``` bash
-myfunc() {
-  local name="DevOps"
-  echo "$name"
-}
+	#!/bin/bash
+	name="Secops"
+	echo $name
+	myfunc() {
+	  local name="DevOps"
+      echo "$name"
+	}
+	echo "$(myfunc)"              ----Calling function
+	Output: Secops
+			DevOps
 ```
 
 ------------------------------------------------------------------------
