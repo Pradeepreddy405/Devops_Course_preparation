@@ -1,6 +1,5 @@
-Build Tools
-
-	1)Build :
+# Build Tools
+	### 1) Build :
 		
 		The process of transforming source code into a runnable application. This typically includes compiling, running automated tests, and packaging the code with necessary dependencies into an artifact.
 		To generate a usable version of the application (or) we can say that to create a usable, functional version of the application.	
@@ -21,7 +20,7 @@ Build Tools
 
 
 
-	2)Deploy : 
+	### 2) Deploy : 
 
 		The process of taking the built application and delivering it to a live environment where users can access it.
 		To make the application available on target environments such as servers, cloud infrastructure, user devices, or an app store.
@@ -33,7 +32,7 @@ Build Tools
 
 
 
-	3)How BUILD and DEPLOY Work Together
+	### 3) How BUILD and DEPLOY Work Together
 		Build are a critical part of the Continuous Integration (CI) and Continuous Delivery/Deployment (CD) pipeline because they ensure that code can be reliably built, tested, and packaged before deployment.
 		Build tools can be integrated with deployment tools to automate the entire path from code → build → deploy (commonly known as CI/CD).
 		A build may occur without deployment (e.g., internal testing).
