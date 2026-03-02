@@ -4,7 +4,8 @@
 - The process of transforming source code into a runnable application. This typically includes compiling, running automated tests, and packaging the code with necessary dependencies into an artifact.
 
 - To generate a usable version of the application (or) we can say that to create a usable, functional version of the application.	
-			Common Build Outputs (Artifacts):
+
+  		Common Build Outputs (Artifacts):
 			Desktop Apps		: .exe (Windows), .dmg (macOS), .app
 			Java Applications	: .jar (Java ARchive), .war (Web Application Archive)
 			Mobile Apps			: .apk (Android), .ipa (iOS)
