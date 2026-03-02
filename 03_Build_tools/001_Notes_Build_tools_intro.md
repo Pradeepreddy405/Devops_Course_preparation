@@ -13,8 +13,8 @@
 			Containers			: Docker images
 			
 - Examples:
-			Maven/Gradle compile Java code into a .jar file
-			PyInstaller packages Python scripts into a .exe
+	- Maven/Gradle compile Java code into a .jar file
+	- PyInstaller packages Python scripts into a .exe
 
 ---
 
