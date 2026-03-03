@@ -13,8 +13,8 @@
 			Containers			: Docker images
 			
 - Examples:
-			Maven/Gradle compile Java code into a .jar file
-			PyInstaller packages Python scripts into a .exe
+	- Maven/Gradle compile Java code into a .jar file
+	- PyInstaller packages Python scripts into a .exe
 
 ---
 
@@ -45,10 +45,10 @@ Often automated together in CI/CD pipelines
 ---		
 		
 ### 4) Summary  :	
-1)Build tools automate the creation, testing, packaging, and deployment preparation of software, making them a core part of DevOps pipelines.
-2)Build	Create an executable version	.jar, .exe, .apk, etc.
-3)Deploy	Make that executable available to users	Live/usable app
-4)You can also build without deploying (internal testing), and you can deploy to test environments before production.
+1) 	Build tools automate the creation, testing, packaging, and deployment preparation of software, making them a core part of DevOps pipelines.
+2) 	Build	Create an executable version	.jar, .exe, .apk, etc.
+3) 	Deploy	Make that executable available to users	Live/usable app
+4)	You can also build without deploying (internal testing), and you can deploy to test environments before production.
 
 ---
 			
