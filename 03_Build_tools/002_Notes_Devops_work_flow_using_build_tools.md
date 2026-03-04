@@ -30,7 +30,6 @@ In DevOps, build tools play a crucial role in automating the process of transfor
 **Tools:** Git, GitHub, GitLab, SVN, Bitbucket  
 **Workflow:** Developers write code and push changes to the version control repository. CI/CD pipelines are triggered on code commits, merges, or pull requests. This ensures every code change is automatically tracked and built, creating a foundation for automation.
 
----
 
 ### 2.Build Stage (Separation of Concerns):
 
@@ -41,7 +40,6 @@ This stage only focuses on compiling code and packaging, not testing logic.
 **Workflow:** Resolve dependencies. Compile source code. Generate artifacts (JAR, WAR, DLL, Docker images, etc.).  
 **Benefits:** Faster Feedback Loops: If the build fails, developers immediately know there’s a compilation or dependency problem. Artifact Reusability: Built artifacts can be used across multiple test suites or environments without rebuilding.
 
----
 
 ### 3. Test Stage (Separation of Concerns):
 
@@ -57,7 +55,6 @@ This stage doesn’t recompile code; it only tests behavior and integration.
 **Workflow:** Fetch the artifact from the build stage. Execute automated tests. Provide feedback on pass/fail results.  
 **Benefits:** Faster Feedback Loops: Failures pinpoint logic or integration issues, not build problems. Parallelization & Optimization: Different tests can run in parallel, saving time.
 
----
 
 ### 4. Artifact Management :
 
@@ -67,7 +64,6 @@ Store built and tested artifacts in a central repository for deployment.
 **Workflow:** Assign version numbers to artifacts. Store in repository for use in multiple environments.  
 **Benefits:** Only verified artifacts proceed to deployment,so that it reduces the risk of deploying broken or untested code.
 
----
 
 ### 5. Deployment / Delivery :
 
@@ -76,7 +72,6 @@ Deploy tested artifacts to different environments (staging, production).
 **Workflow:** Pull artifacts from the repository. Deploy to the target environment. Run smoke tests or post-deployment validations.  
 **Benefits:** Ensures only successfully built and tested artifacts reach production. Reduces risk of broken releases and increases confidence in deployments.
 
----
 
 ### 6. Feedback Loop :
 
