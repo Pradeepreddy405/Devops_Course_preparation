@@ -1,20 +1,20 @@
-## 1 Why Build Tools are Needed (WHY)
-### Problem:	
-   Imagine 100 developers:
-						Writing code
-						Using different machines
-						Different versions of libraries
-			
-   Problems without build tools :
-	   					Manual compilation      		→ error-prone and slow
-						Dependency conflicts 	    	→ different library versions
-						“Works on my machine” issue 	→ configuration/version mismatch
-						No automation 			        → repetitive, hectic, and unreliable work
-	Solution:	
-					Standard build process
-					Automation
-					Repeatable builds
-					CI/CD friendly
+# Why Build Tools are Needed  ?
+
+### Problem: 
+
+Imagine 100 deverlopers writing the source code using different machines by using different versions of libraries .
+
+Problems without build tools :
+	- Manual compilation      		→ error-prone and slow
+	- Dependency conflicts 	    	→ different library versions
+	- “Works on my machine” issue 	→ configuration/version mismatch
+	- No automation 			        → repetitive, hectic, and unreliable work
+
+Solution:	
+	- Standard build process
+	- Automation
+	- Repeatable builds
+	- CI/CD friendly
 
 
 ## 2 DEVOPS BUILD TOOL WORKFLOW
