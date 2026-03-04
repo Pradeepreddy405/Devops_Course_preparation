@@ -5,12 +5,14 @@
 Imagine 100 deverlopers writing the source code using different machines by using different versions of libraries .
 
 Problems without build tools :
+	
 	- Manual compilation      		→ error-prone and slow
 	- Dependency conflicts 	    	→ different library versions
 	- “Works on my machine” issue 	→ configuration/version mismatch
 	- No automation 			        → repetitive, hectic, and unreliable work
 
 Solution:	
+	
 	- Standard build process
 	- Automation
 	- Repeatable builds
