@@ -68,6 +68,7 @@ Store built and tested artifacts in a central repository for deployment.
 ### 5. Deployment / Delivery :
 
 Deploy tested artifacts to different environments (staging, production).  
+
 **Tools:** Jenkins, Ansible, Puppet, Chef, Kubernetes  
 **Workflow:** Pull artifacts from the repository. Deploy to the target environment. Run smoke tests or post-deployment validations.  
 **Benefits:** Ensures only successfully built and tested artifacts reach production. Reduces risk of broken releases and increases confidence in deployments.
@@ -76,4 +77,5 @@ Deploy tested artifacts to different environments (staging, production).
 ### 6. Feedback Loop :
 
 Continuous improvement and rapid problem detection.  
+
 **Workflow:** Build tools and test frameworks provide immediate feedback to developers. Monitoring tools (Prometheus, Grafana, ELK stack) track production health. Issues feed back into the DevOps cycle for fixes.
