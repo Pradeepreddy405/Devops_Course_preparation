@@ -7,38 +7,38 @@ Kubernetes is an open-source container orchestration platform that automates dep
 As companies began moving from monolithic applications to microservices, they started running hundreds or thousands of containers. Running all of them manually quickly became impossible, Mostly when running containers in production especially when demand Fluctuated at that point of time they faced below mentioned problems
 
 
-   1)Manual scaling:
-   	- If traffic increased, someone had to manually start more containers
-   	- When traffic dropped, unused containers wasted resources
-   	- Slow and not real-time
+   1) Manual scaling:
+   		- If traffic increased, someone had to manually start more containers
+   		- When traffic dropped, unused containers wasted resources
+   		- Slow and not real-time
    
-   2)No automated load balancing
-   	- Containers had to be manually connected to load balancers
-   	- If a container died, traffic still went to it
+   2) No automated load balancing
+   		- Containers had to be manually connected to load balancers
+   		- If a container died, traffic still went to it
    
-   3)Lack of self-healing		
-   	- Failed containers stayed down
-   	- Engineers had to restart them manually
-   	- High downtime risk
+   3) Lack of self-healing		
+   		- Failed containers stayed down
+   		- Engineers had to restart them manually
+   		- High downtime risk
    
-   4)Configuration drift
-   	- Different containers could run different configurations
-   	- Hard to maintain consistency across multiple environments
+   4) Configuration drift
+   		- Different containers could run different configurations
+   		- Hard to maintain consistency across multiple environments
    	
-   5)Manual container placement
-   	- You had to choose which server (node) each container ran on
-   	- Could overload one node and underuse others
+   5) Manual container placement
+   		- You had to choose which server (node) each container ran on
+   		- Could overload one node and underuse others
    
-   6)Difficulty managing microservices
-   	- With tens or hundreds of services:
-   	- Tracking IPs and ports was painful
-   	- Service-to-service communication was unreliable
-   	- Hard to manage version updates or rollbacks
+   6) Difficulty managing microservices
+   		- With tens or hundreds of services:
+   		- Tracking IPs and ports was painful
+   		- Service-to-service communication was unreliable
+   		- Hard to manage version updates or rollbacks
    
-   7)No rolling updates
-   	- Updates often caused downtime
-   	- Could not gradually roll out new versions
-   	- No automated rollback if something failed
+   7) No rolling updates
+   		- Updates often caused downtime
+   		- Could not gradually roll out new versions
+  	 	- No automated rollback if something failed
    
    8)If container crash or goes down, the application inside a container also goes down or unable to access that application 
    	- Containers made deployment easier—but managing thousands of containers made operations harder.
