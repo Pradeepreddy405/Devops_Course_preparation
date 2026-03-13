@@ -1,55 +1,48 @@
-SSH :
-A secure connection method using keys, not passwords.
+### SSH : A secure connection method using keys, not passwords.
 
 (or)
 
 SSH (Secure Shell) is a protocol that lets you securely connect to another computer over a network.
+    - Log into remote servers
+    - Run commands on a remote machine
+    - Transfer files securely
 
-    -Log into remote servers
-    -Run commands on a remote machine
-    -Transfer files securely
 
-
-What are SSH Keys?
-        SSH keys are a way to log in to a server without typing a password — and more securely.
+### What are SSH Keys?
+- SSH keys are a way to log in to a server without typing a password — and more securely.
 
 They come as a pair:
     1. Private Key
             Stored on your computer
             Must be kept secret
             Like your personal signature
-
     2. Public Key
             You upload it to the server or GitHub
             Safe to share
             Like a lock that only your private key can open
 
-How keys work ?
-    The server checks if it has your public key(you need to upload the publicket initially).
-    If it matches → you're authenticated.
+### How keys work ?
+- The server checks if it has your public key(you need to upload the publicket initially).
+- If it matches → you're authenticated.
 
     
-Why are SSH Keys Used on Servers ?
+### Why are SSH Keys Used on Servers ?
+- Servers use SSH keys to let admins log in securely.
 
-    Servers use SSH keys to let admins log in securely.
-
-        Benefits:
-        Passwords can be guessed; private keys cannot
-        Faster authentication
-        Can automate tasks (scripts, deployments)
+Benefits:
+- Passwords can be guessed; private keys cannot
+- Faster authentication
+- Can automate tasks (scripts, deployments)
         Harder to hack because the private key stays local
 
-Why are SSH Keys Used in Git & GitHub ?
-        GitHub needs to confirm your identity.
-        Instead of entering your GitHub password every time, you authenticate with SSH keys.
+### Why are SSH Keys Used in Git & GitHub ?
+- GitHub needs to confirm your identity.
+- Instead of entering your GitHub password every time, you authenticate with SSH keys.
 
 
 GitHub workflow:
-
 Step 1 :You generate SSH keys on your computer
-
         cmd:ssh-keygen -t ed25519 -C "your_email@example.com"
-
             Private key → ~/.ssh/id_ed25519
             Public key → ~/.ssh/id_ed25519.pub
 
