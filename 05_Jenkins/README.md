@@ -1,4 +1,4 @@
-Module 1: Jenkins Fundamentals
+### Module 1: Jenkins Fundamentals
 Goal: Understand what Jenkins is, CI/CD concepts, and Jenkins role.
 
 Topics:
@@ -14,7 +14,7 @@ Hands-on:
 	Access UI, complete initial setup
 	Explore dashboard & system info
 
-Module 2: Jenkins Installation & Configuration
+### Module 2: Jenkins Installation & Configuration
 Goal: Install & configure Jenkins like a professional.
 
 Topics:
@@ -30,7 +30,7 @@ Hands-on:
 	Backup and restore Jenkins home
 	Upgrade Jenkins safely
 
-Module 3: Jenkins Jobs & Freestyle Projects
+### Module 3: Jenkins Jobs & Freestyle Projects
 Goal: Learn classic jobs, builds, and artifacts.
 
 Topics:
@@ -47,7 +47,7 @@ Topics:
 	Archive artifacts
 	Parameterized build
 
-Module 4: Jenkins Plugins
+### Module 4: Jenkins Plugins
 Goal: Understand plugins and manage them safely.
 
 Topics:
@@ -61,7 +61,7 @@ Hands-on:
 	Identify dependencies
 	Rollback plugin safely
 
-Module 5: Jenkins Pipeline Basics
+### Module 5: Jenkins Pipeline Basics
 Goal: Learn pipelines (core CI/CD skill).
 
 Topics:
@@ -77,7 +77,7 @@ Hands-on:
 	Multi-stage pipeline
 	Store Jenkinsfile in Git
 
-Module 6: Advanced Pipelines
+### Module 6: Advanced Pipelines
 Goal: Write production-grade pipelines.
 
 Topics:
@@ -93,7 +93,7 @@ Build parallel stages
 Conditional deployment
 Manual approval
 
-Module 7: Shared Libraries
+### Module 7: Shared Libraries
 Goal: Reusable pipelines for multiple repos.
 
 Topics:
@@ -107,7 +107,7 @@ Create shared library repo
 Move pipeline logic to library
 Reuse library across jobs
 
-Module 8: Credentials & Secrets
+### Module 8: Credentials & Secrets
 Goal: Secure Jenkins pipelines.
 
 Topics:
@@ -124,7 +124,7 @@ Use securely in pipelines
 
 Mask secrets in logs
 
-Module 9: Multibranch Pipelines & Git
+### Module 9: Multibranch Pipelines & Git
 Goal: Automate builds for multiple branches and PRs.
 
 Topics:
@@ -139,7 +139,7 @@ Create multibranch pipeline
 Auto-build feature branches
 Configure PR validation builds
 
-Module 10: Security & Access Control
+### Module 10: Security & Access Control
 
 Goal: Harden Jenkins for enterprise.
 
@@ -155,7 +155,7 @@ Create users & roles
 Restrict job access
 Secure admin access
 
-Module 11: Performance & Stability
+### Module 11: Performance & Stability
 Goal: Keep Jenkins stable in production.
 
 Topics:
@@ -171,7 +171,7 @@ Optimize executor count
 Tune JVM
 Clean disk usage safely
 
-Module 12: Monitoring & Troubleshooting
+### Module 12: Monitoring & Troubleshooting
 Goal: Debug Jenkins like an admin.
 Topics:
 
@@ -186,7 +186,7 @@ Hands-on:
 	Fix failed pipelines
 	Recover corrupted jobs
 
-Module 13: Backup, DR & Migration
+### Module 13: Backup, DR & Migration
 Goal: Manage Jenkins as a platform.
 
 Topics:
@@ -201,7 +201,7 @@ Hands-on:
 	Restore Jenkins on new VM
 	Migrate safely
 
-Module 14: Jenkins at Scale
+### Module 14: Jenkins at Scale
 Goal: Design Jenkins for large orgs.
 
 Topics:
@@ -215,7 +215,7 @@ Hands-on:
 	Design architecture for 100+ repos
 	Document access strategy
 
-Module 15: Projects & Portfolio
+### Module 15: Projects & Portfolio
 Goal: Build a real-world portfolio.
 
 Project Ideas:
