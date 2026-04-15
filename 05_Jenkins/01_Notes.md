@@ -8,61 +8,57 @@
 			- Inconsistent builds
 			- frequent failures
 		
-2️.Late Detection of Bugs
-		Code was integrated after days or weeks
-		Bugs were found very late (during QA or production)
+### 2️ Late Detection of Bugs
+   - Code was integrated after days or weeks
+   - Bugs were found very late (during QA or production)
 	
 		Result:
-			Costly bug fixes
-			Delayed releases
+			Costly bug fixes and delayed releases
 	
-3️.No Automated Testing
-		Tests were run manually
-		Developers often skipped tests due to time pressure
+### 3️ No Automated Testing
+   - Tests were run manually
+   - Developers often skipped tests due to time pressure
 	
 		Result:
-			Broken features
-			Low code quality
+			Broken features and low code quality
 	
-4️.Painful Code Integration (Merge Hell)
-		Developers worked on branches for a long time
-		Merging code caused conflicts and failures
+### 4️.Painful Code Integration (Merge Hell)
+   - Developers worked on branches for a long time
+   - Merging code caused conflicts and failures
 	
 		Result:
 			Integration nightmares
 			Unstable main branch
 	
-5️.Manual Deployments
-		Deployment steps written in documents or emails
-		Human errors during deployment
+### 5️ Manual Deployments
+   - Deployment steps written in documents or emails
+   - Human errors during deployment
 	
 		Result:
-			Downtime
-			Rollback issues
+			Downtime and rollback issues
 	
-6️.No Visibility
-		No single place to know:
-		Build status
-		Test results
-		Who broke the build
+### 6️ No Visibility
+   - No single place to know:
+   - Build status
+   - Test results
+   - Who broke the build
 	
 		Result:
 			Blame game
 			Slow troubleshooting
 	
 	
-What is cicd  ?
-	- CI/CD stands for Continuous Integration and Continuous Delivery (or Continuous Deployment).
-	- It is a DevOps practice that automates the process of building, testing, and deploying code whenever developers make changes.
+### 7 What is cicd  ?
+   - CI/CD stands for Continuous Integration and Continuous Delivery (or Continuous Deployment).
+   - It is a DevOps practice that automates the process of building, testing, and deploying code whenever developers make changes.
 	
-What is jenkis ?
-	
-	- Jenkins is an open-source automation tool used to implement CI/CD (Continuous Integration / Continuous Delivery) in DevOps.
-	- It is widely used to build, test, and deploy applications automatically whenever code changes happen.
+### 8 What is jenkis ?
+   - Jenkins is an open-source automation tool used to implement CI/CD (Continuous Integration / Continuous Delivery) in DevOps.
+   - It is widely used to build, test, and deploy applications automatically whenever code changes happen.
 	
 
 
-What Jenkins Solved ?
+### 9 What Jenkins Solved ?
 
 Jenkins introduced Continuous Integration (CI).
 
