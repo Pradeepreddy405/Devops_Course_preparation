@@ -1,5 +1,5 @@
-Problems before CI/CD ? How CI/CD tools helped ?	
-	1️.Manual Builds
+## Problems before CI/CD ? How CI/CD tools helped ?	
+1️.Manual Builds
 		Developers built code manually on their own machines
 		Different environments → “Works on my machine” problem - dependency conflicts issues
 		No standard build process
@@ -8,7 +8,7 @@ Problems before CI/CD ? How CI/CD tools helped ?
 			Inconsistent builds
 			frequent failures
 		
-	2️.Late Detection of Bugs
+2️.Late Detection of Bugs
 		Code was integrated after days or weeks
 		Bugs were found very late (during QA or production)
 	
@@ -16,7 +16,7 @@ Problems before CI/CD ? How CI/CD tools helped ?
 			Costly bug fixes
 			Delayed releases
 	
-	3️.No Automated Testing
+3️.No Automated Testing
 		Tests were run manually
 		Developers often skipped tests due to time pressure
 	
@@ -24,7 +24,7 @@ Problems before CI/CD ? How CI/CD tools helped ?
 			Broken features
 			Low code quality
 	
-	4️.Painful Code Integration (Merge Hell)
+4️.Painful Code Integration (Merge Hell)
 		Developers worked on branches for a long time
 		Merging code caused conflicts and failures
 	
@@ -32,7 +32,7 @@ Problems before CI/CD ? How CI/CD tools helped ?
 			Integration nightmares
 			Unstable main branch
 	
-	5️.Manual Deployments
+5️.Manual Deployments
 		Deployment steps written in documents or emails
 		Human errors during deployment
 	
@@ -40,7 +40,7 @@ Problems before CI/CD ? How CI/CD tools helped ?
 			Downtime
 			Rollback issues
 	
-	6️.No Visibility
+6️.No Visibility
 		No single place to know:
 		Build status
 		Test results
@@ -52,11 +52,10 @@ Problems before CI/CD ? How CI/CD tools helped ?
 	
 	
 What is cicd  ?
-
 	- CI/CD stands for Continuous Integration and Continuous Delivery (or Continuous Deployment).
 	- It is a DevOps practice that automates the process of building, testing, and deploying code whenever developers make changes.
 	
-	What is jenkis ?
+What is jenkis ?
 	
 	- Jenkins is an open-source automation tool used to implement CI/CD (Continuous Integration / Continuous Delivery) in DevOps.
 	- It is widely used to build, test, and deploy applications automatically whenever code changes happen.
