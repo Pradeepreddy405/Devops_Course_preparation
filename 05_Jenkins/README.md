@@ -13,21 +13,25 @@ Goal: Understand what Jenkins is, CI/CD concepts, and Jenkins role.
 	   - Access UI, complete initial setup
 	   - Explore dashboard & system info
 
+---
+
 ### Module 2: Jenkins Installation & Configuration
 Goal: Install & configure Jenkins like a professional.
 
 Topics:
-	Linux installation, Docker installation
-	WAR vs Package install
-	Ports, environment variables
-	Directory structure
-	Upgrade & downgrade strategies
+       - Linux installation, Docker installation
+	   - WAR vs Package install
+	   - Ports, environment variables
+	   - Directory structure
+	   - Upgrade & downgrade strategies
 
-Hands-on:
-	Install Jenkins from scratch
-	Change Jenkins port
-	Backup and restore Jenkins home
-	Upgrade Jenkins safely
+   - Hands-on:
+	   - Install Jenkins from scratch
+	   - Change Jenkins port
+	   - Backup and restore Jenkins home
+	   - Upgrade Jenkins safely
+
+---	   
 
 ### Module 3: Jenkins Jobs & Freestyle Projects
 Goal: Learn classic jobs, builds, and artifacts.
