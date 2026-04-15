@@ -2,7 +2,6 @@ Module 1: Jenkins Fundamentals
 Goal: Understand what Jenkins is, CI/CD concepts, and Jenkins role.
 
 Topics:
-
 	What is Jenkins?
 	CI vs CD
 	Jenkins vs other CI tools
@@ -19,7 +18,6 @@ Module 2: Jenkins Installation & Configuration
 Goal: Install & configure Jenkins like a professional.
 
 Topics:
-
 	Linux installation, Docker installation
 	WAR vs Package install
 	Ports, environment variables
@@ -36,7 +34,6 @@ Module 3: Jenkins Jobs & Freestyle Projects
 Goal: Learn classic jobs, builds, and artifacts.
 
 Topics:
-
 	Freestyle jobs
 	SCM integration (Git)
 	Build triggers: manual, SCM polling, webhooks
