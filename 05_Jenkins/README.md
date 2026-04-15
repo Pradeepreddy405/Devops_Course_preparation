@@ -50,6 +50,8 @@ Topics:
 	Archive artifacts
 	Parameterized build
 
+---
+
 ### Module 4: Jenkins Plugins
 Goal: Understand plugins and manage them safely.
 
@@ -63,6 +65,8 @@ Hands-on:
 	Install essential plugins
 	Identify dependencies
 	Rollback plugin safely
+
+---
 
 ### Module 5: Jenkins Pipeline Basics
 Goal: Learn pipelines (core CI/CD skill).
@@ -80,6 +84,8 @@ Hands-on:
 	Multi-stage pipeline
 	Store Jenkinsfile in Git
 
+---
+
 ### Module 6: Advanced Pipelines
 Goal: Write production-grade pipelines.
 
@@ -96,6 +102,8 @@ Build parallel stages
 Conditional deployment
 Manual approval
 
+---
+
 ### Module 7: Shared Libraries
 Goal: Reusable pipelines for multiple repos.
 
@@ -110,6 +118,8 @@ Create shared library repo
 Move pipeline logic to library
 Reuse library across jobs
 
+---
+
 ### Module 8: Credentials & Secrets
 Goal: Secure Jenkins pipelines.
 
@@ -120,12 +130,11 @@ Secret masking & injection
 Prevent secret leaks
 
 Hands-on:
-
 Add credentials
-
 Use securely in pipelines
-
 Mask secrets in logs
+
+---
 
 ### Module 9: Multibranch Pipelines & Git
 Goal: Automate builds for multiple branches and PRs.
@@ -141,6 +150,8 @@ Hands-on:
 Create multibranch pipeline
 Auto-build feature branches
 Configure PR validation builds
+
+---
 
 ### Module 10: Security & Access Control
 
@@ -158,6 +169,8 @@ Create users & roles
 Restrict job access
 Secure admin access
 
+---
+
 ### Module 11: Performance & Stability
 Goal: Keep Jenkins stable in production.
 
@@ -174,6 +187,8 @@ Optimize executor count
 Tune JVM
 Clean disk usage safely
 
+---
+
 ### Module 12: Monitoring & Troubleshooting
 Goal: Debug Jenkins like an admin.
 Topics:
@@ -188,6 +203,8 @@ Hands-on:
 	Analyze logs
 	Fix failed pipelines
 	Recover corrupted jobs
+
+---
 
 ### Module 13: Backup, DR & Migration
 Goal: Manage Jenkins as a platform.
@@ -204,6 +221,8 @@ Hands-on:
 	Restore Jenkins on new VM
 	Migrate safely
 
+---
+
 ### Module 14: Jenkins at Scale
 Goal: Design Jenkins for large orgs.
 
@@ -217,6 +236,8 @@ Topics:
 Hands-on:
 	Design architecture for 100+ repos
 	Document access strategy
+
+---
 
 ### Module 15: Projects & Portfolio
 Goal: Build a real-world portfolio.
