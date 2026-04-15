@@ -1,41 +1,44 @@
-## Problems before CI/CD ? How CI/CD tools helped ?	
+# 1 Problems before CI/CD ? How CI/CD tools helped ?	
 ### 1️ Manual Builds
    - Developers built code manually on their own machines
    - Different environments → “Works on my machine” problem - dependency conflicts issues
    - No standard build process
 	
-		Result: 
-			- Inconsistent builds
-			- frequent failures
+			Result: 
+				- Inconsistent builds
+				- frequent failures
 		
 ### 2️ Late Detection of Bugs
    - Code was integrated after days or weeks
    - Bugs were found very late (during QA or production)
 	
-		Result:
-			Costly bug fixes and delayed releases
+			Result:
+				- Costly bug fixes
+     			- Delayed releases
 	
 ### 3️ No Automated Testing
    - Tests were run manually
    - Developers often skipped tests due to time pressure
 	
-		Result:
-			Broken features and low code quality
+			Result:
+				- Broken features
+     			- Low code quality
 	
 ### 4️.Painful Code Integration (Merge Hell)
    - Developers worked on branches for a long time
    - Merging code caused conflicts and failures
 	
-		Result:
-			Integration nightmares
-			Unstable main branch
+			Result:
+				- Integration nightmares
+				- Unstable main branch ( Which leads to delay for deployment )
 	
 ### 5️ Manual Deployments
    - Deployment steps written in documents or emails
    - Human errors during deployment
 	
-		Result:
-			Downtime and rollback issues
+			Result:
+				- Downtime
+     			- Rollback issues
 	
 ### 6️ No Visibility
    - No single place to know:
@@ -48,59 +51,57 @@
 			Slow troubleshooting
 	
 	
-### 7 What is cicd  ?
+### 7 What is CICD  ?
    - CI/CD stands for Continuous Integration and Continuous Delivery (or Continuous Deployment).
-   - It is a DevOps practice that automates the process of building, testing, and deploying code whenever developers make changes.
+   - It is a DevOps practice that automates the process of BUILDING, TESTING, and DEPLOYING code whenever developers make changes.
 	
 ### 8 What is jenkins ?
-   - Jenkins is an open-source automation tool used to implement CI/CD (Continuous Integration / Continuous Delivery) in DevOps.
+   - Jenkins is an Open-source automation tool used to implement CI/CD (Continuous Integration / Continuous Delivery) in DevOps.
    - It is widely used to build, test, and deploy applications automatically whenever code changes happen.
 	
 
 
-### 9 What Jenkins Solved ?
-
-Jenkins introduced Continuous Integration (CI).
-
+# 2 What Jenkins Solved ?
+  Jenkins introduced Continuous Integration (CI).
 ### 1 Automated Builds
-- Automatically builds code on every commit
-- Same environment for everyone
-- Solved: Inconsistent builds
+   - Automatically builds code on every commit
+   - Same environment for everyone
+   - Solved: Inconsistent builds
 
-2️ Early Bug Detection
-- Runs build + tests immediately after code push
-- Bugs found within minutes
-- Solved: Late bug discovery
+### 2️ Early Bug Detection
+   - Runs build + tests immediately after code push
+   - Bugs found within minutes
+   - Solved: Late bug discovery
 
-3 Automated Testing
-- Unit, integration, regression tests run automatically
-- Solved: Skipped or manual testing
+### 3 Automated Testing
+   - Unit, integration, regression tests run automatically
+   - Solved: Skipped or manual testing
 
-4️ Continuous Integration
-- Developers merge code frequently
-- Jenkins integrates and validates changes continuously
-- Solved: Merge hell
+### 4️ Continuous Integration
+   - Developers merge code frequently
+   - Jenkins integrates and validates changes continuously
+   - Solved: Merge hell
 
-5️ Automated Pipelines
-- Build → Test → Package → Deploy
-- One-click or fully automated releases
-- Solved: Manual deployments
+### 5️ Automated Pipelines
+   - Build → Test → Package → Deploy
+   - One-click or fully automated releases
+   - Solved: Manual deployments
 
-6️ Centralized Visibility
+### 6️ Centralized Visibility
 	Dashboards show:
-- Build status
-- Logs
-- Test reports
+   - Build status
+   - Logs
+   - Test reports
 	
 	Solved: Lack of transparency
 
-7️ Integration with DevOps Tools
+### 7️ Integration with DevOps Tools
 Works with:
-- GitHub / GitLab
-- Docker
-- Kubernetes
-- SonarQube
-- AWS / Azure
+   - GitHub / GitLab
+   - Docker
+   - Kubernetes
+   - SonarQube
+   - AWS / Azure
 	
 	Solved: Tool fragmentation
 
