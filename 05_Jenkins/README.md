@@ -18,7 +18,7 @@ Goal: Understand what Jenkins is, CI/CD concepts, and Jenkins role.
 ### Module 2: Jenkins Installation & Configuration
 Goal: Install & configure Jenkins like a professional.
 
-Topics:
+   - Topics:
        - Linux installation, Docker installation
 	   - WAR vs Package install
 	   - Ports, environment variables
