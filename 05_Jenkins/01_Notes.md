@@ -52,7 +52,7 @@
    - CI/CD stands for Continuous Integration and Continuous Delivery (or Continuous Deployment).
    - It is a DevOps practice that automates the process of building, testing, and deploying code whenever developers make changes.
 	
-### 8 What is jenkis ?
+### 8 What is jenkins ?
    - Jenkins is an open-source automation tool used to implement CI/CD (Continuous Integration / Continuous Delivery) in DevOps.
    - It is widely used to build, test, and deploy applications automatically whenever code changes happen.
 	
@@ -62,46 +62,45 @@
 
 Jenkins introduced Continuous Integration (CI).
 
-1 Automated Builds
-	Automatically builds code on every commit
-	Same environment for everyone
-	Solved: Inconsistent builds
+### 1 Automated Builds
+- Automatically builds code on every commit
+- Same environment for everyone
+- Solved: Inconsistent builds
 
 2️ Early Bug Detection
-	Runs build + tests immediately after code push
-	Bugs found within minutes
-	Solved: Late bug discovery
+- Runs build + tests immediately after code push
+- Bugs found within minutes
+- Solved: Late bug discovery
 
 3 Automated Testing
-	Unit, integration, regression tests run automatically
-	Solved: Skipped or manual testing
+- Unit, integration, regression tests run automatically
+- Solved: Skipped or manual testing
 
 4️ Continuous Integration
-	Developers merge code frequently
-	Jenkins integrates and validates changes continuously
-	Solved: Merge hell
+- Developers merge code frequently
+- Jenkins integrates and validates changes continuously
+- Solved: Merge hell
 
 5️ Automated Pipelines
-	Build → Test → Package → Deploy
-	One-click or fully automated releases
-	Solved: Manual deployments
+- Build → Test → Package → Deploy
+- One-click or fully automated releases
+- Solved: Manual deployments
 
 6️ Centralized Visibility
 	Dashboards show:
-	Build status
-	Logs
-	Test reports
+- Build status
+- Logs
+- Test reports
 	
 	Solved: Lack of transparency
 
 7️ Integration with DevOps Tools
-
-	Works with:
-	GitHub / GitLab
-	Docker
-	Kubernetes
-	SonarQube
-	AWS / Azure
+Works with:
+- GitHub / GitLab
+- Docker
+- Kubernetes
+- SonarQube
+- AWS / Azure
 	
 	Solved: Tool fragmentation
 
@@ -110,28 +109,23 @@ Jenkins introduced Continuous Integration (CI).
 	
 	
 CD (Continuous Delivery / Continuous Deployment)
-
-	While CI focuses on building and testing code, CD focuses on releasing that code to environments automatically.
+    While CI focuses on building and testing code, CD focuses on releasing that code to environments automatically.
 	In Continuous Delivery, code is automatically deployed to lower environments such as Dev, QA, and Staging, but production deployment requires manual approval.
 	Lower environments :
 					1)Dev
 					2)Qa
 					3)Staging
 					
-	Higher environments : 
+Higher environments : 
 					4)Prod  ----> Manual intervention needed through approvals
+In Continuous Deployment, the entire process is fully automated, and successful builds are deployed to production without any manual intervention.
 
-	In Continuous Deployment, the entire process is fully automated, and successful builds are deployed to production without any manual intervention.
+## Flow : Git → CI → Deploy to Dev → QA → (Manual Approve) → Prod
 
-Flow:
-
-	Git → CI → Deploy to Dev → QA → (Manual Approve) → Prod
-
-Typical stages in pipeline :
+## Typical stages in pipeline :
 	Commit → Build → Test → Deploy to Dev → Deploy to QA → Deploy to Staging → Manual Approval → Deploy to Prod
 
 
-Continuous delivery vs continuous deployment ?
-
-	Continuous Delivery ensures code is always ready for production with manual approval, 
-	whereas Continuous Deployment automatically deploys every successful build to production without human intervention.
+## Continuous delivery vs continuous deployment ?
+   - Continuous Delivery ensures code is always ready for production with manual approval, 
+   - whereas Continuous Deployment automatically deploys every successful build to production without human intervention.
