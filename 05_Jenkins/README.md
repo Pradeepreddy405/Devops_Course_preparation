@@ -1,18 +1,17 @@
 ### Module 1: Jenkins Fundamentals
 Goal: Understand what Jenkins is, CI/CD concepts, and Jenkins role.
-
-Topics:
-	What is Jenkins?
-	CI vs CD
-	Jenkins vs other CI tools
-	Jenkins architecture (Controller, Agents, Executors)
-	Jenkins job lifecycle
-	Jenkins filesystem
-
-Hands-on:
-	Install Jenkins (Linux/Docker)
-	Access UI, complete initial setup
-	Explore dashboard & system info
+	
+   - Topics:
+       - What is Jenkins?
+	   - CI vs CD
+	   - Jenkins vs other CI tools
+	   - Jenkins architecture (Controller, Agents, Executors)
+	   - Jenkins job lifecycle
+	   - Jenkins filesystem
+   - Hands-on:
+	   - Install Jenkins (Linux/Docker)
+	   - Access UI, complete initial setup
+	   - Explore dashboard & system info
 
 ### Module 2: Jenkins Installation & Configuration
 Goal: Install & configure Jenkins like a professional.
