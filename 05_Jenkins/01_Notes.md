@@ -104,8 +104,8 @@ Works with:
 	
 # 3 CD (Continuous Delivery / Continuous Deployment)
    - While CI focuses on building and testing code, CD focuses on releasing that code to environments automatically.
-	- In Continuous Delivery, code is automatically deployed to lower environments such as Dev, QA, and Staging, but production deployment requires manual approval.
-	- Lower environments :
+   - In Continuous Delivery, code is automatically deployed to lower environments such as Dev, QA, and Staging, but production deployment requires manual approval.
+   - Lower environments :
 					1) Dev
 					2) Qa
 					3) Staging
