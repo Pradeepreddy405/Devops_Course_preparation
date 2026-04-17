@@ -43,12 +43,11 @@ Goal: Learn classic jobs, builds, and artifacts.
        - Parameters, post-build actions
        - Build artifacts & logs
        - Build retention
-
-	Hands-on:	
-	Create Freestyle job
-	Clone Git repo & trigger builds
-	Archive artifacts
-	Parameterized build
+   - Hands-on:	
+       - Create Freestyle job
+       - Clone Git repo & trigger builds
+       - Archive artifacts
+       - Parameterized build
 
 ---
 
@@ -60,11 +59,10 @@ Goal: Understand plugins and manage them safely.
        - Essential plugins: Git, Pipeline, Credentials, Role Strategy
        - Plugin upgrade & rollback
 
-Hands-on:
-
-	Install essential plugins
-	Identify dependencies
-	Rollback plugin safely
+   - Hands-on:	
+       - Install essential plugins
+       - Identify dependencies
+       - Rollback plugin safely
 
 ---
 
@@ -78,7 +76,7 @@ Goal: Learn pipelines (core CI/CD skill).
        - Agents, environment variables
        - Post actions
 
-Hands-on:
+   - Hands-on:	
        - Create pipeline job
        - Write basic Jenkinsfile
        - Multi-stage pipeline
@@ -97,7 +95,7 @@ Goal: Write production-grade pipelines.
        - Error handling, notifications
        - Performance optimization
 
-Hands-on:
+   - Hands-on:	
        - Build parallel stages
        - Conditional deployment
        - Manual approval
@@ -112,7 +110,7 @@ Goal: Reusable pipelines for multiple repos.
        - Folder structure & versioning
        - Security considerations
 
-   - Hands-on:
+   - Hands-on:	
        - Create shared library repo
        - Move pipeline logic to library
        - Reuse library across jobs
@@ -197,7 +195,7 @@ Goal: Debug Jenkins like an admin.
 	Plugin crashes
 	Recovery techniques
 
-   - Hands-on:
+   - Hands-on:	
 	Analyze logs
 	Fix failed pipelines
 	Recover corrupted jobs
@@ -214,7 +212,7 @@ Goal: Manage Jenkins as a platform.
 	Version & plugin compatibility
 	Rollback
 
-   - Hands-on:
+   - Hands-on:	
 	Backup Jenkins
 	Restore Jenkins on new VM
 	Migrate safely
@@ -231,7 +229,7 @@ Goal: Design Jenkins for large orgs.
        - Scaling Jenkins
        - When to replace Jenkins
 
-   - Hands-on:
+   - Hands-on:	
        - Design architecture for 100+ repos
        - Document access strategy
 
