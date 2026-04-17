@@ -87,7 +87,7 @@ This approach helped us reduce pipeline failure frequency and improved overall d
 
 
 ------------------------------------------------------------------------------------------------------------
-8 Jenkins Workflow
+## 8 Jenkins Workflow
 
 Step 1 : Code in GitHub
 Step 2 : Webhook configured
@@ -98,7 +98,7 @@ Step 4 : Triggers:
 			
 
 ------------------------------------------------------------------------------------------------------------
-9 Jenkins credentials ?
+## 9 Jenkins credentials ?
 
 	1 Jenkins credentials are securely stored secrets used by pipelines/jobs to authenticate with external systems.
 	2 Jenkins acts as a middleman that needs access to other systems without exposing secrets.
