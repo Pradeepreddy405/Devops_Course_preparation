@@ -101,12 +101,11 @@ Step 4 : Triggers:
 ## 9 Jenkins credentials ?
    - 1 Jenkins credentials are securely stored secrets used by pipelines/jobs to authenticate with external systems.
    - 2 Jenkins acts as a middleman that needs access to other systems without exposing secrets.
-				- GitHub tokens
-				- SSH keys
-				- AWS access keys
-				- Docker registry creds
-				- Kubernetes kubeconfigs
-				- API tokens
+			- GitHub tokens
+			- SSH keys
+			- AWS access keys
+			- Docker registry creds
+			- Kubernetes kubeconfigs				- API tokens
    - 3 Jenkins stores credentials in: /var/lib/jenkins/credentials.xml
    - 4 Global : Available to all jobs
    - 5 System : Only for internal Jenkins use
