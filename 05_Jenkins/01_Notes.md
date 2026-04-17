@@ -3,8 +3,7 @@
    - Developers built code manually on their own machines
    - Different environments → “Works on my machine” problem - dependency conflicts issues
    - No standard build process
-   - 
-			Result: 
+   - Result: 
 				- Inconsistent builds
 				- frequent failures
 		
