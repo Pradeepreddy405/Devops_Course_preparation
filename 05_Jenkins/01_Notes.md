@@ -3,7 +3,6 @@
    - Developers built code manually on their own machines
    - Different environments → “Works on my machine” problem - dependency conflicts issues
    - No standard build process
-	
 			Result: 
 				- Inconsistent builds
 				- frequent failures
@@ -11,7 +10,6 @@
 ### 2️ Late Detection of Bugs
    - Code was integrated after days or weeks
    - Bugs were found very late (during QA or production)
-	
 			Result:
 				- Costly bug fixes
      			- Delayed releases
@@ -19,7 +17,6 @@
 ### 3️ No Automated Testing
    - Tests were run manually
    - Developers often skipped tests due to time pressure
-	
 			Result:
 				- Broken features
      			- Low code quality
@@ -27,7 +24,6 @@
 ### 4️.Painful Code Integration (Merge Hell)
    - Developers worked on branches for a long time
    - Merging code caused conflicts and failures
-	
 			Result:
 				- Integration nightmares
 				- Unstable main branch ( Which leads to delay for deployment )
@@ -35,7 +31,6 @@
 ### 5️ Manual Deployments
    - Deployment steps written in documents or emails
    - Human errors during deployment
-	
 			Result:
 				- Downtime
      			- Rollback issues
@@ -44,11 +39,10 @@
    - No single place to know:
    - Build status
    - Test results
-   - Who broke the build
-	
-		Result:
-			Blame game
-			Slow troubleshooting
+   - Who broke the build	
+			Result:
+				- Blame game
+				- Slow troubleshooting
 	
 	
 ### 7 What is CICD  ?
