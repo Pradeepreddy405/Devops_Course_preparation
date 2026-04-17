@@ -55,43 +55,35 @@ This approach helped us reduce pipeline failure frequency and improved overall d
 	
 
 ------------------------------------------------------------------------------------------------------------	
-6 What is a job in jenkins  ?
-Job is a user-defined automation task or a set of sequential instructions that the Jenkins server executes to perform work
+## 6 What is a job in jenkins  ?
+   - Job is a user-defined automation task or a set of sequential instructions that the Jenkins server executes to perform work
 
 (or)
-
-A Jenkins job is a repeatable automation unit, and each build is a traceable execution of that unit, with console logs acting as the primary debugging and audit mechanism.
-
-	Jobs are used for:
-	- Build applications (Maven, Gradle, npm)
-	- Run tests
-	- Build Docker images
-	- Deploy to Kubernetes
-	- Trigger pipelines across systems
+ 
+   - A Jenkins job is a repeatable automation unit, and each build is a traceable execution of that unit, with console logs acting as the primary debugging and audit mechanism.
+   - Jobs are used for:
+		- Build applications (Maven, Gradle, npm)
+		- Run tests
+		- Build Docker images
+		- Deploy to Kubernetes
+		- Trigger pipelines across systems
 	
 
 ------------------------------------------------------------------------------------------------------------	
 	
-7 What is build in jenkins ?
-What is build ?
-	In Jenkins, a build is a single execution instance of a Jenkins Project also known as a job.
-	
-	(or)
-	
-	We can say that build in Jenkins is an automated process that takes your source code and transforms it into a working, deployable application
-	
-	
-	Usually build consists of 
+## 7 What is build in jenkins ?
+   - In Jenkins, a build is a single execution instance of a Jenkins Project also known as a job.	
+	(or)	
+   - We can say that build in Jenkins is an automated process that takes your source code and transforms it into a working, deployable application
+   - Usually build consists of 
 		- Logs
 		- Status (SUCCESS / FAILURE)
 		- Timestamp
 		- Artifacts (optional)
 		
 ------------------------------------------------------------------------------------------------------------	
-		
-What is workspace in jenkins ?
-
-Workspace is a reusable execution directory per job where Jenkins runs build steps, while logs and history are stored separately under the job’s builds directory.
+## What is workspace in jenkins ?
+   - Workspace is a reusable execution directory per job where Jenkins runs build steps, while logs and history are stored separately under the job’s builds directory.
 
 
 ------------------------------------------------------------------------------------------------------------
