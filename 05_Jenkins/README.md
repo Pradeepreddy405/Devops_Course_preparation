@@ -112,7 +112,7 @@ Goal: Reusable pipelines for multiple repos.
        - Folder structure & versioning
        - Security considerations
 
-Hands-on:
+   - Hands-on:
        - Create shared library repo
        - Move pipeline logic to library
        - Reuse library across jobs
@@ -127,7 +127,7 @@ Goal: Secure Jenkins pipelines.
        - Secret masking & injection
        - Prevent secret leaks
 
-Hands-on:
+   - Hands-on:
        - Add credentials
        - Use securely in pipelines
        - Mask secrets in logs
@@ -144,7 +144,7 @@ Goal: Automate builds for multiple branches and PRs.
        - Tag-based builds
        - Build pruning
 
-Hands-on:
+   - Hands-on:
        - Create multibranch pipeline
        - Auto-build feature branches
        - Configure PR validation builds
@@ -162,7 +162,7 @@ Goal: Harden Jenkins for enterprise.
        - Pipeline execution restrictions
        - Hardening Jenkins
 
-Hands-on:
+   - Hands-on:
        - Create users & roles
        - Restrict job access
 Secure admin access
@@ -173,13 +173,13 @@ Secure admin access
 Goal: Keep Jenkins stable in production.
 
    - Topics:
-JVM tuning
-Executor optimization
-Disk usage & cleanup
-Queue management
-Handling long-running builds
+       - JVM tuning
+       - Executor optimization
+       - Disk usage & cleanup
+       - Queue management
+       - Handling long-running builds
 
-Hands-on:
+   - Hands-on:
 
 Optimize executor count
 Tune JVM
@@ -197,7 +197,7 @@ Goal: Debug Jenkins like an admin.
 	Plugin crashes
 	Recovery techniques
 
-Hands-on:
+   - Hands-on:
 	Analyze logs
 	Fix failed pipelines
 	Recover corrupted jobs
@@ -214,7 +214,7 @@ Goal: Manage Jenkins as a platform.
 	Version & plugin compatibility
 	Rollback
 
-Hands-on:
+   - Hands-on:
 	Backup Jenkins
 	Restore Jenkins on new VM
 	Migrate safely
@@ -225,15 +225,15 @@ Hands-on:
 Goal: Design Jenkins for large orgs.
 
    - Topics:
-	Centralized vs team Jenkins
-	Governance & compliance
-	Shared library ownership
-	Scaling Jenkins
-	When to replace Jenkins
+       - Centralized vs team Jenkins
+       - Governance & compliance
+       - Shared library ownership
+       - Scaling Jenkins
+       - When to replace Jenkins
 
-Hands-on:
-	Design architecture for 100+ repos
-	Document access strategy
+   - Hands-on:
+       - Design architecture for 100+ repos
+       - Document access strategy
 
 ---
 
