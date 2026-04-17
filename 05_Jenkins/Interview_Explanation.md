@@ -13,19 +13,14 @@
 	
 
 -----------------------------------------------------------------------------------------------------------
-2 What happens when pipeline fails ?
-
-	In one of our projects, whenever the CI/CD pipeline failed, we treated it as a production-impacting event rather than just a build issue.
+## 2 What happens when pipeline fails ?
+   - In one of our projects, whenever the CI/CD pipeline failed, we treated it as a production-impacting event rather than just a build issue.
+   - First, we categorized failures into types like build failures, test failures, or infrastructure issues. For example, if it was a test failure, we checked logs and reports to identify flaky tests or genuine code issues. If it was a build failure, we analyzed dependency or Docker build problems.
+   - We ensured immediate visibility using alerts integrated with tools like Slack and dashboards in Jenkins.
+   - To reduce downtime, we implemented retry mechanisms for transient failures and isolated flaky tests so they wouldn't block deployments unnecessarily.
+   - For long-term improvement, we focused on root cause analysis. For instance, we reduced failures caused by dependency downloads by introducing caching, and improved pipeline reliability by optimizing Docker layer usage.
 	
-	First, we categorized failures into types like build failures, test failures, or infrastructure issues. For example, if it was a test failure, we checked logs and reports to identify flaky tests or genuine code issues. If it was a build failure, we analyzed dependency or Docker build problems.
-	
-	We ensured immediate visibility using alerts integrated with tools like Slack and dashboards in Jenkins.
-	
-	To reduce downtime, we implemented retry mechanisms for transient failures and isolated flaky tests so they wouldn't block deployments unnecessarily.
-	
-	For long-term improvement, we focused on root cause analysis. For instance, we reduced failures caused by dependency downloads by introducing caching, and improved pipeline reliability by optimizing Docker layer usage.
-	
-	This approach helped us reduce pipeline failure frequency and improved overall deployment speed and developer productivity.”
+This approach helped us reduce pipeline failure frequency and improved overall deployment speed and developer productivity.
 	
 
 
