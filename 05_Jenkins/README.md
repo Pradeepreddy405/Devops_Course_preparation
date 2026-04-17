@@ -179,26 +179,26 @@ Goal: Keep Jenkins stable in production.
 
    - Hands-on:
 
-Optimize executor count
-Tune JVM
-Clean disk usage safely
+       - Optimize executor count
+       - Tune JVM
+       - Clean disk usage safely
 
 ---
 
 ### Module 12: Monitoring & Troubleshooting
 Goal: Debug Jenkins like an admin.
+
    - Topics:
+       - Jenkins & build logs
+       - Common pipeline failures
+       - Stuck builds
+       - Plugin crashes
+       - Recovery techniques
 
-	Jenkins & build logs
-	Common pipeline failures
-	Stuck builds
-	Plugin crashes
-	Recovery techniques
-
-   - Hands-on:	
-	Analyze logs
-	Fix failed pipelines
-	Recover corrupted jobs
+   - Hands-on:
+       - Analyze logs
+       - Fix failed pipelines
+       - Recover corrupted jobs
 
 ---
 
@@ -206,16 +206,16 @@ Goal: Debug Jenkins like an admin.
 Goal: Manage Jenkins as a platform.
 
    - Topics:
-	Backup strategies
-	Disaster recovery
-	Migration to new servers
-	Version & plugin compatibility
-	Rollback
+       - Backup strategies
+       - Disaster recovery
+       - Migration to new servers
+       - Version & plugin compatibility
+       - Rollback
 
-   - Hands-on:	
-	Backup Jenkins
-	Restore Jenkins on new VM
-	Migrate safely
+   - Hands-on:
+       - Backup Jenkins
+       - Restore Jenkins on new VM
+       - Migrate safely
 
 ---
 
