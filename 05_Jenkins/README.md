@@ -37,12 +37,12 @@ Goal: Install & configure Jenkins like a professional.
 Goal: Learn classic jobs, builds, and artifacts.
 
 Topics:
-	Freestyle jobs
-	SCM integration (Git)
-	Build triggers: manual, SCM polling, webhooks
-	Parameters, post-build actions
-	Build artifacts & logs
-	Build retention
+       - Freestyle jobs
+       - SCM integration (Git)
+       - Build triggers: manual, SCM polling, webhooks
+       - Parameters, post-build actions
+       - Build artifacts & logs
+       - Build retention
 
 	Hands-on:	
 	Create Freestyle job
@@ -56,9 +56,9 @@ Topics:
 Goal: Understand plugins and manage them safely.
 
 Topics:
-	Plugin architecture & dependencies
-	Essential plugins: Git, Pipeline, Credentials, Role Strategy
-	Plugin upgrade & rollback
+       - Plugin architecture & dependencies
+       - Essential plugins: Git, Pipeline, Credentials, Role Strategy
+       - Plugin upgrade & rollback
 
 Hands-on:
 
@@ -72,17 +72,17 @@ Hands-on:
 Goal: Learn pipelines (core CI/CD skill).
 
 Topics:
-	Declarative vs Scripted pipelines
-	Jenkinsfile structure
-	Stages & steps
-	Agents, environment variables
-	Post actions
+       - Declarative vs Scripted pipelines
+       - Jenkinsfile structure
+       - Stages & steps
+       - Agents, environment variables
+       - Post actions
 
 Hands-on:
-	Create pipeline job
-	Write basic Jenkinsfile
-	Multi-stage pipeline
-	Store Jenkinsfile in Git
+       - Create pipeline job
+       - Write basic Jenkinsfile
+       - Multi-stage pipeline
+       - Store Jenkinsfile in Git
 
 ---
 
@@ -90,17 +90,17 @@ Hands-on:
 Goal: Write production-grade pipelines.
 
 Topics:
-Parallel stages
-Conditional execution
-Input approvals
-Retry & timeout
-Error handling, notifications
-Performance optimization
+       - Parallel stages
+       - Conditional execution
+       - Input approvals
+       - Retry & timeout
+       - Error handling, notifications
+       - Performance optimization
 
 Hands-on:
-Build parallel stages
-Conditional deployment
-Manual approval
+       - Build parallel stages
+       - Conditional deployment
+       - Manual approval
 
 ---
 
@@ -108,15 +108,14 @@ Manual approval
 Goal: Reusable pipelines for multiple repos.
 
 Topics:
-
-Global vs project libraries
-Folder structure & versioning
-Security considerations
+       - Global vs project libraries
+       - Folder structure & versioning
+       - Security considerations
 
 Hands-on:
-Create shared library repo
-Move pipeline logic to library
-Reuse library across jobs
+       - Create shared library repo
+       - Move pipeline logic to library
+       - Reuse library across jobs
 
 ---
 
@@ -124,15 +123,14 @@ Reuse library across jobs
 Goal: Secure Jenkins pipelines.
 
 Topics:
-
-Credential types: username/password, secret text, SSH keys
-Secret masking & injection
-Prevent secret leaks
+       - Credential types: username/password, secret text, SSH keys
+       - Secret masking & injection
+       - Prevent secret leaks
 
 Hands-on:
-Add credentials
-Use securely in pipelines
-Mask secrets in logs
+       - Add credentials
+       - Use securely in pipelines
+       - Mask secrets in logs
 
 ---
 
@@ -140,16 +138,16 @@ Mask secrets in logs
 Goal: Automate builds for multiple branches and PRs.
 
 Topics:
-Multibranch pipelines
-Branch discovery
-PR builds
-Tag-based builds
-Build pruning
+       - Multibranch pipelines
+       - Branch discovery
+       - PR builds
+       - Tag-based builds
+       - Build pruning
 
 Hands-on:
-Create multibranch pipeline
-Auto-build feature branches
-Configure PR validation builds
+       - Create multibranch pipeline
+       - Auto-build feature branches
+       - Configure PR validation builds
 
 ---
 
@@ -158,15 +156,15 @@ Configure PR validation builds
 Goal: Harden Jenkins for enterprise.
 
 Topics:
-Authentication vs authorization
-Role-Based Access Control (RBAC)
-Folder-level permissions
-Pipeline execution restrictions
-Hardening Jenkins
+       - Authentication vs authorization
+       - Role-Based Access Control (RBAC)
+       - Folder-level permissions
+       - Pipeline execution restrictions
+       - Hardening Jenkins
 
 Hands-on:
-Create users & roles
-Restrict job access
+       - Create users & roles
+       - Restrict job access
 Secure admin access
 
 ---
