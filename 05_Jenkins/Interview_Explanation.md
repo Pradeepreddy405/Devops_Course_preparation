@@ -33,30 +33,24 @@ This approach helped us reduce pipeline failure frequency and improved overall d
 
 
 -----------------------------------------------------------------------------------------------------------
-3 How do you reduce CI time?
+## 3 How do you reduce CI time?
 
-	Reducing CI time is critical for faster feedback and developer productivity. I focus on optimizing pipeline execution using techniques like parallelization, dependency caching, and minimizing unnecessary builds.
-	
-	For example, in a Jenkins pipeline using Jenkins, I reduced build time by splitting test and lint stages into parallel execution and caching dependencies, which significantly improved pipeline performance.
-	
-	
-	I will consider pipeline failures are treated as system reliability issues, not just build errors, we focus on fast detection, root cause analysis, and preventing recurrence.
+- Reducing CI time is critical for faster feedback and developer productivity. I focus on optimizing pipeline execution using techniques like parallelization, dependency caching, and minimizing unnecessary builds.
+- For example, in a Jenkins pipeline using Jenkins, I reduced build time by splitting test and lint stages into parallel execution and caching dependencies, which significantly improved pipeline performance.
+- I will consider pipeline failures are treated as system reliability issues, not just build errors, we focus on fast detection, root cause analysis, and preventing recurrence.
 	
 	
 ------------------------------------------------------------------------------------------------------------
-4 What is the difference between CI and CD ?
-
-	CI focuses on integrating code changes frequently by running automated builds and tests to detect issues early. 
-	CD extends this by automating the release process, either by preparing artifacts for manual deployment (continuous delivery) or automatically deploying them to production (continuous deployment). In short, CI ensures code quality, while CD ensures reliable and consistent releases.
+## 4 What is the difference between CI and CD ?
+   - CI focuses on integrating code changes frequently by running automated builds and tests to detect issues early.
+   - CD extends this by automating the release process, either by preparing artifacts for manual deployment (continuous delivery) or automatically deploying them to production (continuous deployment). In short, CI ensures code quality, while CD ensures reliable and consistent releases.
 
 
 
 ------------------------------------------------------------------------------------------------------------
-5 Continuous Deliver and Continuous Deployment
-
-	Continuous Delivery ensures that code is always in a deployable state, but requires a manual approval step before production release. Continuous Deployment removes that manual gate and automatically deploys every successful change to production.
-
-	In real-world enterprise environments, Continuous Delivery is more common due to compliance and risk management, whereas Continuous Deployment is adopted in highly mature DevOps setups with strong automated testing and monitoring.
+## 5 Continuous Deliver and Continuous Deployment
+   - Continuous Delivery ensures that code is always in a deployable state, but requires a manual approval step before production release. Continuous Deployment removes that manual gate and automatically deploys every successful change to production.
+   - In real-world enterprise environments, Continuous Delivery is more common due to compliance and risk management, whereas Continuous Deployment is adopted in highly mature DevOps setups with strong automated testing and monitoring.
 	
 	
 
