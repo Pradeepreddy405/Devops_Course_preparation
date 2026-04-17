@@ -16,7 +16,7 @@ In my projects, I used CI pipelines in tools like Jenkins / GitHub Actions to en
 	
 
 -----------------------------------------------------------------------------------------------------------
-What happens when pipeline fails ?
+2 What happens when pipeline fails ?
 
 	In one of our projects, whenever the CI/CD pipeline failed, we treated it as a production-impacting event rather than just a build issue.
 	
@@ -35,7 +35,7 @@ What happens when pipeline fails ?
 
 
 -----------------------------------------------------------------------------------------------------------
-How do you reduce CI time?
+3 How do you reduce CI time?
 
 	Reducing CI time is critical for faster feedback and developer productivity. I focus on optimizing pipeline execution using techniques like parallelization, dependency caching, and minimizing unnecessary builds.
 	
@@ -46,7 +46,7 @@ How do you reduce CI time?
 	
 	
 ------------------------------------------------------------------------------------------------------------
-What is the difference between CI and CD ?
+4 What is the difference between CI and CD ?
 
 	CI focuses on integrating code changes frequently by running automated builds and tests to detect issues early. 
 	CD extends this by automating the release process, either by preparing artifacts for manual deployment (continuous delivery) or automatically deploying them to production (continuous deployment). In short, CI ensures code quality, while CD ensures reliable and consistent releases.
@@ -54,7 +54,7 @@ What is the difference between CI and CD ?
 
 
 ------------------------------------------------------------------------------------------------------------
-Continuous Deliver and Continuous Deployment
+5 Continuous Deliver and Continuous Deployment
 
 	Continuous Delivery ensures that code is always in a deployable state, but requires a manual approval step before production release. Continuous Deployment removes that manual gate and automatically deploys every successful change to production.
 
@@ -63,7 +63,7 @@ Continuous Deliver and Continuous Deployment
 	
 
 ------------------------------------------------------------------------------------------------------------	
-What is a job in jenkins  ?
+6 What is a job in jenkins  ?
 Job is a user-defined automation task or a set of sequential instructions that the Jenkins server executes to perform work
 
 (or)
@@ -80,7 +80,7 @@ A Jenkins job is a repeatable automation unit, and each build is a traceable exe
 
 ------------------------------------------------------------------------------------------------------------	
 	
-What is build in jenkins ?
+7 What is build in jenkins ?
 What is build ?
 	In Jenkins, a build is a single execution instance of a Jenkins Project also known as a job.
 	
@@ -103,7 +103,7 @@ Workspace is a reusable execution directory per job where Jenkins runs build ste
 
 
 ------------------------------------------------------------------------------------------------------------
-Typicall workflow
+8 Jenkins Workflow
 
 Step 1 : Code in GitHub
 Step 2 : Webhook configured
@@ -114,7 +114,7 @@ Step 4 : Triggers:
 			
 
 ------------------------------------------------------------------------------------------------------------
-Jenkins credentials ?
+9 Jenkins credentials ?
 
 	1 Jenkins credentials are securely stored secrets used by pipelines/jobs to authenticate with external systems.
 	2 Jenkins acts as a middleman that needs access to other systems without exposing secrets.
