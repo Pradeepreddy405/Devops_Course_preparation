@@ -240,12 +240,12 @@ Hands-on:
 ### Module 15: Projects & Portfolio
 Goal: Build a real-world portfolio.
 
-Project Ideas:
-	Enterprise CI pipeline
-	Shared library–driven CI/CD
-	Secure Jenkins setup
-	Backup & migration project
-	High-scale Jenkins architecture design
+   - Project Ideas :
+       - Enterprise CI pipeline
+       - Shared library–driven CI/CD
+       - Secure Jenkins setup
+       - Backup & migration project
+       - High-scale Jenkins architecture design
 
 
 
