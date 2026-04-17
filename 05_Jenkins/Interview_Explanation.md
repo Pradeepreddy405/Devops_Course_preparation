@@ -88,13 +88,12 @@ This approach helped us reduce pipeline failure frequency and improved overall d
 
 ------------------------------------------------------------------------------------------------------------
 ## 8 Jenkins Workflow
-
-Step 1 : Code in GitHub
-Step 2 : Webhook configured
-Step 3 : Jenkins Multibranch Pipeline
-Step 4 : Triggers:
-			PR → run tests
-			Merge to main → deploy
+   - Step 1 : Code in GitHub
+   - Step 2 : Webhook configured
+   - Step 3 : Jenkins Multibranch Pipeline
+   - Step 4 : Triggers:
+		    	PR → run tests
+			    Merge to main → deploy
 			
 
 ------------------------------------------------------------------------------------------------------------
