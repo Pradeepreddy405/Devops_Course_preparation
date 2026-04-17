@@ -1,16 +1,15 @@
 ## 1 Why Continuous Integration ?
-
- 1 Continuous Integration is a practice where developers frequently merge code into a shared repository, and every change automatically triggers a pipeline that builds and tests the application.
- 2 In my projects, I used CI pipelines in tools like Jenkins / GitHub Actions to ensure every commit is validated before moving forward.	
+   - Continuous Integration is a practice where developers frequently merge code into a shared repository, and every change automatically triggers a pipeline that builds and tests the application.
+   - In my projects, I used CI pipelines in tools like Jenkins / GitHub Actions to ensure every commit is validated before moving forward.	
 		Typically, most of the pipeline includes stages like:	
 			- Dependency installation
 			- Build
 			- Unit testing
 			- Code quality checks
- 3 This helps catch issues early, reduces integration conflicts, and ensures that the main branch is always in a deployable state.
+  - This helps catch issues early, reduces integration conflicts, and ensures that the main branch is always in a deployable state.
 	I also focused on optimizing pipelines by using caching and parallel execution to reduce build time.
 	
-	Scenario : In one case, our builds were taking around 15 minutes, which slowed down releases. I optimized it by introducing parallel stages and dependency caching, reducing the build time to around 6 minutes.
+   - Scenario : In one case, our builds were taking around 15 minutes, which slowed down releases. I optimized it by introducing parallel stages and dependency caching, reducing the build time to around 6 minutes.
 	
 
 -----------------------------------------------------------------------------------------------------------
