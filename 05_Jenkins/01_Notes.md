@@ -12,7 +12,7 @@
    - Bugs were found very late (during QA or production)
    - Result: 
 		- Costly bug fixes
-    - Delayed releases
+   		- Delayed releases
 	
 ### 3️ No Automated Testing
    - Tests were run manually
