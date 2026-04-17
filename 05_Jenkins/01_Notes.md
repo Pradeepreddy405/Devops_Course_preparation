@@ -111,7 +111,7 @@ Works with:
 		- 3) Staging
 					
    - Higher environments : 
-					4)Prod  ----> Manual intervention needed through approvals
+		- 4) Prod  ----> Manual intervention needed through approvals
      
 In Continuous Deployment, the entire process is fully automated, and successful builds are deployed to production without any manual intervention.
 
