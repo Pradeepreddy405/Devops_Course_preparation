@@ -1,4 +1,4 @@
-# 1 Problems before CI/CD ? How CI/CD tools helped ?	
+# 1 Problems before CI/CD and How CI/CD tools helped ?	
 ### 1️ Manual Builds
    - Developers built code manually on their own machines
    - Different environments → “Works on my machine” problem - dependency conflicts issues
