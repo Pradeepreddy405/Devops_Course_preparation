@@ -55,8 +55,7 @@ Agents connect to the master using:
 	Platform diversity : Run jobs on different OS environments
 	Isolation : Safer and cleaner execution
 
-###5. How It Works (Workflow)
-	
+### 5. How It Works (Workflow)	
 	Step 1: Developer commits code (e.g., via Git)
 	Step 2: Jenkins master detects change or receives trigger
 	Step 3: Master schedules a job
