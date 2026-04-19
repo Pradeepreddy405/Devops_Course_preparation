@@ -49,7 +49,7 @@
    - CI/CD stands for Continuous Integration and Continuous Delivery (or Continuous Deployment).
    - It is a DevOps practice that automates the process of BUILDING, TESTING, and DEPLOYING code whenever developers make changes.
    
-   - Continuous Integration is a development practice where developers frequently commit and merge code into a shared repository and every change is automatically built and tested.
+   - Continuous Integration is a development practice where developers frequently commit and merge code into a shared repository and every change is automatically triggers a pipeline that builds and test the application.
    
    - Continuous Delivery is nothing but, after CI builds and tests your code, it is automatically prepared and kept ready for deployment to production but, a human may still approve the final release.
    
