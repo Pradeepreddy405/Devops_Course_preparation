@@ -29,7 +29,6 @@ Responsibilities:
 	- Maintains job configurations
 	- Stores build history and logs
 	- Monitors agent health
-
 	Think of it as a manager that delegates work but doesn’t do heavy tasks itself.
 
 ### 2. Jenkins Slaves (Agents) : The slave/agent nodes are worker machines.

@@ -48,6 +48,9 @@
 ### 7 What is CICD  ?
    - CI/CD stands for Continuous Integration and Continuous Delivery (or Continuous Deployment).
    - It is a DevOps practice that automates the process of BUILDING, TESTING, and DEPLOYING code whenever developers make changes.
+   - Continuous Integration is a development practice where developers frequently commit and merge code into a shared repository and every change is automatically built and tested .
+   - Continuous Delivery is nothing but, after CI builds and tests your code, it is automatically prepared and kept ready for deployment to production,but a human may still approve the final release.
+   Every successful change goes straight to production automatically, without  human approval or intervention called "Continuous Deployment".
 	
 ### 8 What is jenkins ?
    - Jenkins is an Open-source automation tool used to implement CI/CD (Continuous Integration / Continuous Delivery) in DevOps.
