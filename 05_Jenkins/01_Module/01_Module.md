@@ -17,13 +17,16 @@ This module covers the **absolute core concepts** every DevOps engineer must kno
 
 ##  1. What is Jenkins?
 
+**Jenkins** is an Open-source automation tool used to implement CI/CD (Continuous Integration / Continuous Delivery) in DevOps.
+It is widely used to build, test, and deploy applications automatically whenever code changes happen.
+
 **Jenkins** is an open-source automation server used to:
 
 * Build applications
 * Run tests automatically
 * Deploy applications
 
-	In simple terms: Jenkins removes manual work from software delivery.
+   - In simple terms: Jenkins removes manual work from software delivery.
 
 ###  Real Problem It Solves
 
