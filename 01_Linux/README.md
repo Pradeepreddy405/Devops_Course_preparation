@@ -1,4 +1,4 @@
-# Linux for DevOps & Cloud Engineers (20 LPA Roadmap)
+# Linux for DevOps & Cloud Engineers Roadmap
 
 ## Goal
 Master Linux administration, troubleshooting, automation, security, and performance tuning for **DevOps, SRE, Cloud, and Kubernetes roles**.
@@ -101,17 +101,7 @@ Master Linux administration, troubleshooting, automation, security, and performa
 
 ---
 
-## Module 10: Shell Scripting
-**Topics**
-- Bash scripting
-- Automation
-
-**Hands-on**
-- Backup & cleanup scripts
-
----
-
-## Module 11: Linux Security
+## Module 10: Linux Security
 **Topics**
 - SSH hardening
 - Firewalls
@@ -122,28 +112,14 @@ Master Linux administration, troubleshooting, automation, security, and performa
 
 ---
 
-## Module 12: Performance Tuning
+## Module 11: Performance Tuning
 **Topics**
 - CPU, memory, disk tuning
 - sysctl
 
 ---
 
-## Module 13: Linux for Docker & Kubernetes
-**Topics**
-- cgroups & namespaces
-- Container debugging
-
----
-
-## Module 14: Linux in Cloud (AWS)
-**Topics**
-- EC2 Linux
-- AMIs & cloud-init
-
----
-
-## Module 15: Interview & Production Scenarios
+## Module 12: Interview & Production Scenarios
 **Topics**
 - Real outage scenarios
 - Troubleshooting methodology
