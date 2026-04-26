@@ -3,14 +3,9 @@
 
 ## Git ? 
  - Git is a version control tool used to track and manage changes in code.
-
-			(or)
-			
  - Git is a distributed version control system used to track changes in files(source code) over time.
  - It helps developers collaborate, maintain history, and manage different versions of a project.
-
-In simple way ,it track the changes like 
-"What changed, Who changed and When changed "
+ - In simple way ,it track the changes like "What changed, Who changed and When changed "
 
 Core concepts of git 
 Tracks changes			: Every edit you make can be saved as a “commit,” creating a timeline of your project.
