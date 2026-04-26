@@ -83,6 +83,7 @@ Look for:
 Depends:
 
 7 Repositories (Where Packages Come From)
+A repository is a structured source that provides both software packages AND the metadata required to manage them.
 
 Repos are configured in:
 
