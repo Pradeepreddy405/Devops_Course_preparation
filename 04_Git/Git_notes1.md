@@ -1,13 +1,13 @@
 
-Version control : Version control tracks changes in your project over time.
+## Version control : Version control tracks changes in your project over time.
 
-Git ? 
-Git is a version control tool used to track and manage changes in code.
+## Git ? 
+ - Git is a version control tool used to track and manage changes in code.
 
 			(or)
 			
-Git is a distributed version control system used to track changes in files(source code) over time. 
-It helps developers collaborate, maintain history, and manage different versions of a project.
+ - Git is a distributed version control system used to track changes in files(source code) over time.
+ - It helps developers collaborate, maintain history, and manage different versions of a project.
 
 In simple way ,it track the changes like 
 "What changed, Who changed and When changed "
