@@ -39,23 +39,23 @@ Check:
 
 
 ## 3. Searching Packages
-Ubuntu 			: apt search nginx
-RHEL/CentOS 	: yum search nginx
+ - Ubuntu 			: apt search nginx
+ - RHEL/CentOS 	: yum search nginx
 
 ## LAB 2: Search for a Package
- - apt search curl
- - Observe: Package name, Description
+  - apt search curl
+  - Observe: Package name, Description
  
  1.Installing Packages
- - Ubuntu 		: sudo apt install nginx -y
- - RHEL/CentOS  : sudo yum install nginx -y
+  - Ubuntu 		: sudo apt install nginx -y
+  - RHEL/CentOS  : sudo yum install nginx -y
  
 ## LAB 3: Install and Verify
- - sudo apt install nginx -y
- - nginx -v
- - If command works → installed successfully
+  - sudo apt install nginx -y
+  - nginx -v
+  - If command works → installed successfully
 
- - Under the Hood (Important for DevOps)
+  - Under the Hood (Important for DevOps)
 
 When you install:
 
@@ -70,14 +70,14 @@ When you install:
 Problem: Software depends on other software
 
 Example:
-- sudo apt install docker
+ - sudo apt install docker
 	It installs:
 		containerd
 		runc
 		libraries
 		
 ## LAB 4: See Dependencies
-apt show nginx
+ - apt show nginx
 
 Look for:
 Depends:
@@ -102,8 +102,8 @@ Updating Packages :
 	- sudo apt upgrade -y
 
 ## LAB 6: Update System
-sudo apt update
-sudo apt upgrade -y
+ - sudo apt update
+ - sudo apt upgrade -y
 This is mandatory in real world DevOps before installation 
 
 Removing Packages
@@ -113,8 +113,8 @@ Remove completely:
  - sudo apt purge nginx
 
 ## LAB 7: Remove Package
-sudo apt remove nginx -y
-nginx -v
+ - sudo apt remove nginx -y
+ - nginx -v
 Should fail → means removed
 
 Cleaning System
@@ -133,7 +133,7 @@ RHEL
 These don’t resolve dependencies dangerous if misused
 
 ## LAB 8: List Installed Packages
-dpkg -l | grep nginx
+ - dpkg -l | grep nginx
 
 Debugging Issues (REAL DevOps Skill)
 
@@ -162,13 +162,13 @@ Fix it:
 ## 13. Installing from External Repos
 
 Example: Docker
-sudo apt install ca-certificates curl gnupg
+ - sudo apt install ca-certificates curl gnupg
 Add repo:
-sudo mkdir -p /etc/apt/keyrings
+ - sudo mkdir -p /etc/apt/keyrings
 
 ## LAB 10: Add Custom Repo (Basic)
-sudo add-apt-repository universe
-sudo apt update
+ - sudo add-apt-repository universe
+ - sudo apt update
 
 
 ## 14. What You Actually Need for DevOps
