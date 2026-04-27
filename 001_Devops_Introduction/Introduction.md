@@ -117,6 +117,10 @@ Microservices				: Deploying small, independent services to improve scalability.
     DevOps		    End-to-end delivery + reliability
 	
 ```
+# Summary
+ - Waterfall is a sequential model with delayed feedback, leading to high-risk releases.
+ - Agile introduces iterative development and faster feedback, but primarily focuses on the development lifecycle.
+ - DevOps extends Agile by integrating operations, enabling continuous integration, automated deployments, and real-time monitoring — which ensures faster, reliable, and scalable software delivery in production environments.
 
 
 
