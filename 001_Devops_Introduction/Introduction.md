@@ -101,7 +101,7 @@ What DevOps actually solves:
 	Stage			Focus
     Waterfall		Process
     Agile			Development speed
-    DevOps		End-to-end delivery + reliability
+    DevOps		    End-to-end delivery + reliability
 	
 ```
 
