@@ -4,7 +4,7 @@
 
  - Practically, it means I design and manage systems where code moves from commit to production through automated pipelines, with infrastructure provisioned as code, continuous monitoring, and built-in resilience.
 
- - For example, I work on CI/CD pipelines using tools like Jenkins or GitHub Actions, containerize applications with Docker, and orchestrate them using Kubernetes.”
+ - For example, I work on CI/CD pipelines using tools like Jenkins or GitHub Actions, containerize applications with Docker, and orchestrate them using Kubernetes.
 
  - Infrastructure is managed using IaC tools like Terraform, and I ensure observability using monitoring stacks like Prometheus and Grafana.
  
