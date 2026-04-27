@@ -97,11 +97,13 @@ What DevOps actually solves:
  - Fix production issues quickly
  
 #### Key difference
-  Stage			Focus
-- Waterfall		Process
-- Agile			Development speed
-- DevOps		End-to-end delivery + reliability
-
+```
+	Stage			Focus
+    Waterfall		Process
+    Agile			Development speed
+    DevOps		End-to-end delivery + reliability
+	
+```
 
 
 
