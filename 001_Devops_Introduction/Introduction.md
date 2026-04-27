@@ -11,9 +11,12 @@
  - Beyond tools, DevOps is about system design decisions like implementing blue-green deployments, auto-scaling, fault tolerance, and reducing MTTR through proper alerting and logging.
 
 
+---
+
+
 ## 2 You will find lot more definations - bit confused ? - Please go through below ?
 
-
+---
 
 ## 3 Waterfall model ?
 The Waterfall Model is a traditional, linear, and sequential software development methodology where projects move steadily downwards through distinct phases—requirements, design, implementation, testing, deployment, and maintenance(Monitoring).
@@ -30,6 +33,8 @@ Phases :
 - Cons: Inflexible to changes, high risk, and unsuitable for complex or long-term projects where requirements may change.
 
 
+---
+
 ## 4 Agile model 
 
 The Agile model is an iterative and incremental software development approach focusing on flexibility, continuous delivery, and collaboration. It breaks projects into small, time-boxed increments called sprints (typically 1–4 weeks), allowing teams to adapt to changing requirements rapidly, improve quality, and ensure high customer satisfaction through continuous feedback.
@@ -42,6 +47,9 @@ The Agile model is an iterative and incremental software development approach fo
 	- Infrastructure still messy
 	- Production issues still frequent
 
+
+---
+
 ## 5 DevOps = Agile + Automation + Operations + Ownership
 DevOps is a set of practices, cultural philosophies, and tools that unites software development (Dev) and IT operations (Ops) teams to shorten the development lifecycle and deliver high-quality software continuously. It removes silos, focusing on automation, collaboration, and shared responsibility to improve efficiency.
 
@@ -50,6 +58,8 @@ Infrastructure as Code (IaC): Managing infrastructure through code rather than m
 Monitoring & Alerting		: Real-time tracking of application performance (e.g., Prometheus, Grafana).
 Microservices				: Deploying small, independent services to improve scalability. 
 
+
+---
 
 ## 6 Waterfall vs Agile vs DevOps : Waterfall → Agile → DevOps
 
@@ -101,6 +111,7 @@ Microservices				: Deploying small, independent services to improve scalability.
 #### Key difference
 ```
 	Stage			Focus
+	=====           =========
     Waterfall		Process
     Agile			Development speed
     DevOps		    End-to-end delivery + reliability
