@@ -53,7 +53,7 @@ Microservices				: Deploying small, independent services to improve scalability.
 
 ## 6 Waterfall vs Agile vs DevOps : Waterfall → Agile → DevOps
 
- #### Waterfall : Sequential execution
+ #### 6.1 Waterfall : Sequential execution
  - Requirement → Design → Development → Testing → Release
  #### Reality in production:
  - Feedback comes too late
@@ -64,7 +64,7 @@ Microservices				: Deploying small, independent services to improve scalability.
  - Releases delayed
  - High failure rate
  
- ####  Agile : Break work into small iterations (sprints)
+ #### 6.2 Agile : Break work into small iterations (sprints)
  - Plan → Develop → Test → Repeat (every 2–3 weeks)
  - What Agile fixed:
  - Faster feedback
@@ -78,7 +78,7 @@ Microservices				: Deploying small, independent services to improve scalability.
  - Infrastructure scaling
  - Production failures
 
- #### DevOps
+ #### 6.3 DevOps
  - Code → Build → Test → Deploy → Monitor → Feedback → Improve
  - What DevOps actually solves:
  1 Continuous Integration
