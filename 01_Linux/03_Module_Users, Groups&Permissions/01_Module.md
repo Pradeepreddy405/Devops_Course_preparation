@@ -60,6 +60,7 @@ Most service users are configured with non-login shells such as /sbin/nologin.
 Only root can read this file.)
  
 ### 4 Group Management Commands
+ 
  #### 4.1 Create Group	: groupadd <Group_name>
 	- Eg: groupadd developers
 	
@@ -91,7 +92,8 @@ Only root can read this file.)
 	- a ----> append 
 	- G ----> supplementary groups
 	- Without -a, existing groups get removed.
-
+	- Eg: useradd -g devops -G docker,jenkins ravi
+	
  #### 5.5 Check User Groups
 	- groups ravi
 		
@@ -103,3 +105,17 @@ Only root can read this file.)
 	
  #### 5.7 Change User Primary Group
 	- usermod -g devops ravi
+	
+ #### userdel username
+	- userdel -r username    -> remove user with home directory
+
+ #### lock and Unlock account
+	- passwd -l username     -> lock account
+	- passwd -u username     -> unlock account
+
+ #### Password aging information
+	- chage -l username      -> To get the password aging info	
+	
+ #### Adds user to sudo administrative group.
+	- usermod -aG wheel ravi     # RHEL/CentOS
+	- usermod -aG sudo ravi      # Ubuntu
