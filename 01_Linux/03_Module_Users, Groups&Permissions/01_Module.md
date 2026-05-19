@@ -56,15 +56,38 @@
  - Password Hashes		: /etc/shadow
  
 ### 4 Group Management Commands
-	- Create Group	: groupadd <Group_name>
+	- 4.1 Create Group	: groupadd <Group_name>
 	- Eg: groupadd developers
 	
-	- Check the group after creating it
+	- 4.2 Check the group after creating it
 	- cat /etc/group | grep developers
 	
-	- Delete Group	: groupdel <Group_name>
+	- 4.3 Delete Group	: groupdel <Group_name>
 	- groupdel developers
 	
-	- Rename the group developers to devops
+	- 4.4 Rename the group developers to devops
 	- Modify Group Name : groupmod -n <New_Group_name> <Old_Group_name>
 	- groupmod -n devops developers
+
+### 5 User Management with Groups
+	- 5.1 Create User with Group : useradd -g group 
+	- useradd -g devops ravi
+	-g indicates ---> primary group
+	
+	- 5.2 Add User to Secondary Group
+	- usermod -aG docker ravi
+	- a ----> append 
+	- G ----> supplementary groups
+	- Without -a, existing groups get removed.
+
+	- 5.3. Check User Groups
+	- groups ravi
+		
+		OR
+	- id ravi
+	
+	- 5.4 Remove User from Group
+	- gpasswd -d ravi docker
+	
+	- 5.4 Change User Primary Group
+	- usermod -g devops ravi
