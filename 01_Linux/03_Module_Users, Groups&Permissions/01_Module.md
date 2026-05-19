@@ -106,16 +106,16 @@ Only root can read this file.)
  #### 5.7 Change User Primary Group
 	- usermod -g devops ravi
 	
- #### userdel username
+ #### 5.8 userdel username
 	- userdel -r username    -> remove user with home directory
 
- #### lock and Unlock account
+ #### 5.9 lock and Unlock account
 	- passwd -l username     -> lock account
 	- passwd -u username     -> unlock account
 
- #### Password aging information
+ #### 5.10 Password aging information
 	- chage -l username      -> To get the password aging info	
 	
- #### Adds user to sudo administrative group.
+ #### 5.11 Adds user to sudo administrative group.
 	- usermod -aG wheel ravi     # RHEL/CentOS
 	- usermod -aG sudo ravi      # Ubuntu
