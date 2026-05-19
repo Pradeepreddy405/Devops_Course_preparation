@@ -12,7 +12,7 @@
 	- Password
 	- GID (Primary Group ID)
 
- - Example: cat /etc/passwd
+ - Example: cat /etc/passwd ----> Output : ravi:x:1001:1001:Ravi:/home/ravi:/bin/bash
  - This file stores user account information.
 
  - There are mainly 3 types of users:
