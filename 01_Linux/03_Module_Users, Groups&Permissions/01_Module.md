@@ -19,7 +19,8 @@
 
  - Root user  	------>	Full administrative access
  - Normal users						------> Regular login users or Used by humans for interactive login and regular operations.
- - System/service users				------> Cannot login interactively and Used by services like nginx, mysql
+ - System/service users				------> Cannot login interactively and Used by services like nginx, mysql. System/service users are mainly used by applications and services like nginx, mysql, apache, etc.
+Most service users are configured with non-login shells such as /sbin/nologin.
 
 	- Example:
 	- root
