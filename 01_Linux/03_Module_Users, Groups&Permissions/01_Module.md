@@ -19,8 +19,7 @@
 
  - Root user  	                	------>	Full administrative access
  - Normal users						------> Regular login users or Used by humans for interactive login and regular operations.
- - System/service users				------> Cannot login interactively and Used by services like nginx, mysql. System/service users are mainly used by applications and services like nginx, mysql, apache, etc.
-Most service users are configured with non-login shells such as /sbin/nologin.
+ - System/service users				------> Cannot login interactively and Used by services like nginx, mysql. System/service users are typically used by applications and services such as nginx, mysql, and apache. Most of them are configured with non-login shells like /sbin/nologin.
 
 	- Example:
 	- root				------> Root user
@@ -92,30 +91,32 @@ Only root can read this file.)
 	- a ----> append 
 	- G ----> supplementary groups
 	- Without -a, existing groups get removed.
+	
+ #### 5.5 Adding Users to Primary and Secondary Group
 	- Eg: useradd -g devops -G docker,jenkins ravi
 	
- #### 5.5 Check User Groups
+ #### 5.6 Check User Groups
 	- groups ravi
 		
 		OR
 	- id ravi
 	
- #### 5.6 Remove User from Group
+ #### 5.7 Remove User from Group
 	- gpasswd -d ravi docker
 	
- #### 5.7 Change User Primary Group
+ #### 5.8 Change User Primary Group
 	- usermod -g devops ravi
 	
- #### 5.8 userdel username
+ #### 5.9 userdel username
 	- userdel -r username    -> remove user with home directory
 
- #### 5.9 lock and Unlock account
+ #### 5.10 lock and Unlock account
 	- passwd -l username     -> lock account
 	- passwd -u username     -> unlock account
 
- #### 5.10 Password aging information
+ #### 5.11 Password aging information
 	- chage -l username      -> To get the password aging info	
 	
- #### 5.11 Adds user to sudo administrative group.
+ #### 5.12 Adds user to sudo administrative group.
 	- usermod -aG wheel ravi     # RHEL/CentOS
 	- usermod -aG sudo ravi      # Ubuntu
