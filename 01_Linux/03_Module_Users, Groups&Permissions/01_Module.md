@@ -25,6 +25,10 @@
 	- root				------> Root user
 	- ec2-user			------> Normal User
 	- nginx				------> System User / Service User
+	
+	- 0 → root user
+	- 1-999 → system/service users
+	- 1000+ → normal users (varies by distro)
 
 ### 2 Groups
  - A group is a collection of users.
@@ -120,3 +124,4 @@ Only root can read this file.)
  #### 5.12 Adds user to sudo administrative group.
 	- usermod -aG wheel ravi     # RHEL/CentOS
 	- usermod -aG sudo ravi      # Ubuntu
+	
