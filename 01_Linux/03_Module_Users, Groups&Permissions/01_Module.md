@@ -17,15 +17,15 @@
 
  - There are mainly 3 types of users:
 
- - Root user  	------>	Full administrative access
+ - Root user  	                	------>	Full administrative access
  - Normal users						------> Regular login users or Used by humans for interactive login and regular operations.
  - System/service users				------> Cannot login interactively and Used by services like nginx, mysql. System/service users are mainly used by applications and services like nginx, mysql, apache, etc.
 Most service users are configured with non-login shells such as /sbin/nologin.
 
 	- Example:
-	- root
-	- ec2-user
-	- nginx
+	- root				------> Root user
+	- ec2-user			------> Normal User
+	- nginx				------> System User / Service User
 
 ### 2 Groups
  - A group is a collection of users.
@@ -56,7 +56,8 @@ Most service users are configured with non-login shells such as /sbin/nologin.
 ### 3 Important commands
  - User Information		: /etc/passwd
  - Group Information	: /etc/group
- - Password Hashes		: /etc/shadow
+ - Password Hashes		: /etc/shadow  (/etc/shadow stores encrypted password hashes and password aging information.
+Only root can read this file.)
  
 ### 4 Group Management Commands
  #### 4.1 Create Group	: groupadd <Group_name>
