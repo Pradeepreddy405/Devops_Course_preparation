@@ -30,44 +30,65 @@
 	- 1-999 → system/service users
 	- 1000+ → normal users (varies by distro)
 	
+ #### Sudo 	
+ - sudo allows permitted users to execute commands with elevated privileges.
+ - Usually used to run commands as root
+	
  #### User management 
  
- #### Create a User
+ #### 1.1 Create a User
 	- sudo useradd username
 	- Eg : sudo useradd john
 	
 	
- #### Create with home directory:
+ #### 1.2 Create with home directory:
 	- sudo useradd -m john
   
- #### Set password:
+ #### 1.3 Set password:
 	- sudo passwd john
 	
- #### Current user:
+ #### 1.4 Current user:
 	- whoami
 
- #### User Details:
+ #### 1.5 User Details:
 	- id username 
 	- Eg : id john
  
- #### Change username:
+ #### 1.6 Change username:
 	- sudo usermod -l newname oldname
 	- sudo usermod -l paul john
 
- #### Change home directory:
+ #### 1.7 Change home directory:
 	- sudo usermod -d /home/newdir -m john
 	
- #### Lock the account
+ #### 1.8 Lock the account
 	- sudo usermod -L john
 	
- #### Unlock the account	
+ #### 1.9 Unlock the account	
 	- sudo usermod -U john
 	
- #### Delete the User
+ #### 1.10 Delete the User
 	- sudo userdel john
- #### Delete the user with home directory	
+	
+ #### 1.11 Delete the user with home directory	
 	- sudo userdel -r john
  
+ #### 1.12 Password expiry info
+	- sudo chage -l john
+ 
+ #### 1.13 Force password change on next login
+	- sudo passwd -e john
+	
+ #### 1.14 Set account expiry date
+	- sudo chage -E 2026-12-31 john
+	
+ #### 1.15 Disable Interactive Login
+	- usermod -s /sbin/nologin username
+	
+ #### 1.16 Check Current Logged-In Users
+	- who or - w
+---
+
 ### 2 Groups
  - A group is a collection of users.
  - Groups are used to simplify permission management by assigning permissions to multiple users collectively.
@@ -94,12 +115,17 @@
 		- usermod -aG docker ravi
 		- Now ravi can access Docker commands.
 	```
+
+---
+
 ### 3 Important commands
  - User Information		: /etc/passwd
  - Group Information	: /etc/group
  - Password Hashes		: /etc/shadow  (/etc/shadow stores encrypted password hashes and password aging information.
 Only root can read this file.)
- 
+
+--- 
+
 ### 4 Group Management Commands
  
  #### 4.1 Create Group	: groupadd <Group_name>
@@ -115,6 +141,8 @@ Only root can read this file.)
  #### 4.4 Rename the group developers to devops
 	- Modify Group Name : groupmod -n <New_Group_name> <Old_Group_name>
 	- groupmod -n devops developers
+
+--- 
 
 ### 5 User Management with Groups
 	
