@@ -70,24 +70,24 @@
 	- groupmod -n devops developers
 
 ### 5 User Management with Groups
-	- 5.1 Create User with Group : useradd -g group 
+	#### 5.1 Create User with Group : useradd -g group 
 	- useradd -g devops ravi
 	-g indicates ---> primary group
 	
-	- 5.2 Add User to Secondary Group
+	#### 5.2 Add User to Secondary Group
 	- usermod -aG docker ravi
 	- a ----> append 
 	- G ----> supplementary groups
 	- Without -a, existing groups get removed.
 
-	- 5.3. Check User Groups
+	#### 5.3. Check User Groups
 	- groups ravi
 		
 		OR
 	- id ravi
 	
-	- 5.4 Remove User from Group
+	#### 5.4 Remove User from Group
 	- gpasswd -d ravi docker
 	
-	- 5.4 Change User Primary Group
+	#### 5.4 Change User Primary Group
 	- usermod -g devops ravi
