@@ -29,7 +29,45 @@
 	- 0 → root user
 	- 1-999 → system/service users
 	- 1000+ → normal users (varies by distro)
+	
+ #### User management 
+ 
+ #### Create a User
+	- sudo useradd username
+	- Eg : sudo useradd john
+	
+	
+ #### Create with home directory:
+	- sudo useradd -m john
+  
+ #### Set password:
+	- sudo passwd john
+	
+ #### Current user:
+	- whoami
 
+ #### User Details:
+	- id username 
+	- Eg : id john
+ 
+ #### Change username:
+	- sudo usermod -l newname oldname
+	- sudo usermod -l paul john
+
+ #### Change home directory:
+	- sudo usermod -d /home/newdir -m john
+	
+ #### Lock the account
+	- sudo usermod -L john
+	
+ #### Unlock the account	
+	- sudo usermod -U john
+	
+ #### Delete the User
+	- sudo userdel john
+ #### Delete the user with home directory	
+	- sudo userdel -r john
+ 
 ### 2 Groups
  - A group is a collection of users.
  - Groups are used to simplify permission management by assigning permissions to multiple users collectively.
