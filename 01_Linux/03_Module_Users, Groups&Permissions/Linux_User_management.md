@@ -87,20 +87,20 @@
 				3 Use your normal user account for day-to-day work and run administrative commands with sudo only when needed. This minimizes the risk of accidental damage while maintaining security and accountability.
 				
 		### 2.2 System Users
-			- System users are special accounts created for running system services and background processes.
-			- These accounts are not intended for human login, Instead, they provide isolated identities for applications and services.
-				- Examples : 
-						- apache
-						- nginx
-						- mysql
-						- postgres
-						- sshd
-						- daemon
-						- nobody
-						- systemd-network
+		- System users are special accounts created for running system services and background processes.
+		- These accounts are not intended for human login, Instead, they provide isolated identities for applications and services.
+			- Examples : 
+					- apache
+					- nginx
+					- mysql
+					- postgres
+					- sshd
+					- daemon
+					- nobody
+					- systemd-network
 						
 		### 2.2.1 Why Do We Need System Users?
-			- Imagine a web server running as the root user.If an attacker exploits a vulnerability in the web server,they immediately gain root access to the entire operating system.If incase attacker can gain access ,that would allow them to do below things
+		- Imagine a web server running as the root user.If an attacker exploits a vulnerability in the web server,they immediately gain root access to the entire operating system.If incase attacker can gain access ,that would allow them to do below things
 			
 			- Delete files
 			- Install malware
@@ -123,12 +123,12 @@
 					- Every service receives only the permissions it actually needs.
 					
 		### 2.2.2 characteristics of System User
-			- Usually created automatically during software installation.
-			- Primarily used by operating system services.
-			- Typically cannot log in interactively.
-			- Own service-related files and processes.
-			- Have limited permissions.
-			- Improve isolation between applications.
+		- Usually created automatically during software installation.
+		- Primarily used by operating system services.
+		- Typically cannot log in interactively.
+		- Own service-related files and processes.
+		- Have limited permissions.
+		- Improve isolation between applications.
 			
 			#### Lets consider real time example
 			- Consider a Linux server running:
@@ -144,4 +144,3 @@
 				- docker
 
 			If Jenkins is compromised, the attacker does not automatically gain access to MySQL files because each service operates under a different user identity. This separation greatly improves system security.
-							-
