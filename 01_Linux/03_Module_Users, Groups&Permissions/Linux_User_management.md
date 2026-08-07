@@ -33,12 +33,10 @@
 - Linux is a multi-user operating system, which means multiple users can use the same operating system simultaneously. Every person, application, or service that interacts with the operating system does so through a user account.
 
 	- However, not all users are the same. Linux categorizes users based on their purpose and privileges.
-
 	- The three major types of users are:
-
-		1 Root User
-		2 System Users
-		3 Normal Users
+		- 1 Root User
+		- 2 System Users
+		- 3 Normal Users
 
 	- Each type has a different role in maintaining the security and stability of the operating system.
 	
