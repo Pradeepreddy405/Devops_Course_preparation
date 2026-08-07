@@ -132,15 +132,15 @@
 			
 			#### Lets consider real time example
 			- Consider a Linux server running:
-				1 Nginx
-				2 MySQL
-				3 Jenkins
-				4 Docker
+			- 1 Nginx
+			- 2 MySQL
+			- 3 Jenkins
+			- 4 Docker
 				
 			Each service runs under its own user account:
-				- nginx
-				- mysql
-				- jenkins
-				- docker
+			- nginx
+			- mysql
+			- jenkins
+			- docker
 
 			If Jenkins is compromised, the attacker does not automatically gain access to MySQL files because each service operates under a different user identity. This separation greatly improves system security.
