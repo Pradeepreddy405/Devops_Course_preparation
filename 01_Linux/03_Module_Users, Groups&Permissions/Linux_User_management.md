@@ -64,16 +64,15 @@
 			
 		- If something can be done on Linux, the root user can do it.
 			
-		### 2.1.4 Why is Root Dangerous?
-		
+		### 2.1.4 Why is Root Dangerous?		
 			- Since root has unrestricted access, even a small mistake can damage the entire operating system.
 			
 			#### Eamples
-				- rm -rf /			
+				1 rm -rf /			
 						
 						This command attempts to delete everything from the root filesystem.
 				
-				- chmod -R 777 /
+				2 chmod -R 777 /
 
 						would make every file writable, creating a serious security risk.Because of this, administrators avoid logging in directly as root for daily tasks.Instead, they temporarily obtain administrative privileges using commands such as
 
