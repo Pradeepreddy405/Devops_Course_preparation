@@ -150,3 +150,43 @@
 			
 			#### Summary 
 			System users are non-human accounts created for operating system services and applications. Each service runs using its own dedicated user account instead of root, ensuring isolation and limiting the impact of security vulnerabilities.
+			
+			
+		### 3. Normal Users
+		Normal users are regular human users who interact with the operating system.
+		
+			Examples:rahul, john, developer, ubuntu, ec2-user, student
+		Unlike the systemUsers, normal users are intended to log in and perform daily tasks.
+		
+			#### 3.1 What can Normal Users can do ?
+				- Log into the operating system.
+				- Execute commands.
+				- Create files and directories.
+				- Install software inside their home directory (where permitted).
+				- Access applications.
+				- Connect to remote servers.
+				- Develop and deploy applications.
+				- However, they cannot modify protected system files unless administrative privileges are granted.
+
+				#### 3.1.1 Example
+				1 Suppose user rahul creates " report.txt " . Eventually the owner becomes rahul. If Another normal user named john or someother user cannot modify the file unless appropriate permissions are granted.This ensures data isolation between users.
+				
+				2 On AWS EC2 instances once you login into instance either Ubuntu or Amaozn linux or centos default usernames are 
+				- ec2-user
+				- Ubuntu
+				- ubuntu
+				
+				These are normal users provided for administrators to log in securely. When administrative work is required sudo is used to temporarily obtain elevated privileges.
+				
+				#### Characteristics of Normal User	
+				- Intended for human users.
+				- Can log in using SSH or a console.
+				- Own personal files.
+				- Have individual home directories (/home/ec2-user , /home/rahul , /home/John.
+				- Limited permissions by default.
+				- Can become administrators through sudo if authorized.
+
+	### Summary 
+	Linux classifies users into three main categories: Root, System, and Normal users. The root user (UID 0) has unrestricted administrative access to the operating system. System users are dedicated accounts used by services such as Nginx, MySQL, and SSHD, allowing applications to run with only the permissions they require. Normal users are intended for human interaction and perform everyday tasks with limited privileges. When administrative actions are needed, they temporarily elevate their permissions using sudo. This design provides security, isolation, accountability, and controlled access, making Linux suitable for secure multi-user environments and production cloud infrastructure.
+	
+---
