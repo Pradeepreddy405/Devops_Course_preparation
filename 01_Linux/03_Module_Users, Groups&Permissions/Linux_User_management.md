@@ -86,6 +86,9 @@
 				Best practice
 				3 Use your normal user account for day-to-day work and run administrative commands with sudo only when needed. This minimizes the risk of accidental damage while maintaining security and accountability.
 				
+				#### Summary 
+				The root user is the Linux superuser with UID 0. It has unrestricted access to every resource in the operating system and bypasses almost all permission checks. Because of its unlimited privileges, administrators use it cautiously and generally perform administrative tasks through sudo rather than logging in directly as root.
+				
 		### 2.2 System Users
 		- System users are special accounts created for running system services and background processes.
 		- These accounts are not intended for human login, Instead, they provide isolated identities for applications and services.
@@ -144,3 +147,6 @@
 			- docker
 
 			If Jenkins is compromised, the attacker does not automatically gain access to MySQL files because each service operates under a different user identity. This separation greatly improves system security.
+			
+			#### Summary 
+			System users are non-human accounts created for operating system services and applications. Each service runs using its own dedicated user account instead of root, ensuring isolation and limiting the impact of security vulnerabilities.
