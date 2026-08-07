@@ -43,34 +43,28 @@
 	- Each type has a different role in maintaining the security and stability of the operating system.
 	
 		#### 2.1 Root User
-
-			Username : root
-			UID      : 0
+		- Username : root
+		- UID      : 0
 
 
 		#### 2.1.1 What is the Root User?
-		
-			- The root user is the superuser or administrator of the Linux operating system.
-
-			- Unlike other users, the root user has unrestricted access to every file, directory, process, device, and configuration on the system.
-
-			- The Linux kernel recognizes any user with UID (User ID) 0 as the root user.
-
-			- Because of this special UID, root bypasses almost all permission checks performed by Linux.
+		- The root user is the superuser or administrator of the Linux operating system.
+		- Unlike other users, the root user has unrestricted access to every file, directory, process, device, and configuration on the system.
+		- The Linux kernel recognizes any user with UID (User ID) 0 as the root user.
+		- Because of this special UID, root bypasses almost all permission checks performed by Linux.
 			
-		#### 2.1.3	Root user characteristics
-		
-			- Has complete administrative privileges.
-			- Can access every file regardless of permissions.
-			- Can install or remove software.
-			- Can create, modify, or delete any user account.
-			- Can start or stop any service.
-			- Can modify kernel parameters.
-			- Can change file ownership and permissions.
-			- Can mount or unmount storage devices.
-			- Can shut down or reboot the system.
+		#### 2.1.3	Root user characteristics		
+		- Has complete administrative privileges.
+		- Can access every file regardless of permissions.
+		- Can install or remove software.
+		- Can create, modify, or delete any user account.
+		- Can start or stop any service.
+		- Can modify kernel parameters.
+		- Can change file ownership and permissions.
+		- Can mount or unmount storage devices.
+		- Can shut down or reboot the system.
 			
-			- If something can be done on Linux, the root user can do it.
+		- If something can be done on Linux, the root user can do it.
 			
 		#### 2.1.4 Why is Root Dangerous?
 		
