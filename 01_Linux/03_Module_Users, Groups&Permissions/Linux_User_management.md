@@ -152,13 +152,13 @@
 			System users are non-human accounts created for operating system services and applications. Each service runs using its own dedicated user account instead of root, ensuring isolation and limiting the impact of security vulnerabilities.
 			
 			
-		### 3. Normal Users
+		### 2.3 Normal Users
 		Normal users are regular human users who interact with the operating system.
 		
 			Examples:rahul, john, developer, ubuntu, ec2-user, student
 		Unlike the systemUsers, normal users are intended to log in and perform daily tasks.
 		
-			#### 3.1 What can Normal Users can do ?
+			#### 2.3.1 What can Normal Users can do ?
 				- Log into the operating system.
 				- Execute commands.
 				- Create files and directories.
@@ -168,7 +168,7 @@
 				- Develop and deploy applications.
 				- However, they cannot modify protected system files unless administrative privileges are granted.
 
-				#### 3.1.1 Example
+				#### 2.3.2 Example
 				1 Suppose user rahul creates " report.txt " . Eventually the owner becomes rahul. If Another normal user named john or someother user cannot modify the file unless appropriate permissions are granted.This ensures data isolation between users.
 				
 				2 On AWS EC2 instances once you login into instance either Ubuntu or Amaozn linux or centos default usernames are 
@@ -178,7 +178,7 @@
 				
 				These are normal users provided for administrators to log in securely. When administrative work is required sudo is used to temporarily obtain elevated privileges.
 				
-				#### Characteristics of Normal User	
+				#### 2.3.3 Characteristics of Normal User	
 				- Intended for human users.
 				- Can log in using SSH or a console.
 				- Own personal files.
