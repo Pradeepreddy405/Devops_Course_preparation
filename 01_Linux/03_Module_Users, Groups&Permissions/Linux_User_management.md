@@ -67,3 +67,23 @@
 		### 2.1.4 Why is Root Dangerous?
 		
 			- Since root has unrestricted access, even a small mistake can damage the entire operating system.
+			
+			#### Eamples
+				- rm -rf /			
+						
+						This command attempts to delete everything from the root filesystem.
+				
+				- chmod -R 777 /
+
+						would make every file writable, creating a serious security risk.Because of this, administrators avoid logging in directly as root for daily tasks.Instead, they temporarily obtain administrative privileges using commands such as
+
+						sudo command
+							
+							Examples:
+							
+								- sudo systemctl restart nginx
+								- sudo useradd devops
+								- sudo chmod 644 index.html
+								- sudo kill -9 12345
+								- sudo mount /dev/xvdf1 /data
+								- sudo -i, sudo su -
