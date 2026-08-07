@@ -131,7 +131,7 @@
 		- Improve isolation between applications.
 			
 			#### Lets consider real time example
-			- Consider a Linux server running:
+			Consider a Linux server running:
 			- 1 Nginx
 			- 2 MySQL
 			- 3 Jenkins
