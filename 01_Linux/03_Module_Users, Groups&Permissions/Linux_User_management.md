@@ -1,6 +1,6 @@
 ## Linux User management
 
-	Linux uses users to identify who is accessing the system. Every file, process, and resource belongs to a user and a group. This prevents unauthorized access, protects critical system files, keeps users isolated from one another, allows administrators to track actions, and enables controlled sharing of resources. Without user management, Linux would not be a secure multi-user operating system.
+- Linux uses users to identify who is accessing the system. Every file, process, and resource belongs to a user and a group. This prevents unauthorized access, protects critical system files, keeps users isolated from one another, allows administrators to track actions, and enables controlled sharing of resources. Without user management, Linux would not be a secure multi-user operating system.
 		
 ### 1 Why Linux Needs Users ?
 
