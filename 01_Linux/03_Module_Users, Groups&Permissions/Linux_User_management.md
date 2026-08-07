@@ -72,9 +72,7 @@
 					This command attempts to delete everything from the root filesystem.
 				
 				2 chmod -R 777 /
-					would make every file writable, creating a serious security risk.Because of this, administrators avoid logging in directly as root for daily tasks.Instead, they temporarily obtain administrative privileges using commands such as
-
-						sudo command
+					would make every file writable, creating a serious security risk.Because of this, administrators avoid logging in directly as root for daily tasks.Instead, they temporarily obtain administrative privileges using commands such as "sudo command"
 							
 							Examples:
 							
