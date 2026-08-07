@@ -4,9 +4,10 @@
 		
 ### 1 Why Linux Needs Users ?
 
-	Linux is designed as a multi-user operating system, meaning multiple users can access and use the same system simultaneously. To maintain security, stability, and efficient resource management, Linux identifies every user and controls what they are allowed to do.
+- Linux is designed as a multi-user operating system, meaning multiple users can access and use the same system simultaneously. To maintain security, stability, and efficient resource management, Linux identifies every user and controls what they are allowed to do.
 
-	#### 1.1 An easy way to understand this concept is to imagine Linux as an apartment building:
+	#### 1.1 An easy way to understand this concept is to imagine Linux as an apartment building
+	
 			- Every resident represents a user.
 			- Every family represents a group of users who share common permissions.
 			- The security guard represents the authentication system, which verifies the identity of anyone attempting to access the building.
@@ -31,7 +32,7 @@
 
 ### 2 Types of Users ?
 	
-	- Linux is a multi-user operating system, which means multiple users can use the same operating system simultaneously. Every person, application, or service that interacts with the operating system does so through a user account.
+- Linux is a multi-user operating system, which means multiple users can use the same operating system simultaneously. Every person, application, or service that interacts with the operating system does so through a user account.
 
 	- However, not all users are the same. Linux categorizes users based on their purpose and privileges.
 
