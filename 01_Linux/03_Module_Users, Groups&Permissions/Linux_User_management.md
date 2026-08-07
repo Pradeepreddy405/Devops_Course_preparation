@@ -65,7 +65,7 @@
 		- If something can be done on Linux, the root user can do it.
 			
 		### 2.1.4 Why is Root Dangerous?		
-			- Since root has unrestricted access, even a small mistake can damage the entire operating system.
+		- Since root has unrestricted access, even a small mistake can damage the entire operating system.
 			
 			#### Eamples
 				1 rm -rf /			
