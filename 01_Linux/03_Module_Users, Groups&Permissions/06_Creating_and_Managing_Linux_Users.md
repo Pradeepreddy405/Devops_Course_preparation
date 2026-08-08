@@ -1,4 +1,4 @@
-### 6. Creating and Managing Linux Users
+## 6. Creating and Managing Linux Users
 
 - Linux user management is one of the most important administration skills for a DevOps/Cloud Engineer.
 In real production environments, engineers create users for developers, administrators, CI/CD systems, monitoring tools, application processes, and automation.
@@ -22,7 +22,7 @@ In real production environments, engineers create users for developers, administ
 	```
 	- Each Linux user has an identity represented primarily by a UID, and users can belong to one or more groups.
 	
-	#### 6.1 Create a User
+	## 6.1 Create a User
 	- Basic command : sudo useradd rahul
 		- This creates the user rahul.
 		- Verify : id rahul
@@ -30,7 +30,7 @@ In real production environments, engineers create users for developers, administ
 	- You can also check:
 		- getent passwd rahul
 	
-	### 6.2 Create a User With a Home Directory
+	## 6.2 Create a User With a Home Directory
 	- Use : sudo useradd -m rahul
 	- The -m option creates: /home/rahul
 		- Verify: ls -ld /home/rahul
