@@ -30,3 +30,16 @@ In real production environments, engineers create users for developers, administ
 	- You can also check:
 		- getent passwd rahul
 	
+	### 6.2 Create a User With a Home Directory
+	- Use : sudo useradd -m rahul
+	- The -m option creates: /home/rahul
+		- Verify: ls -ld /home/rahul
+	
+	- You can also specify the login shell while creating user :
+		- sudo useradd -m -s /bin/bash rahul
+
+	- This creates the user with:
+		- Username:		rahul
+		- Home    :     /home/rahul
+		- Shell   :    	/bin/bash
+	
