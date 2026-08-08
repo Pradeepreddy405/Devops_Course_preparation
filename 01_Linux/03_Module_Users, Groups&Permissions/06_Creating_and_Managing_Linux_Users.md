@@ -176,3 +176,86 @@ In real production environments, engineers create users for developers, administ
 	
 	- You need to understand what the account is being used for before deleting it.
 	
+	## 14. Check Whether a User Exists
+	- Useful command: id rahul
+	- If the user doesn't exist, you'll get an error.
+	- Another useful command:
+		- getent passwd rahul
+
+	- For automation scripts, this is particularly useful.
+
+		```
+		Example:
+		
+		if id rahul >/dev/null 2>&1
+		then
+			echo "User exists"
+		else
+			echo "User does not exist"
+		fi
+		
+		```
+	This introduces you to Linux administration + shell automation, which is important for DevOps.
+
+	## 6.1.15 Check User's Groups
+	- Command: groups rahul	or id rahul
+	- Example:
+		- uid=1001(rahul) gid=1001(rahul) groups=1001(rahul),1002(developers),1003(deployment)
+		- This tells you:
+			UID
+			Primary GID
+			Supplementary groups
+
+	## 6.1.16 Add User to Sudo/Admin Group
+	- On Ubuntu/Debian systems: " sudo usermod -aG sudo rahul "
+	
+	- On RHEL/Amazon Linux systems, the administrative group is commonly: " sudo usermod -aG wheel rahul"
+	
+	- Then verify : id rahul
+	
+	- Important: Don't assume the same administrative group exists on every Linux distribution.
+		- For example:
+			- Ubuntu/Debian → sudo
+			- RHEL/CentOS/Amazon Linux → wheel
+
+	## 6.1.17 Switch to Another User
+	You can switch users with:
+	- Command:  su - rahul
+	- The  " - " is important because it creates a login shell and loads Rahul's environment.
+
+	- After you finish working as Rahul, you can return to the previous user with Command"/ exit "
+	- The exit command closes the current user's shell and returns you to the previous user.
+
+	## 6.1.18 SSH User Management — Very Important for Cloud
+	- In AWS environments, you commonly connect to EC2 using SSH.
+	- For example:
+		- ssh -i key.pem ec2-user@<server-ip>
+
+	- For another administrator:
+		- sudo useradd -m devops
+		- sudo passwd devops
+
+	- But for production SSH access, SSH keys are generally preferred over password authentication.
+	- The user's public key is commonly placed in:
+			- 1  /home/devops/.ssh/authorized_keys
+			- 2  Permissions matter:
+			- 3  chmod 700 /home/devops/.ssh
+			- 4  chmod 600 /home/devops/.ssh/authorized_keys
+		- Ownership should also be correct:
+		- sudo chown -R devops:devops /home/devops/.ssh
+		- This connects Linux user management directly to AWS EC2 administration and cloud security.
+
+	## 6.1.19 Service Accounts
+	- Not every Linux user represents a human. Applications often run under dedicated accounts.
+	- For example:
+		- 1 nginx
+		- 2 jenkins
+		- 3 prometheus
+		- 4 postgres
+
+	- You can create a service account such as:
+		- sudo useradd -r nginx
+		-r creates a system account.
+
+	- A service account helps enforce the principle of least privilege:
+	- Run each application with only the permissions it actually needs. For example, instead of running the Nginx application as the root user, you can run it as a dedicated service account such as the nginx user. This reduces the impact of a compromise.
