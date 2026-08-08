@@ -2,14 +2,15 @@
 
 - Whenever you create a user, assign a password, create a group, or give sudo access, Linux stores that information in a few important files.
 
-
-	File			Purpose
-	====			==============
-	/etc/passwd		User information
-	/etc/shadow		User passwords
-	/etc/group		Group information
-	/etc/gshadow	Secure group passwords & admins
+	```
+		File			Purpose
+		====			==============
+		/etc/passwd		User information
+		/etc/shadow		User passwords
+		/etc/group		Group information
+		/etc/gshadow	Secure group passwords & admins
 	
+	```
 	#### 5.1 /etc/passwd - User information
 	- It stores basic information about every user on the system.
 	- It does not store passwords anymore.
