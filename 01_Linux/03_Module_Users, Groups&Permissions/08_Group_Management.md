@@ -129,3 +129,6 @@
 		View all groups							cat /etc/group
 	
 	```
+	
+### Summary
+- Linux groups allow us to manage permissions for multiple users collectively. Instead of assigning permissions to every user individually, we create a group, add the required users to it, and assign ownership or permissions to that group. In production DevOps environments, this makes access management scalable and easier to maintain. For example, we can create a developers group, add developers to it, and grant the group access to an application directory.
