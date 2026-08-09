@@ -31,11 +31,11 @@
 ---
 		
 ### 8.1.1 Create a Group
-	- Create a group called developers:
-		- sudo groupadd developers
+- Create a group called developers:
+- sudo groupadd developers
 	
-		- Verify:
-			- getent group developers
+	- Verify:
+		- getent group developers
 	
 		- Example:
 			- developers:x:1002:
@@ -47,8 +47,8 @@
 ---
 	
 ### 8.2 Delete a Group
-	- Delete the developers group:
-	- sudo groupdel developers
+- Delete the developers group:
+- sudo groupdel developers
 	
 	- Verify:
 		- getent group developers
@@ -58,8 +58,8 @@
 ---
 
 ### 8.3 Add a User to a Group
-	- Add Rahul to the developers group:
-	- sudo usermod -aG developers rahul
+- Add Rahul to the developers group:
+- sudo usermod -aG developers rahul
 	- What does -aG mean?
 		
 		-a  → append
@@ -67,20 +67,19 @@
 
 		- So " sudo usermod -aG developers rahul ", means Adding rahul to the developers supplementary group without removing his existing supplementary groups.
 
-	- Caution : Do not accidentally use:
-	- "sudo usermod -G developers rahul ", because -G without -a can replace the user's existing supplementary groups.
-
-	- For normal group addition, use: " sudo usermod -aG developers rahul"
+- Caution : Do not accidentally use:
+- "sudo usermod -G developers rahul ", because -G without -a can replace the user's existing supplementary groups.
+- For normal group addition, use: " sudo usermod -aG developers rahul"
 
 ---
 		
 ### 8.4 View a User's Groups
-	- Check which groups Rahul belongs to:
-		- groups rahul (groups username)
+- Check which groups Rahul belongs to:
+- groups rahul (groups username)
 	- Example:
 	- rahul : rahul developers
 	
-	- You can also use:
+- You can also use:
 		- id rahul
 			- Example:
 			- uid=1001(rahul) gid=1001(rahul) groups=1001(rahul),1002(developers)
@@ -92,8 +91,8 @@
 ---
 					
 ### 8.5 Primary Group vs Supplementary Group
-	- This is an important concept for DevOps interviews.
-	- A Linux user has a primary group and can have multiple supplementary groups.
+- This is an important concept for DevOps interviews.
+- A Linux user has a primary group and can have multiple supplementary groups.
 
 	- For example:
 		- User: id rahul
