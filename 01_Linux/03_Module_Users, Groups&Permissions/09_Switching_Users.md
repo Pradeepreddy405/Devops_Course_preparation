@@ -51,6 +51,7 @@
 		- root
 
 	- For a clean root login environment, sudo -i is generally preferred over sudo su.
+	- In production, avoid staying as root unnecessarily.
 	
 ---
 
