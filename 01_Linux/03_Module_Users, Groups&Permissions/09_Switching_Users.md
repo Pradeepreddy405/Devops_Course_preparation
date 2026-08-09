@@ -44,10 +44,10 @@
 	- Method 2: sudo -i
 	- sudo -i : This starts an interactive root login shell.
 
-	Verify:
+	- Verify:
 		- whoami
 
-	Output:
+	- Output:
 		- root
 
 	- For a clean root login environment, sudo -i is generally preferred over sudo su.
