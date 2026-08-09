@@ -31,6 +31,7 @@ In real production environments, engineers create users for developers, administ
 		- getent passwd rahul
 	
 	## 6.1.2 Create a User With a Home Directory
+	- A Linux user's home directory is their personal working environment. For a normal user such as Rahul, it is typically /home/rahul. It contains personal files and user-specific configuration such as .bashrc, .profile, and .ssh. When creating users with useradd, I can use useradd -m username to explicitly create the user's home directory. Linux can populate the initial configuration from /etc/skel.
 	- Command : sudo useradd -m rahul
 	- The -m option creates: /home/rahul
 		- Verify: ls -ld /home/rahul
@@ -176,7 +177,7 @@ In real production environments, engineers create users for developers, administ
 	
 	- You need to understand what the account is being used for before deleting it.
 	
-	## 14. Check Whether a User Exists
+	## 14. check Whether a User Exists
 	- Useful command: id rahul
 	- If the user doesn't exist, you'll get an error.
 	- Another useful command:
@@ -223,7 +224,7 @@ In real production environments, engineers create users for developers, administ
 	- Command:  su - rahul
 	- The  " - " is important because it creates a login shell and loads Rahul's environment.
 
-	- After you finish working as Rahul, you can return to the previous user with Command"/ exit "
+	- After you finish working as Rahul, you can return to the previous user with Command"" exit "
 	- The exit command closes the current user's shell and returns you to the previous user.
 
 	## 6.1.18 SSH User Management — Very Important for Cloud
