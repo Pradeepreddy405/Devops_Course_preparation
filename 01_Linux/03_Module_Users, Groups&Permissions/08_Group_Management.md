@@ -1,4 +1,4 @@
-### 8 Group Management
+## 8 Group Management
 	- Linux groups are used to manage permissions for multiple users at the same time.
 
 	- For example, suppose a company has multiple employees working in different teams or departments. Giving permissions to each employee individually can become difficult and time-consuming.
