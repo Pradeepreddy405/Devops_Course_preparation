@@ -72,7 +72,7 @@
 	- Caution: exit does not shut down the server. It simply exits the current shell and returns you to the previous shell/user.
 	- You can also press: Ctrl + D to exit the current shell.
 
-### 9.1.4 su vs su - vs sudo -i
+### 9.1.4 su (vs) su - (vs) sudo -i
 	```
 		Command			Purpose
 		=======			========
