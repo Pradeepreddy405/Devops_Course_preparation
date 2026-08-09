@@ -30,7 +30,7 @@
 
 ---
 		
-	### 8.1.1 Create a Group
+### 8.1.1 Create a Group
 	- Create a group called developers:
 		- sudo groupadd developers
 	
@@ -46,7 +46,7 @@
 	
 ---
 	
-	### 8.2 Delete a Group
+### 8.2 Delete a Group
 	- Delete the developers group:
 	- sudo groupdel developers
 	
@@ -57,7 +57,7 @@
 
 ---
 
-	### 8.3 Add a User to a Group
+### 8.3 Add a User to a Group
 	- Add Rahul to the developers group:
 	- sudo usermod -aG developers rahul
 	- What does -aG mean?
@@ -74,7 +74,7 @@
 
 ---
 		
-	### 8.4 View a User's Groups
+### 8.4 View a User's Groups
 	- Check which groups Rahul belongs to:
 		- groups rahul (groups username)
 	- Example:
@@ -91,7 +91,7 @@
 
 ---
 					
-	### 8.5 Primary Group vs Supplementary Group
+### 8.5 Primary Group vs Supplementary Group
 	- This is an important concept for DevOps interviews.
 	- A Linux user has a primary group and can have multiple supplementary groups.
 
@@ -117,7 +117,7 @@
 			
 ---
 	
-	### 8.6 Cheat sheet commands
+### 8.6 Cheat sheet commands
 	```
 		Task									Command
 		============================== 			==========================
