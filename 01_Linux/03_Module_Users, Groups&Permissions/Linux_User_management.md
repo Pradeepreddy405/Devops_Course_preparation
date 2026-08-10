@@ -190,3 +190,44 @@
 	Linux classifies users into three main categories: Root, System, and Normal users. The root user (UID 0) has unrestricted administrative access to the operating system. System users are dedicated accounts used by services such as Nginx, MySQL, and SSHD, allowing applications to run with only the permissions they require. Normal users are intended for human interaction and perform everyday tasks with limited privileges. When administrative actions are needed, they temporarily elevate their permissions using sudo. This design provides security, isolation, accountability, and controlled access, making Linux suitable for secure multi-user environments and production cloud infrastructure.
 	
 ---
+
+### 3 User IDs (UID)
+
+- In Linux, every user is assigned a User ID (UID), which is a unique numerical identifier.Although humans recognize users by names such as rahul, john, or root, the Linux kernel does not use usernames internally. Instead, it identifies every user by their UID.
+	
+	For example:
+		Username    UID
+		root        0
+		john        1001
+		rahul       1002
+Usernames are designed for humans, while UIDs are designed for the Linux kernel.
+When you log into a Linux system, your username is first converted into its corresponding UID. From that point onward, the kernel uses the UID—not the username—to determine ownership, permissions, and access rights.
+
+
+
+---
+### 4 Groups
+-Imagine you work in a software company.
+
+There are 100 Developers, 30 Testers, 15 Database Administrators, 10 DevOps Engineers and the company has thousands of files. Now suppose every developer needs access to the source code.Just image without groups, Linux would have to give permissions individually.
+
+	1 John   → Access
+	2 Rahul  → Access
+	3 Ankit  → Access
+	4 Priya  → Access
+	5 Kiran  → Access
+	
+	...upto 100			
+
+If a new developer joins,you must manually give permissions and if someone leaves the organization or company you must manually remove permissions. This quickly becomes impossible to manage and very difficult to manage.
+
+To avoid this Linux introduces Groups. Instead of managing permissions for every user, manage permissions for the entire team.
+
+		Developers Group
+		John
+		Rahul
+		Ankit
+		Priya
+		Kiran
+		
+Now give permissions only to the Developers group. Every member automatically gets those permissions.
