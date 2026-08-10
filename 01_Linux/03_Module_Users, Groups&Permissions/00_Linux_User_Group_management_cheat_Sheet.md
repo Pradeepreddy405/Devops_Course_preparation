@@ -90,11 +90,11 @@
 ---
 
 ## 2 Groups
-	- A group is a collection of users.
-	- Groups are used to simplify permission management by assigning permissions to multiple users collectively.
-	- A user can belong to multiple groups.
-	- Check the groups 
-	- Command : groups username
+- A group is a collection of users.
+- Groups are used to simplify permission management by assigning permissions to multiple users collectively.
+- A user can belong to multiple groups.
+- Check the groups 
+- Command : groups username
 	
 	### 2.1 Primary Group
 	- Every user has one default group.
@@ -119,10 +119,10 @@
 ---
 
 ## 3 Important commands
-	- User Information		: /etc/passwd
-	- Group Information	: /etc/group
-	- Password Hashes		: /etc/shadow  (/etc/shadow stores encrypted password hashes and password aging information.
-	- Only root can read this file.)
+- User Information		: /etc/passwd
+- Group Information	: /etc/group
+- Password Hashes		: /etc/shadow  (/etc/shadow stores encrypted password hashes and password aging information.
+- Only root can read this file.)
 
 --- 
 
