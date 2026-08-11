@@ -4,7 +4,8 @@
 
 - These are executable programs. When Linux executes a program, the operating system creates a process.
 
-	- BASIC WORKFLOW
+	### BASIC WORKFLOW
+	
 	```
 			Software / Program
 				↓
@@ -19,27 +20,29 @@
 			User Request
 
 	```
-### What is a program?
+## What is a program?
 - A program is a file containing instructions that tell the computer what to do.
 - For example " nginx " is software that provides a web server.
 - The actual executable might be located at " /usr/sbin/nginx "
 - You can think of it as:
 	
-	Program
-		│
-		│ contains instructions
-		▼
-	Executable file
+	```
+		Program
+			│
+			│ contains instructions
+			▼
+		Executable file
+		
+	```
+- But simply having the file on disk does not mean Nginx is running.Once you start running this "systemctl start nginx"
 
-But simply having the file on disk does not mean Nginx is running.Once you start running this "systemctl start nginx"
-
-Step 1 : Find the executable
-Step 2 : Load it into memory
-Step 3 : Create a process
-Step 4 : Assign the process a PID
-Step 5 : Allocate resources
-Step 6 : Schedule it on the CPU
-Step 7 : Start executing its instructions
+	- Step 1 : Find the executable
+	- Step 2 : Load it into memory
+	- Step 3 : Create a process
+	- Step 4 : Assign the process a PID
+	- Step 5 : Allocate resources
+	- Step 6 : Schedule it on the CPU
+	- Step 7 : Start executing its instructions
 
 	```
 			Program on Disk
@@ -59,7 +62,7 @@ Step 7 : Start executing its instructions
 		
 		
 	```
-### 1.4 What Is a Process in Linux?
+## 1.4 What Is a Process in Linux?
 - A process is an instance of a program that is currently being executed by the operating system.
 - For example:
 
