@@ -43,7 +43,6 @@
 	- tree /etc
 	
 ## 2.Managing Files (cp, mv, rm):		These commands manipulate files and directories.
-	
 	## 2.1 touch — Create Empty File
 		- touch file.txt
 	
@@ -106,7 +105,6 @@
 		- tail -f /var/log/syslog   # live log monitoring
 	
 ## 4.Permissions (chmod, chown):		Linux permissions control who can read, write, or execute a file.
-	
 	## 4.1 Permission Types
 	
 		```
@@ -197,7 +195,6 @@
 		- hostnamectl
 
 ## 6. Text Processing & Shell Scripting Essentials:		These commands help extract, filter, modify, and search text — essential for DevOps.
-
 	## 6.1 grep — Search Text in Files
 	- Search patterns in files (works with regex).
 	
@@ -213,7 +210,7 @@
 	Show line numbers:
 	- grep -n "root" /etc/passwd
 	
-## 6.2 awk — Smart Text Processing
+	## 6.2 awk — Smart Text Processing
 	
 	Reads files line-by-line and processes fields (columns).
 	Print first column:
@@ -228,7 +225,7 @@
 	Field separator:
 	- awk -F: '{print $1}' /etc/passwd   # print usernames
 	
-## 6.3 sed — Stream Editor (Modify Text)
+	## 6.3 sed — Stream Editor (Modify Text)
 	Search + replace values inside file.
 	Replace first occurrence in each line:
 	- sed 's/old/new/' file.txt
@@ -239,7 +236,7 @@
 	Delete lines:
 	- sed '/delete_me/d' file.txt
 	
-## 6.4 find — Search Files & Directories
+	## 6.4 find — Search Files & Directories
 	Locate files by name, type, size, etc.
 	
 	Find by name:
@@ -251,7 +248,7 @@
 	Delete matching files (use carefully):
 	- find . -name "*.tmp" -delete
 	
-## 6.5 sort — Sort Text
+	## 6.5 sort — Sort Text
 	
 	Sort alphabetically:
 	- sort names.txt
@@ -262,7 +259,7 @@
 	Reverse sort:
 	- sort -r data.txt
 	
-## 6.6 uniq — Remove Duplicate Lines
+	## 6.6 uniq — Remove Duplicate Lines
 	
 	Show unique lines:
 	- uniq file.txt
@@ -271,7 +268,7 @@
 	Count occurrences:
 	- uniq -c file.txt | sort -n
 	
-## 6.7 wc — Count Words, Lines, Characters
+	## 6.7 wc — Count Words, Lines, Characters
 	
 	Count lines:
 	- wc -l file.txt
@@ -284,7 +281,7 @@
 	Show all counts:
 	- wc file.txt
 	
-## 6.8 cut — Extract Columns by Character/Delimiter
+	## 6.8 cut — Extract Columns by Character/Delimiter
 	Cut first 10 characters:
 	- cut -c 1-10 file.txt
 	
@@ -292,7 +289,7 @@
 	Cut specific field (columns) using delimiter:
 	- cut -d ":" -f 1 /etc/passwd   # show usernames
 	
-## 6.9 xargs — Execute Commands from Output
+	## 6.9 xargs — Execute Commands from Output
 	
 	Example: delete files listed from a command:
 	- find . -name "*.bak" | xargs rm -f
