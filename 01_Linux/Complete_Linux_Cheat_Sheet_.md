@@ -1,9 +1,10 @@
 # Linux basic commands to be familiar with O.S
-- Navigate files and directories
-- Manage files (cp, mv, rm)
-- View files (cat, less)
-- Permissions (chmod, chown)
-- System info commands
+- INDEX : 
+	- Navigate files and directories
+	- Manage files (cp, mv, rm)
+	- View files (cat, less)
+	- Permissions (chmod, chown)
+	- System info commands
 
 
 
