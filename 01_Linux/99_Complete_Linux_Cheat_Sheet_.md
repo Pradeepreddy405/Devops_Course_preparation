@@ -1,12 +1,12 @@
 # Linux basic commands to be familiar with O.S
-	## INDEX : 
+   ## INDEX : 
 	1 Navigate files and directories
 	2 Manage files (cp, mv, rm)
 	3 View files (cat, less)
 	4 Permissions (chmod, chown)
 	5 System info commands
 
-
+---
 
 ## 1.Concept: Linux Filesystem
 - Navigating Files & Directories
@@ -42,7 +42,9 @@
 	### 1.4 tree (optional)
 	- Shows directory tree.
 	- tree /etc
-	
+
+---	
+
 ## 2.Managing Files (cp, mv, rm):		These commands manipulate files and directories.
 -	
 	## 2.1 touch — Create Empty File
@@ -80,7 +82,9 @@
 		- Force delete (dangerous):
 		- rm -rf /
 		- NEVER RUN THIS — it wipes your system.
-		
+
+---
+
 ## 3.Viewing Files (cat, less, head, tail)
 - 
 	## 3.1 cat — Display File Content
@@ -106,7 +110,9 @@
 	## 3.4 tail — Last Lines of File
 		- tail file.txt
 		- tail -f /var/log/syslog   # live log monitoring
-	
+
+---
+
 ## 4.Permissions (chmod, chown):		Linux permissions control who can read, write, or execute a file.
 -
 	## 4.1 Permission Types
@@ -164,6 +170,8 @@
 	
 	
 		- Example: chown root:root /var/www/html
+
+---
 	
 ## 5.System Info Commands:		These commands give system-level information needed for DevOps & troubleshooting.
 -
