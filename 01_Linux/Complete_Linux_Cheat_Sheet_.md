@@ -11,10 +11,9 @@
 - Navigating Files & Directories
 - Linux uses a hierarchical directory structure, starting from root (/).
 - Everything starts at / (root directory).
-	### Key commands :
+	#### Key commands :
 	
 	- 1.1 pwd — Print Working Directory - Shows your current directory location.
-	- Usage:
 	- cmd:pwd
 	- Example output:/home/user/projects
 
@@ -44,50 +43,51 @@
 	
 ## 2.Managing Files (cp, mv, rm):		These commands manipulate files and directories.
 	
-	2.1 touch — Create Empty File
-	touch file.txt
+- 2.1 touch — Create Empty File
+	- touch file.txt
 	
-	2.2 mkdir — Create Directory
-	mkdir myfolder
-	mkdir -p devops/scripts/logs    # create nested folders
+- 2.2 mkdir — Create Directory
+	- mkdir myfolder
+	- mkdir -p devops/scripts/logs    # create nested folders
 	
-	2.3 cp — Copy Files
-	Basic copy:
-	cp file1.txt file2.txt
+- 2.3 cp — Copy Files
+
+	- Basic copy:
+	- cp file1.txt file2.txt
 	
-	Copy folder recursively:
-	cp -r folder1 folder2
+	- Copy folder recursively:
+	- cp -r folder1 folder2
 	
-	Copy with verbose output:
-	cp -v file.txt /backup/
+	- Copy with verbose output:
+	- cp -v file.txt /backup/
 	
-	2.4 mv — Move or Rename
-	Move:
-	mv file.txt /home/user/docs/
+- 2.4 mv — Move or Rename
+	- Move:
+	- mv file.txt /home/user/docs/
 	
-	Rename:
-	mv oldname.txt newname.txt
+	- Rename:
+	- mv oldname.txt newname.txt
 	
-	2.5 rm — Remove (Delete)
-	Delete file:
-	rm file.txt
+	- rm — Remove (Delete)
+	- Delete file:
+	- rm file.txt
 	
-	Delete folder:
-	rm -r foldername
+	- Delete folder:
+	- rm -r foldername
 	
-	Force delete (dangerous):
-	rm -rf /
-	NEVER RUN THIS — it wipes your system.
+	- Force delete (dangerous):
+	- rm -rf /
+	- NEVER RUN THIS — it wipes your system.
 	
 ## 3.Viewing Files (cat, less, head, tail)
-	3.1 cat — Display File Content
-	cat file.txt
+ - 3.1 cat — Display File Content
+	- cat file.txt
 	
-	With line numbers:
-	cat -n file.txt
+	- With line numbers:
+	- cat -n file.txt
 	
-	3.2 less — View Large Files (Best for logs)
-	less /var/log/syslog
+ - 3.2 less — View Large Files (Best for logs)
+	- less /var/log/syslog
 	
 	
 	Navigation inside less:
@@ -97,70 +97,70 @@
 	/keyword = search	
 	n = next match
 	
-	3.3 head — First Lines of File
-	head file.txt
-	head -20 file.txt  # first 20 lines
+- 3.3 head — First Lines of File
+	- head file.txt
+	- head -20 file.txt  # first 20 lines
 	
-	3.4 tail — Last Lines of File
-	tail file.txt
-	tail -f /var/log/syslog   # live log monitoring
+- 3.4 tail — Last Lines of File
+	- tail file.txt
+	- tail -f /var/log/syslog   # live log monitoring
 	
 ## 4.Permissions (chmod, chown):		Linux permissions control who can read, write, or execute a file.
 	
-	4.1 Permission Types
+- 4.1 Permission Types
 	
-	Permission	Symbol	Meaning
-	read		 r		view file content
-	write		 w		modify/delete
-	execute		 x		run as a program
+		```
+			Permission	Symbol	Meaning
+			==========	======	==================
+			read		 r		view file content
+			write		 w		modify/delete
+			execute		 x		run as a program
+		```
 	
-	4.2 Permission Groups
+- 4.2 Permission Groups
+	- Linux assigns permissions for:
+		- Owner
+		- Group
+		- Others
 	
-	Linux assigns permissions for:
+	- Run:
+	- ls -l
 	
-	Owner
-	Group
-	Others
-	
-	Run:
-	ls -l
-	
-	You’ll see:
-	-rwxr-xr--  1 user group  123 Jan 1 script.sh
-	
-	
-	Breakdown:
-	
-	rwx → owner
-	r-x → group
-	r-- → others
-	
-	4.3 chmod — Change Permissions
-	Symbolic:
-	chmod u+x script.sh    # add execute to owner
-	chmod g-w myfile       # remove write from group
-	chmod a+r file         # give read to everyone
-	
-	Numeric mode:
-	Number	Meaning
-	7		rwx			->READ,WRITE,EXECUTE
-	6		rw-         ->READ,WRITE
-	5		r-x			->READ,EXECUTE
-	4		r--			->READ
-	
-	So:
-	chmod 755 script.sh
+	- You’ll see:
+	- -rwxr-xr--  1 user group  123 Jan 1 script.sh
 	
 	
-	Means:
+	- Breakdown:
+	============
+	- rwx → owner
+	- r-x → group
+	- r-- → others
 	
-	Owner: rwx    7 ---READ,WRITE,EXECUTE
-	Group: r-x    5 ---READ,EXECUTE
-	Others: r-x   5 ---READ,EXECUTE
+	- 4.3 chmod — Change Permissions
+	- Symbolic:
+		- chmod u+x script.sh    # add execute to owner
+		- chmod g-w myfile       # remove write from group
+		- chmod a+r file         # give read to everyone
 	
-	4.4 chown — Change Owner
-	chown user file
-	chown user:group file
+	- Numeric mode:
+		```
+			Number	Meaning		Permissions
+			=======	=========	======================
+			7		rwx			->READ,WRITE,EXECUTE
+			6		rw-         ->READ,WRITE
+			5		r-x			->READ,EXECUTE
+			4		r--			->READ
+		```
+	- So:
+	- chmod 755 script.sh
+	- Means:
+		- Owner: rwx    7 ---READ,WRITE,EXECUTE
+		- Group: r-x    5 ---READ,EXECUTE
+		- Others: r-x   5 ---READ,EXECUTE
+	
+	- 4.4 chown — Change Owner
+	- chown user file
+	- chown user:group file
 	
 	
 	Example:
@@ -168,45 +168,44 @@
 	chown root:root /var/www/html
 	
 ## 5.System Info Commands:		These commands give system-level information needed for DevOps & troubleshooting.
-	
-	5.1 uname — System Info
+- 5.1 uname — System Info
 	uname -a
 	Shows kernel version, architecture, OS type.
 	
-	5.2 uptime — System Uptime
+- 5.2 uptime — System Uptime
 	uptime
 	
 	
 	Also shows system load averages.
 	
-	5.3 df — Disk Usage
+- 5.3 df — Disk Usage
 	df -h
 	Shows mounted partitions and free space.
 	
-	5.4 du — Directory/File Size
+- 5.4 du — Directory/File Size
 	du -sh /var/log
 	
-	5.5 top — Live Process Monitor
+- 5.5 top — Live Process Monitor
 	top
 	
 	Alternative (better):
 	htop
 	
-	5.6 free — Memory Usage
+- 5.6 free — Memory Usage
 	free -h
 	
-	5.7 whoami — Current User
+- 5.7 whoami — Current User
 	whoami
 	
-	5.8 id — User ID and Groups
+- 5.8 id — User ID and Groups
 	id
 	
-	5.9 hostnamectl — Host Information
+- 5.9 hostnamectl — Host Information
 	hostnamectl
 
 ## 6. Text Processing & Shell Scripting Essentials:		These commands help extract, filter, modify, and search text — essential for DevOps.
 
-	6.1 grep — Search Text in Files
+- 6.1 grep — Search Text in Files
 	Search patterns in files (works with regex).
 	
 	Basic search:
@@ -221,7 +220,7 @@
 	Show line numbers:
 	grep -n "root" /etc/passwd
 	
-	6.2 awk — Smart Text Processing
+- 6.2 awk — Smart Text Processing
 	
 	Reads files line-by-line and processes fields (columns).
 	Print first column:
@@ -236,7 +235,7 @@
 	Field separator:
 	awk -F: '{print $1}' /etc/passwd   # print usernames
 	
-	6.3 sed — Stream Editor (Modify Text)
+- 6.3 sed — Stream Editor (Modify Text)
 	Search + replace values inside file.
 	Replace first occurrence in each line:
 	sed 's/old/new/' file.txt
@@ -246,7 +245,7 @@
 	Delete lines:
 	sed '/delete_me/d' file.txt
 	
-	6.4 find — Search Files & Directories
+- 6.4 find — Search Files & Directories
 	Locate files by name, type, size, etc.
 	
 	Find by name:
@@ -258,7 +257,7 @@
 	Delete matching files (use carefully):
 	find . -name "*.tmp" -delete
 	
-	6.5 sort — Sort Text
+- 6.5 sort — Sort Text
 	
 	Sort alphabetically:
 	sort names.txt
@@ -269,7 +268,7 @@
 	Reverse sort:
 	sort -r data.txt
 	
-	6.6 uniq — Remove Duplicate Lines
+- 6.6 uniq — Remove Duplicate Lines
 	
 	Show unique lines:
 	uniq file.txt
@@ -278,7 +277,7 @@
 	Count occurrences:
 	uniq -c file.txt | sort -n
 	
-	6.7 wc — Count Words, Lines, Characters
+- 6.7 wc — Count Words, Lines, Characters
 	
 	Count lines:
 	wc -l file.txt
@@ -291,7 +290,7 @@
 	Show all counts:
 	wc file.txt
 	
-	6.8 cut — Extract Columns by Character/Delimiter
+- 6.8 cut — Extract Columns by Character/Delimiter
 	Cut first 10 characters:
 	cut -c 1-10 file.txt
 	
@@ -299,7 +298,7 @@
 	Cut specific field (columns) using delimiter:
 	cut -d ":" -f 1 /etc/passwd   # show usernames
 	
-	6.9 xargs — Execute Commands from Output
+- 6.9 xargs — Execute Commands from Output
 	
 	Example: delete files listed from a command:
 	find . -name "*.bak" | xargs rm -f
