@@ -1,4 +1,14 @@
 ## Linux Process Management
+- Linux process management refers to creating, monitoring, controlling, and terminating processes in a Linux operating system. A process is an instance of a running program, identified by a unique Process ID (PID).
+
+	- Key Concepts
+		- PID (Process ID)			: Unique identifier for each process.
+		- PPID (Parent Process ID)	: ID of the process that created the current process.
+		- Foreground process		: Runs interactively and uses the terminal.
+		- Background process		: Runs without occupying the terminal.
+		- Daemon					: A background service process that starts at boot or on demand (e.g., web server)
+
+- Lets go with an example
 - Before understanding a process, you need to understand a program.
 - Imagine you have a Linux server and you have installed Nginx,Java,Python,Docker,SSH,PostgreSQL. All of these are softwares, but software sitting on the disk cannot serve users right .Something has to execute that software.That is where the concept of a process comes in.
 
