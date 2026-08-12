@@ -1,10 +1,10 @@
 # Linux basic commands to be familiar with O.S
-- INDEX : 
-	- Navigate files and directories
-	- Manage files (cp, mv, rm)
-	- View files (cat, less)
-	- Permissions (chmod, chown)
-	- System info commands
+	## INDEX : 
+	1 Navigate files and directories
+	2 Manage files (cp, mv, rm)
+	3 View files (cat, less)
+	4 Permissions (chmod, chown)
+	5 System info commands
 
 
 
@@ -44,6 +44,7 @@
 	- tree /etc
 	
 ## 2.Managing Files (cp, mv, rm):		These commands manipulate files and directories.
+-	
 	## 2.1 touch — Create Empty File
 		- touch file.txt
 	
@@ -81,6 +82,7 @@
 		- NEVER RUN THIS — it wipes your system.
 		
 ## 3.Viewing Files (cat, less, head, tail)
+- 
 	## 3.1 cat — Display File Content
 		- cat file.txt
 	
@@ -106,6 +108,7 @@
 		- tail -f /var/log/syslog   # live log monitoring
 	
 ## 4.Permissions (chmod, chown):		Linux permissions control who can read, write, or execute a file.
+-
 	## 4.1 Permission Types
 	
 		```
@@ -163,6 +166,7 @@
 		- Example: chown root:root /var/www/html
 	
 ## 5.System Info Commands:		These commands give system-level information needed for DevOps & troubleshooting.
+-
 	## 5.1 uname — System Info
 		- Shows kernel version, architecture, OS type : uname -a
 	
@@ -196,6 +200,7 @@
 		- hostnamectl
 
 ## 6. Text Processing & Shell Scripting Essentials:		These commands help extract, filter, modify, and search text — essential for DevOps.
+-	
 	## 6.1 grep — Search Text in Files
 	- Search patterns in files (works with regex).
 	
