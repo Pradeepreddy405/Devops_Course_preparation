@@ -1,3 +1,0 @@
-🔹 Artifact Management (DevOps – Zero to Pro)
-
-Artifact Management is the practice of storing, versioning, securing, and distributing build outputs (artifacts) generated during the CI/CD pipeline.
