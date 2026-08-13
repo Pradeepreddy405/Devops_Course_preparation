@@ -142,7 +142,7 @@
 
 
 
-	##7. chgrp
+	### 7. chgrp
 	- Changes only the group  
 	- Example : chgrp devops app.txt
 
