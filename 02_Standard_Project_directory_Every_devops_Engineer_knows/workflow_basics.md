@@ -112,6 +112,7 @@ Kubernetes Cluster
 =================================================
 # What DevOps Engineers TOUCH Daily 
 
+```
 ✔ Jenkinsfile
 ✔ Dockerfile
 ✔ k8s/*.yaml
@@ -122,4 +123,5 @@ Kubernetes Cluster
 ================================================
 
 ```
-“As a DevOps engineer, we need to work across Java, Python, and .NET applications. Our focus  should be how to build automation, containerization, CI/CD pipelines, and deployments, not on writing application code.”
+
+As a DevOps engineer, we need to work across Java, Python, and .NET applications. Our focus  should be how to build automation, containerization, CI/CD pipelines, and deployments, not on writing application code.”
