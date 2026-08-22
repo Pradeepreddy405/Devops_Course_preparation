@@ -1,4 +1,4 @@
-DevOps Project Directory – Visual Representation
+## DevOps Project Directory – Visual Representation
 
 ```
                         ┌──────────────────────────┐
