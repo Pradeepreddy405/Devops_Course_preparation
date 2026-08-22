@@ -71,8 +71,8 @@ terraform/
 
 ```
 
-# End-to-End DevOps Flow (MOST IMPORTANT VISUAL)
-
+# End-to-End DevOps Flow 
+```
 Developer
    │
    ▼
@@ -97,7 +97,7 @@ Container Registry
 Kubernetes Cluster
 (EKS / AKS / GKE)
 
-
+```
 =================================================
 
 # Real-Time DevOps Workflow
