@@ -1,5 +1,6 @@
 DevOps Project Directory – Visual Representation
 
+```
                         ┌──────────────────────────┐
                         │      project-root/       │
                         └────────────┬─────────────┘
@@ -114,4 +115,5 @@ What DevOps Engineers TOUCH Daily
 
 ================================================
 
+```
 “As a DevOps engineer, we need to work across Java, Python, and .NET applications. Our focus  should be how to build automation, containerization, CI/CD pipelines, and deployments, not on writing application code.”
