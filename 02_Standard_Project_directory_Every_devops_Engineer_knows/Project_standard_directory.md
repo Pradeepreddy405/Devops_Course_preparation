@@ -1,6 +1,7 @@
-Universal Project Directory - Every DevOps Engineer Should Know 
+## Universal Project Directory - Every DevOps Engineer Should Know 
 This structure is common across Java, Python, Node.js, .NET projects.
 
+```
 =============================================================================================================================================================
 
 			project-root/
@@ -60,7 +61,9 @@ This structure is common across Java, Python, Node.js, .NET projects.
 			
 ================================================================================================================================================
 
-Explanation:
+```
+
+# Explanation:
 
 1️  	src/ – Application Code
 	You don’t write this, but you should know:
