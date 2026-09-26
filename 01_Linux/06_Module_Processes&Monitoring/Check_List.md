@@ -1,3 +1,4 @@
+```
              PROCESS MANAGEMENT
                     │
      ┌──────────────┼──────────────┐
@@ -16,3 +17,4 @@ systemctl        ps/top           ss
                   LOGS
                     ↓
           STOP / RESTART / KILL
+```
