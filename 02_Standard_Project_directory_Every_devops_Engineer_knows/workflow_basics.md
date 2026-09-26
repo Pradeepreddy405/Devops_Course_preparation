@@ -1,5 +1,6 @@
-DevOps Project Directory – Visual Representation
+# DevOps Project Directory – Visual Representation
 
+```
                         ┌──────────────────────────┐
                         │      project-root/       │
                         └────────────┬─────────────┘
@@ -16,8 +17,10 @@ DevOps Project Directory – Visual Representation
  │ (Java/Python) │         │ GitHub workflows  │        └─────────────────┘
  └───────────────┘         └───────────────────┘
 
+```
+# Container & Deployment Layer (Visual)
 
-🐳 Container & Deployment Layer (Visual)
+```
                  ┌──────────────────────┐
                  │     Docker Image     │
                  │   (from Dockerfile)  │
@@ -36,9 +39,10 @@ DevOps Project Directory – Visual Representation
                  └──────────────────────┘
 
 
+```
+# Kubernetes Folder – Visual Layout
 
-☸ Kubernetes Folder – Visual Layout
-
+```
 k8s/
 │
 ├── deployment.yaml  ──► Pods (Replicas)
@@ -47,9 +51,11 @@ k8s/
 │
 └── ingress.yaml     ──► Domain / Routing
 
+```
 
-🏗 Infrastructure Layer – Terraform Visual
+# Infrastructure Layer – Terraform Visual
 
+```
 terraform/
 │
 ├── main.tf       ──► What to create
@@ -63,9 +69,10 @@ terraform/
     ├── qa/
     └── prod/
 
+```
 
-🔁 End-to-End DevOps Flow (MOST IMPORTANT VISUAL)
-
+# End-to-End DevOps Flow 
+```
 Developer
    │
    ▼
@@ -90,10 +97,10 @@ Container Registry
 Kubernetes Cluster
 (EKS / AKS / GKE)
 
-
+```
 =================================================
 
-Real-Time DevOps Workflow
+# Real-Time DevOps Workflow
 
 	Developer 	→ pushes code
 	DevOps 		→ pipeline triggers
@@ -103,8 +110,9 @@ Real-Time DevOps Workflow
 	Terraform 	→ infra managed
 
 =================================================
-What DevOps Engineers TOUCH Daily 
+# What DevOps Engineers TOUCH Daily 
 
+```
 ✔ Jenkinsfile
 ✔ Dockerfile
 ✔ k8s/*.yaml
@@ -114,4 +122,6 @@ What DevOps Engineers TOUCH Daily
 
 ================================================
 
-“As a DevOps engineer, we need to work across Java, Python, and .NET applications. Our focus  should be how to build automation, containerization, CI/CD pipelines, and deployments, not on writing application code.”
+```
+
+As a DevOps engineer, we need to work across Java, Python, and .NET applications. Our focus  should be how to build automation, containerization, CI/CD pipelines, and deployments, not on writing application code.”
