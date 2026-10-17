@@ -1136,14 +1136,7 @@ Linux is a foundational skill for Cloud Engineering, DevOps, SRE, and container 
 
 Start with the fundamentals, practice daily, and gradually move toward cloud infrastructure, CI/CD, containers, Kubernetes, monitoring, and production troubleshooting.
 
-**Learn Linux by doing, not just by reading.**
 
-### Suggested next steps
-
-- Build a Linux lab using an Ubuntu virtual machine or a cloud instance.
-- Complete the hands-on labs in this README.
-- Document each lab with commands, expected outputs, common errors, and troubleshooting steps.
-- Create separate folders for Linux fundamentals, networking, security, shell scripting, and production scenarios.
 
 ---
 
