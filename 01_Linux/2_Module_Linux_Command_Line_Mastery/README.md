@@ -693,27 +693,5 @@ Linux
         └── Monitoring
 ```
 
-# 🎯 Linux Mastery Goal
-
-Do not measure your Linux knowledge by the number of commands you can memorize.
-
-Measure it by whether you can troubleshoot a real server.
-
-You should eventually be able to answer questions such as:
-
-* Why is the application down?
-* Why is the server slow?
-* Why is CPU usage high?
-* Why is memory exhausted?
-* Why is disk space full?
-* Why can't users connect to port `8080`?
-* Why is DNS resolution failing?
-* Why can't a service start?
-* Why is a user getting `Permission denied`?
-* Why is an application unable to read/write a file?
-* Which process is consuming resources?
-* Which process is listening on a port?
-* Where are the relevant logs?
-* How can this task be automated?
 
 **That is the level of Linux knowledge required for serious Cloud & DevOps work.**
